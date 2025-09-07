@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import SmoothScrolling from "@/components/smooth-scrolling";
-import { Spotlight } from "@/components/ui/spotlight-new";
 
 const bricol = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -13,23 +12,23 @@ const bricol = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "PhaseOne Partners",
+  title: "Founder - PhaseOne Partners",
   description:
-    "Connecting businesses with the right investors through strategic deal origination.",
+    "Partners for growth - Helping entrepreneurs achieve their vision.",
 };
 
-export default function RootLayout({
+export default function FounderLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${bricol.variable} antialiased`}>
-        <SmoothScrolling> 
-          {children}
-        </SmoothScrolling>
-      </body>
-    </html>
+    <div className="bg-gradient-to-b from-primary to-80% to-background min-h-screen">
+      <SmoothScrolling> 
+        <Navbar textColor="background" logoColor="white" />
+        {children}
+        <Footer />
+      </SmoothScrolling>
+    </div>
   );
 }

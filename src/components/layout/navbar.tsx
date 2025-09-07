@@ -53,8 +53,8 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "For Founders", href: "/for-founders" },
-  { name: "For Investors", href: "/for-investors" },
+  { name: "For Founders", href: "/founders" },
+  { name: "For Investors", href: "/investors" },
   {
     name: "Services",
     href: "#",
@@ -190,7 +190,8 @@ const navigation: NavigationItem[] = [
   { name: "Contact", href: "/contact", icon: ThumbsUp, description: "Get in touch with our team." },
 ];
 
-export default function Navbar() {
+
+export default function Navbar({ textColor, logoColor }: { textColor: string, logoColor: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
@@ -250,24 +251,20 @@ export default function Navbar() {
     if (items <= 3) {
       return "min-w-[300px]";
     } else if (items <= 6) {
-      return "min-w-[600px]";
+      return "min-w-[500px]";
     } else if (items <= 12) {
-      return "min-w-[800px]";
+      return "min-w-[600px]";
     }
-    return "min-w-[1000px]";
+    return "min-w-[800px]";
   };
 
   return (
     <header
-      className={`relative text-foreground   top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "" : ""
-      }`}
+      className={`relative top-0 left-0 right-0 z-50 transition-all duration-300 text-${textColor}`}
     >
       <div className="max-w-[1600px] mx-auto px-6 lg:px-16">
         <nav
-          className={`${
-            scrolled ? "" : ""
-          } py-4 px-2 rounded-lg transition-all duration-300`}
+          className={` py-4 px-2 rounded-lg transition-all duration-300`}
           aria-label="Global"
         >
           <div className="flex items-center justify-between">
@@ -275,11 +272,11 @@ export default function Navbar() {
             <div className="flex lg:flex-1">
               <Link href="/" className="-m-1.5 p-1.5 inline-block">
                 <Image
-                  src="/logo.png"
-                  alt="Enzig Studio"
+                  src={logoColor === "white" ? "/white-logo.webp" : "/black-logo.png"} 
+                  alt="PhaseOne Partners"
                   width={400}
                   height={200}
-                  className="h-10 w-auto"
+                  className={`h-10 w-auto `}
                 />
               </Link>
             </div>
@@ -288,15 +285,15 @@ export default function Navbar() {
             <div className="flex lg:hidden">
               <button
                 type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
+                className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 `}
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 <span className="sr-only">Toggle menu</span>
                 {mobileMenuOpen ? (
-                  <X className="h-6 w-6 text-foreground" aria-hidden="true" />
+                  <X className={`h-6 w-6 `} aria-hidden="true" />
                 ) : (
                   <Menu
-                    className="h-6 w-6 text-foreground"
+                    className={`h-6 w-6 `}
                     aria-hidden="true"
                   />
                 )}
@@ -315,12 +312,11 @@ export default function Navbar() {
                 >
                   {item.dropdown ? (
                     <>
-                      <button className="flex items-center gap-1 text-[16px] text-foreground leading-6 cursor-pointer">
+                      <button className={`flex items-center gap-1 text-[16px] leading-6 cursor-pointer`}>
                         {item.name}
                         <ChevronDown
-                          className={`h-4 w-4 text-foreground transition-transform duration-200 ${
-                            activeDropdown === item.name ? "rotate-180" : ""
-                          }`}
+                          className={`h-4 w-4 transition-transform duration-200 
+                            ${activeDropdown === item.name ? "rotate-180" : ""}`}
                           aria-hidden="true"
                         />
                       </button>
@@ -334,7 +330,7 @@ export default function Navbar() {
 
                       {/* Multi-level Dropdown Menu */}
                       <div
-                        className={`absolute left-1/2 -translate-x-1/2 top-10 mt-4 w-full ${calculateDropdownWidth(calculateTotalItems(item.dropdown))} rounded-lg bg-background px-6 py-4 shadow-2xl ring-1 transition-all duration-300 origin-top-left 
+                        className={`absolute left-1/2 -translate-x-1/2 top-10 mt-4 w-full ${calculateDropdownWidth(calculateTotalItems(item.dropdown))} rounded-lg bg-background px-4 py-4 shadow-2xl ring-1 transition-all duration-300 origin-top-left 
                                             ${
                                               activeDropdown === item.name
                                                 ? "opacity-100 scale-100"
@@ -353,13 +349,13 @@ export default function Navbar() {
                                   target={
                                     subItem.name == "Careers" ? "_blank" : "_self"
                                   }
-                                  className="group hover:bg-foreground/5 p-3 w-full flex items-center gap-3  transition-colors"
+                                  className="group p-1.5 w-full flex items-center gap-3  transition-colors"
                                 >
                                   <span className="text-xl text-primary">
-                                    <subItem.icon className="w-6 h-6" />
+                                    <subItem.icon className="w-4 h-4" />
                                   </span>
                                   <div className="flex flex-col">
-                                    <span className="text-[16px] text-foreground font-bold underline">
+                                    <span className="text-[14px] text-foreground font-bold underline">
                                       {subItem.name}
                                     </span>
                                   </div>
@@ -375,13 +371,13 @@ export default function Navbar() {
                                         target={
                                           subSubItem.name == "Careers" ? "_blank" : "_self"
                                         }
-                                        className="group hover:bg-foreground/5 p-3 w-full flex items-center gap-3  transition-colors"
+                                        className="group p-1.5 w-full flex items-center gap-3  transition-colors"
                                       >
                                         <span className="text-xl text-primary">
-                                          <subSubItem.icon className="w-6 h-6" />
+                                          <subSubItem.icon className="w-4 h-4" />
                                         </span>
                                         <div className="flex flex-col">
-                                          <span className="text-[16px] text-foreground font-medium">
+                                          <span className="text-[14px] text-foreground/[85%] hover:text-foreground font-medium">
                                             {subSubItem.name}
                                           </span>
                                         </div>
@@ -398,7 +394,7 @@ export default function Navbar() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-[16px] text-foreground lora-medium  cursor-pointer"
+                      className={`text-[16px] lora-medium cursor-pointer `}
                     >
                       {item.name}
                     </Link>
@@ -435,11 +431,11 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <Image
-                src="/logo.jpg"
-                alt="Enzig Studio"
+                src={logoColor === "white" ? "/white-logo.webp" : "/black-logo.png"} 
+                alt="PhaseOne Partners"
                 width={300}
                 height={100}
-                className="h-10 w-auto"
+                className={`h-10 w-auto `}
               />
             </Link>
             <button

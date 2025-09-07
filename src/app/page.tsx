@@ -20,7 +20,7 @@ export default function Home() {
       }}
       >
         {/* <Spotlight /> */}
-        <Navbar />
+        <Navbar textColor="foreground" logoColor="black" />
         <HeroSection />
       </div>
       <InvestorFounder />
