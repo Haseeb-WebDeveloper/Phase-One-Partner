@@ -6,7 +6,7 @@ export default function FounderHeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col">
       {/* Main Content */}
-      <div className="flex-1 flex items-center justify-center px-6 lg:px-16 pt-20">
+      <div className="flex-1 flex items-center justify-center px-6 lg:px-16 ">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
@@ -32,7 +32,7 @@ export default function FounderHeroSection() {
           </h1>
 
           {/* Subheading */}
-          <div className="text-xl md:text-2xl text-white mb-12">
+          <div className="text-xl md:text-2xl text-white mb-10">
             <p>Helping entrepreneurs achieve their vision.</p>
           </div>
 

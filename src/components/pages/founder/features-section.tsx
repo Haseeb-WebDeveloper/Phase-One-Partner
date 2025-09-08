@@ -1,8 +1,12 @@
 "use client";
 
+
 export default function FeaturesSection() {
   return (
-    <section className="py-20 px-6 lg:px-16 bg-gradient-to-br from-muted/30 to-background">
+    <section className="py-20 px-6 lg:px-16 bg-gradient-to-br from-muted/30 to-background relative">
+      {/* Center decorative vectors */}
+    
+
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left Column */}
@@ -18,7 +22,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Direct Access to Investors
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   We connect you straight to vetted private equity funds and strategic buyers already investing in your 
                   industry. No broad auctions, no wasted time.
                 </p>
@@ -36,7 +40,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Confidential and Targeted Outreach
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   Your reputation matters. We only approach a select group of aligned investors who want to speak with 
                   you directly, keeping the process discreet and focused.
                 </p>
@@ -54,7 +58,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Relationships, Not Transactions
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   We prioritise early, genuine conversations so you can 
                   assess cultural fit and alignment before formal discussions begin.
                 </p>
@@ -75,7 +79,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Fast, Clean Process
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   Pre-qualified investors mean fewer distractions, no wasted presentations, and more time spent on serious opportunities.
                 </p>
               </div>
@@ -92,7 +96,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Aligned Incentives
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   We are paid by investors, not by pushing deals. Our goal is finding the right long-term match for your business.
                 </p>
               </div>
@@ -109,7 +113,7 @@ export default function FeaturesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3">
                   Protecting Your Legacy
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   We help match you with investors who share your vision and will look after your employees, customers, and the culture you've built.
                 </p>
               </div>

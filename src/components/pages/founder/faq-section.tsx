@@ -84,7 +84,7 @@ export default function FAQSection() {
                 </button>
                 
                 {expandedFAQ === faq.id && (
-                  <div className="px-4 pb-6 animate-in slide-in-from-top-2 duration-200">
+                  <div className=" pb-6 animate-in slide-in-from-top-2 duration-200">
                     <p className="text-muted-foreground leading-relaxed">
                       {faq.answer}
                     </p>
@@ -113,7 +113,7 @@ export default function FAQSection() {
                 </button>
                 
                 {expandedFAQ === faq.id && (
-                  <div className="px-4 pb-6 animate-in slide-in-from-top-2 duration-200">
+                  <div className=" pb-6 animate-in slide-in-from-top-2 duration-200">
                     <p className="text-muted-foreground leading-relaxed">
                       {faq.answer}
                     </p>

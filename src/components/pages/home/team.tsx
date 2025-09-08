@@ -53,7 +53,7 @@ const Team = () => {
         </div>
 
         {/* Comparison Table */}
-        <div className="rounded-2xl border border-foreground/20 overflow-hidden">
+        <div className="rounded-2xl border-[2px] border-primary overflow-hidden">
           {/* Table Header */}
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="p-4 md:p-6 text-lg font-semibold text-background bg-primary/80 border-r border-background">
@@ -68,21 +68,21 @@ const Team = () => {
           </div>
 
           {/* Table Body */}
-          <div className="divide-y divide-foreground/20">
+          <div className="">
             {comparisonData.map((row, index) => (
               <div key={index} className="grid grid-cols-1 md:grid-cols-3 hover:bg-foreground/5 transition-colors">
                 {/* Feature Name */}
-                <div className="p-4 md:px-6 py-4 bg-foreground/5 flex items-center font-medium text-foreground border-r border-foreground/20">
+                <div className="border-b p-4 md:px-6 py-4 bg-foreground/5 flex items-center font-medium text-foreground border-r border-foreground/20">
                   {row.feature}
                 </div>
                 
                 {/* PhaseOne Partners */}
-                <div className="p-4 md:px-6 py-4 text-foreground border-r border-foreground/20">
+                <div className="border-b p-4 md:px-6 py-4 bg-primary/20 border-r border-foreground/20">
                   {row.phaseOne}
                 </div>
                 
                 {/* Traditional Brokers/Advisors */}
-                <div className="p-4 md:px-6 py-4 text-foreground">
+                <div className="border-b p-4 md:px-6 py-4 text-foreground">
                   {row.traditional}
                 </div>
               </div>

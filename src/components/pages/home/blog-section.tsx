@@ -56,7 +56,7 @@ export default function BlogSection() {
                   <div className="h-full flex flex-col md:justify-between gap-3 py-3">
                     {/* Category Label on Top */}
                     <div className="">
-                      <p className="pb-3 text-2xl w-full text-center font-medium">
+                      <p className="pb-3 text-2xl w-full text-center font-bold">
                         {post.category}
                       </p>
 
@@ -69,7 +69,7 @@ export default function BlogSection() {
                         height={500}
                       />
 
-                      <h3 className="pt-3 text-center md:px-3 font-bold text-2xl  group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                      <h3 className="pt-3 text-center md:px-3 font-normal text-xl  group-hover:text-primary transition-colors duration-300 line-clamp-2">
                         {post.title}
                       </h3>
                     </div>

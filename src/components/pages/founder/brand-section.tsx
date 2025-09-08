@@ -13,12 +13,12 @@ export default function BrandSection() {
                 <span className="text-primary">phase</span> of the process.
               </h2>
               
-              <h3 className="text-xl md:text-2xl text-muted-foreground font-medium">
+              <h3 className="text-xl md:text-2xl text-black-foreground font-medium">
                 Selling a business can feel overwhelming, but you don't need to go through it alone.
               </h3>
             </div>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-foreground leading-relaxed">
               With PhaseOne, every stage is structured, managed, and supported, so you can focus on running your business while we handle the complexities.
             </p>
           </div>

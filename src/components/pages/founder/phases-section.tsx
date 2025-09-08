@@ -81,7 +81,7 @@ export default function PhasesSection() {
                   </svg>
                 </span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed">
                 There are 6 simple phases of selling your business or raising capital — and we handle them all.
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function PhasesSection() {
 
           {/* Right Column - Enhanced Phases Accordion */}
           <div className="relative">
-            <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8 shadow-xl">
+            <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 shadow-xl">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   The Phases of Doing a Deal
@@ -97,19 +97,19 @@ export default function PhasesSection() {
                 <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
               </div>
               
-              <div className="space-y-3">
+              <div className="space-y-0">
                 {phases.map((phase, index) => (
                   <div key={phase.id} className="group">
                     <button
                       onClick={() => togglePhase(phase.id)}
-                      className="w-full flex items-center justify-between p-4 text-left hover:bg-muted/50 transition-all duration-200 rounded-xl border border-transparent hover:border-primary/20"
+                      className="w-full flex items-center justify-between p-2 text-left hover:bg-muted/50 transition-all duration-200 rounded-xl border border-transparent hover:border-primary/20"
                     >
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-1">
-                          <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                          <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-sm font-sm">
                             {phase.id}
                           </div>
-                          <h4 className="font-semibold text-foreground text-sm md:text-base">
+                          <h4 className="font-bold text-foreground lg:text-lg text-sm md:text-base">
                             {phase.title}
                           </h4>
                         </div>
@@ -125,8 +125,8 @@ export default function PhasesSection() {
                     </button>
                     
                     {expandedPhase === phase.id && (
-                      <div className="px-4 pb-4 ml-11 animate-in slide-in-from-top-2 duration-200">
-                        <p className="text-sm text-muted-foreground leading-relaxed bg-muted/30 p-3 rounded-lg">
+                      <div className="pb-4 ml-10 animate-in slide-in-from-top-2 duration-200">
+                        <p className="text-normal text-foreground leading-relaxed bg-muted/30 p-3 rounded-lg">
                           {phase.description}
                         </p>
                       </div>

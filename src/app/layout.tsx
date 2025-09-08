@@ -28,6 +28,7 @@ export default function RootLayout({
       <body className={`${bricol.variable} antialiased`}>
         <SmoothScrolling> 
           {children}
+          <Footer />
         </SmoothScrolling>
       </body>
     </html>
