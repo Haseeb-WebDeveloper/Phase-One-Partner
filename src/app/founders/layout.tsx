@@ -27,7 +27,7 @@ export default function FounderLayout({
       <SmoothScrolling> 
         <Navbar textColor="background" logoColor="white" />
         {children}
-        
+        <Footer />
       </SmoothScrolling>
     </div>
   );
