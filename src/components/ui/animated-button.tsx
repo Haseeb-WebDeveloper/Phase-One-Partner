@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "./button";
 
 
-export default function AnimatedButton({ text, className }: { text: string, className?: string }) {
+export default function AnimatedButton({ text, className, defaultBgColor }: { text: string, className?: string, defaultBgColor?: string }) {
     const buttonRef = useRef<HTMLDivElement>(null);
     const arrowRef = useRef<HTMLDivElement>(null);
   
@@ -43,10 +43,10 @@ export default function AnimatedButton({ text, className }: { text: string, clas
       };
     }, []);
   return (
-    <div ref={buttonRef} className="z-50 group flex items-center w-fit relative mx-auto">
+    <div ref={buttonRef} className="z-20 group flex items-center w-fit relative mx-auto">
       <Button
         size="xl"
-        className="z-10 group-hover:pr-8 bg-background border-[2px] border-foreground/60 hover:border-primary hover:bg-primary hover:text-background text-foreground md:text-lg font-medium rounded-full w-fit transition-all duration-300 "
+        className={`z-10 font-lato group-hover:pr-8 ${defaultBgColor ? `${defaultBgColor} text-background` : "bg-background text-primary"} border-[2px] border-primary hover:border-[#252acf] hover:bg-[#252acf]  hover:text-background md:text-lg font-medium rounded-full w-fit transition-all duration-300`}
       >
         {text}
       </Button>

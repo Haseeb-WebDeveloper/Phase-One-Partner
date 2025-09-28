@@ -69,21 +69,21 @@ const navigation: NavigationItem[] = [
             name: "Deal Sourcing",
             href: "/services/deal-sourcing",
             icon: BarChart2,
-            description: "Finding the right investment opportunities."
+            description: "Finding the right investment opportunities.",
           },
           {
             name: "Marketing Mapping",
             href: "/services/marketing-mapping",
             icon: Globe,
-            description: "Mapping and analyzing market opportunities."
+            description: "Mapping and analyzing market opportunities.",
           },
           {
             name: "Business Outreach",
             href: "/services/business-outreach",
             icon: Users,
-            description: "Connecting with key business stakeholders."
-          }
-        ]
+            description: "Connecting with key business stakeholders.",
+          },
+        ],
       },
       {
         name: "Transaction Support",
@@ -95,27 +95,27 @@ const navigation: NavigationItem[] = [
             name: "Due Diligence",
             href: "/services/due-diligence",
             icon: Search,
-            description: "Comprehensive due diligence for investments."
+            description: "Comprehensive due diligence for investments.",
           },
           {
             name: "Stakeholder Engagement",
             href: "/services/stakeholder-engagement",
             icon: Heart,
-            description: "Engaging and managing stakeholders effectively."
+            description: "Engaging and managing stakeholders effectively.",
           },
           {
             name: "Valuation",
             href: "/services/valuation",
             icon: TrendingUp,
-            description: "Accurate business and asset valuation services."
+            description: "Accurate business and asset valuation services.",
           },
           {
             name: "Post Acquisition Planning",
             href: "/services/post-acquisition-planning",
             icon: Edit3,
-            description: "Strategic planning after acquisition."
-          }
-        ]
+            description: "Strategic planning after acquisition.",
+          },
+        ],
       },
       {
         name: "Buy & Build",
@@ -127,21 +127,21 @@ const navigation: NavigationItem[] = [
             name: "Platform Identification",
             href: "/services/platform-identification",
             icon: Monitor,
-            description: "Identifying scalable platform businesses."
+            description: "Identifying scalable platform businesses.",
           },
           {
             name: "Target Sourcing",
             href: "/services/target-sourcing",
             icon: Target,
-            description: "Finding and evaluating acquisition targets."
+            description: "Finding and evaluating acquisition targets.",
           },
           {
             name: "Growth Roadmaps",
             href: "/services/growth-roadmaps",
             icon: TrendingUp,
-            description: "Strategic roadmaps for business growth."
-          }
-        ]
+            description: "Strategic roadmaps for business growth.",
+          },
+        ],
       },
     ],
   },
@@ -153,41 +153,46 @@ const navigation: NavigationItem[] = [
         name: "About",
         href: "/about",
         icon: BookOpen,
-        description: "Learn more about PhaseOne Partners."
+        description: "Learn more about PhaseOne Partners.",
       },
       {
         name: "Grow Your Business",
         href: "/grow-your-business",
         icon: Zap,
-        description: "Accelerate your business growth with us."
+        description: "Accelerate your business growth with us.",
       },
       {
         name: "Portfolio",
         href: "/portfolio",
         icon: Award,
-        description: "See our track record and portfolio companies."
+        description: "See our track record and portfolio companies.",
       },
       {
         name: "Insights",
         href: "/insights",
         icon: FileText,
-        description: "Latest news, articles, and industry insights."
+        description: "Latest news, articles, and industry insights.",
       },
       {
         name: "Terms and Conditions",
         href: "/terms-and-conditions",
         icon: Edit3,
-        description: "Read our terms and conditions."
+        description: "Read our terms and conditions.",
       },
       {
         name: "Privacy Policy",
         href: "/privacy-policy",
         icon: Shield,
-        description: "Understand how we protect your data."
+        description: "Understand how we protect your data.",
       },
     ],
   },
-  { name: "Contact", href: "/contact", icon: ThumbsUp, description: "Get in touch with our team." },
+  {
+    name: "Contact",
+    href: "/contact",
+    icon: ThumbsUp,
+    description: "Get in touch with our team.",
+  },
 ];
 
 export default function Navbar() {
@@ -259,7 +264,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`relative text-foreground   top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`relative text-foreground top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "" : ""
       }`}
     >
@@ -267,19 +272,21 @@ export default function Navbar() {
         <nav
           className={`${
             scrolled ? "" : ""
-          } py-4 px-2 rounded-lg transition-all duration-300`}
+          } py-4 lg:px-2 rounded-lg transition-all duration-300`}
           aria-label="Global"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between bg-background lg:bg-transparent px-6 py-4 lg:px-0 lg:py-0 rounded-full shadow lg:shadow-none ">
             {/* Logo */}
             <div className="flex lg:flex-1">
               <Link href="/" className="-m-1.5 p-1.5 inline-block">
                 <Image
-                  src="/logo.png"
-                  alt="Enzig Studio"
-                  width={400}
-                  height={200}
-                  className="h-10 w-auto"
+                  src="/logo.svg"
+                  alt="PhaseOne Partners"
+                  width={600}
+                  height={400}
+                  className="lg:h-10 h-6 w-auto"
+                  priority
+                  quality={100}
                 />
               </Link>
             </div>
@@ -303,7 +310,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            <div className="hidden lg:flex lg:gap-x-8">
+            <div className="hidden lg:flex lg:gap-x-8 bg-background px-10 py-2.5 font-poppins rounded-full">
               {navigation.map((item) => (
                 <div
                   key={item.name}
@@ -327,14 +334,18 @@ export default function Navbar() {
 
                       {/* Invisible bridge to maintain hover state */}
                       <div
-                        className={`absolute left-1/2 -translate-x-1/2  right-0 top-full h-8 ${calculateDropdownWidth(calculateTotalItems(item.dropdown))} ${
+                        className={`absolute left-1/2 -translate-x-1/2  right-0 top-full h-8 ${calculateDropdownWidth(
+                          calculateTotalItems(item.dropdown)
+                        )} ${
                           activeDropdown === item.name ? "block" : "hidden"
                         }`}
                       />
 
                       {/* Multi-level Dropdown Menu */}
                       <div
-                        className={`absolute left-1/2 -translate-x-1/2 top-10 mt-4 w-full ${calculateDropdownWidth(calculateTotalItems(item.dropdown))} rounded-lg bg-background px-6 py-4 shadow-2xl ring-1 transition-all duration-300 origin-top-left 
+                        className={`absolute left-1/2 -translate-x-1/2 top-10 mt-4 w-full ${calculateDropdownWidth(
+                          calculateTotalItems(item.dropdown)
+                        )} rounded-lg bg-background px-6 py-4 shadow-2xl ring-1 transition-all duration-300 origin-top-left 
                                             ${
                                               activeDropdown === item.name
                                                 ? "opacity-100 scale-100"
@@ -343,7 +354,9 @@ export default function Navbar() {
                       >
                         <div className="relative">
                           <div
-                            className={`grid ${calculateGridLayout(calculateTotalItems(item.dropdown))} z-[100] w-full`}
+                            className={`grid ${calculateGridLayout(
+                              calculateTotalItems(item.dropdown)
+                            )} z-[100] w-full`}
                           >
                             {item.dropdown.map((subItem, index) => (
                               <div key={subItem.name} className="space-y-1">
@@ -351,7 +364,9 @@ export default function Navbar() {
                                 <Link
                                   href={subItem.href}
                                   target={
-                                    subItem.name == "Careers" ? "_blank" : "_self"
+                                    subItem.name == "Careers"
+                                      ? "_blank"
+                                      : "_self"
                                   }
                                   className="group hover:bg-foreground/5 p-3 w-full flex items-center gap-3  transition-colors"
                                 >
@@ -364,29 +379,33 @@ export default function Navbar() {
                                     </span>
                                   </div>
                                 </Link>
-                                
+
                                 {/* Further submenu items */}
                                 {subItem.submenu && (
                                   <div className="space-y-1">
-                                    {subItem.submenu.map((subSubItem: SubMenuItem) => (
-                                      <Link
-                                        key={subSubItem.name}
-                                        href={subSubItem.href}
-                                        target={
-                                          subSubItem.name == "Careers" ? "_blank" : "_self"
-                                        }
-                                        className="group hover:bg-foreground/5 p-3 w-full flex items-center gap-3  transition-colors"
-                                      >
-                                        <span className="text-xl text-primary">
-                                          <subSubItem.icon className="w-6 h-6" />
-                                        </span>
-                                        <div className="flex flex-col">
-                                          <span className="text-[16px] text-foreground font-medium">
-                                            {subSubItem.name}
+                                    {subItem.submenu.map(
+                                      (subSubItem: SubMenuItem) => (
+                                        <Link
+                                          key={subSubItem.name}
+                                          href={subSubItem.href}
+                                          target={
+                                            subSubItem.name == "Careers"
+                                              ? "_blank"
+                                              : "_self"
+                                          }
+                                          className="group hover:bg-foreground/5 p-3 w-full flex items-center gap-3  transition-colors"
+                                        >
+                                          <span className="text-xl text-primary">
+                                            <subSubItem.icon className="w-6 h-6" />
                                           </span>
-                                        </div>
-                                      </Link>
-                                    ))}
+                                          <div className="flex flex-col">
+                                            <span className="text-[16px] text-foreground font-medium">
+                                              {subSubItem.name}
+                                            </span>
+                                          </div>
+                                        </Link>
+                                      )
+                                    )}
                                   </div>
                                 )}
                               </div>
@@ -411,7 +430,7 @@ export default function Navbar() {
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link
                 href="/contact"
-                className="border bg-primary py-[8px] px-[16px] text-[16px] text-background hover:bg-primary/70 transition-colors duration-200"
+                className="border bg-primary py-[8px] px-[16px] text-[16px] text-background hover:bg-primary/70 transition-colors duration-200 rounded-2xl font-medium"
               >
                 Get in Touch
               </Link>
@@ -422,29 +441,16 @@ export default function Navbar() {
 
       {/* Mobile menu - Full Screen */}
       <div
-        className={`lg:hidden fixed inset-0 bg-foreground z-50 transition-all duration-300 ${
+        className={`lg:hidden fixed inset-0 bg-background z-[150] transition-all duration-300 ${
           mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
         <div className="flex flex-col h-[100dvh] overflow-auto px-6 pt-4">
           {/* Mobile Header */}
-          <div className="flex items-center justify-between mb-4 px-6 py-4 bg-primary rounded-full">
-            <Link
-              href="/"
-              className="-m-1.5 p-1.5"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <Image
-                src="/logo.jpg"
-                alt="Enzig Studio"
-                width={300}
-                height={100}
-                className="h-10 w-auto"
-              />
-            </Link>
+          <div className="flex items-center justify-end mb-4 px-6 py-4 rounded-full">
             <button
               type="button"
-              className="rounded-md p-2 text-foreground"
+              className="rounded-md text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -453,12 +459,12 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="flex-1 flex flex-col">
-            <div className="space-y-6 py-6 mb-auto">
+          <div className="flex-1 flex flex-col justify-between">
+            <div className="flex flex-col gap-4">
               {navigation.map((item) => (
                 <div
                   key={item.name}
-                  className="border-b border-background/10 last:border-b-0 min-h-5 "
+                  className=" bg-foreground/10 border-b border-background/10 last:border-b-0 px-6 py-3 rounded-md"
                 >
                   {item.dropdown ? (
                     <>
@@ -468,7 +474,7 @@ export default function Navbar() {
                             activeDropdown === item.name ? null : item.name
                           )
                         }
-                        className="flex w-full items-center justify-between py-2 text-xl font-medium text-foreground "
+                        className="flex w-full items-center justify-between text-xl font-medium text-foreground "
                       >
                         {item.name}
                         <ChevronDown
@@ -479,21 +485,21 @@ export default function Navbar() {
                         />
                       </button>
                       <div
-                        className={`mt-2 mb-4 space-y-2 pl-4 overflow-hidden transition-all duration-300 ${
+                        className={`space-y-2 overflow-hidden transition-all duration-300 ${
                           activeDropdown === item.name
                             ? "max-h-[800px] opacity-100"
                             : "max-h-0 opacity-0"
                         }`}
                       >
                         {item.dropdown.map((subItem) => (
-                          <div key={subItem.name} className="space-y-2">
+                          <div key={subItem.name} className="space-y-2 first:pt-4">
                             {/* Main submenu item */}
                             <Link
                               href={subItem.href}
                               target={
                                 subItem.name == "Careers" ? "_blank" : "_self"
                               }
-                              className="block py-2 text-base font-bold underline"
+                              className="block py-3 text-base font-bold underline"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               <div className="flex items-center gap-3">
@@ -507,32 +513,36 @@ export default function Navbar() {
                                 </div>
                               </div>
                             </Link>
-                            
+
                             {/* Further submenu items */}
                             {subItem.submenu && (
                               <div className="space-y-1">
-                                {subItem.submenu.map((subSubItem: SubMenuItem) => (
-                                  <Link
-                                    key={subSubItem.name}
-                                    href={subSubItem.href}
-                                    target={
-                                      subSubItem.name == "Careers" ? "_blank" : "_self"
-                                    }
-                                    className="block py-2 text-base font-medium"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                  >
-                                    <div className="flex items-center gap-3">
-                                      <span className="text-xl text-secondary">
-                                        <subSubItem.icon className="w-5 h-5" />
-                                      </span>
-                                      <div className="flex flex-col">
-                                        <span className="text-foreground">
-                                          {subSubItem.name}
+                                {subItem.submenu.map(
+                                  (subSubItem: SubMenuItem) => (
+                                    <Link
+                                      key={subSubItem.name}
+                                      href={subSubItem.href}
+                                      target={
+                                        subSubItem.name == "Careers"
+                                          ? "_blank"
+                                          : "_self"
+                                      }
+                                      className="block py-3 text-base font-medium"
+                                      onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                      <div className="flex items-center gap-3">
+                                        <span className="text-xl text-secondary">
+                                          <subSubItem.icon className="w-5 h-5" />
                                         </span>
+                                        <div className="flex flex-col">
+                                          <span className="text-foreground">
+                                            {subSubItem.name}
+                                          </span>
+                                        </div>
                                       </div>
-                                    </div>
-                                  </Link>
-                                ))}
+                                    </Link>
+                                  )
+                                )}
                               </div>
                             )}
                           </div>
@@ -542,7 +552,7 @@ export default function Navbar() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="min-h-5 block pt-2 pb-5 text-xl font-medium text-foreground"
+                      className="text-xl font-medium text-foreground"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
@@ -556,7 +566,7 @@ export default function Navbar() {
             <div className="mt-6 py-6">
               <Link
                 href="/contact"
-                className="block w-full text-center text-base font-medium shadow-sm rounded-md bg-primary py-[16px] px-[16px] text-[16px] lora-medium text-foreground hover:bg-primary/90 transition-colors duration-200"
+                className="block w-full text-center text-base font-medium shadow-sm rounded-full text-background bg-primary py-[16px] px-[16px] text-[16px] lora-medium  hover:bg-primary/90 transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Get in Touch

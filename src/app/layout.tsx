@@ -1,15 +1,37 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Manrope, Poppins, Lato, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import SmoothScrolling from "@/components/smooth-scrolling";
-import { Spotlight } from "@/components/ui/spotlight-new";
 
 const bricol = Bricolage_Grotesque({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-dm-sans",
+  variable: "--font-bricolage-grotesque",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
+  variable: "--font-lato",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bricol.variable} antialiased`}>
+      <body className={`${bricol.variable} ${manrope.variable} ${poppins.variable} ${lato.variable} ${inter.variable} antialiased`}>
         <SmoothScrolling>
           {children}
           <Footer />

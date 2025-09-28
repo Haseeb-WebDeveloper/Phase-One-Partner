@@ -299,7 +299,7 @@ export default function HomeVideo() {
     <section className="pb-40 pt-6">
       <div
         ref={containerRef}
-        className="relative max-w-4xl mx-auto h-fit  md:cursor-none cursor-pointer group overflow-hidden"
+        className="relative max-w-4xl px-6 lg:px-0 mx-auto h-fit  md:cursor-none cursor-pointer group overflow-hidden"
         id="video-container"
         style={{
           cursor: isNearBottom ? "default" : undefined,
@@ -333,7 +333,7 @@ export default function HomeVideo() {
         {/* Video element */}
         <video
           ref={videoRef}
-          className="w-full h-fit max-w-4xl mx-auto object-cover aspect-video rounded-2xl"
+          className="w-full h-fit max-w-4xl mx-auto object-cover aspect-square lg:aspect-video rounded-2xl poster"
           onClick={handleVideoClick}
           loop
           muted={true} // Always start muted
@@ -344,39 +344,29 @@ export default function HomeVideo() {
           preload="auto"
           poster="/images/thumbnail.png" // Using poster attribute for thumbnail
           style={{
-            objectFit: "contain",
+            objectFit: "cover",
             objectPosition: "center",
-            aspectRatio: "16/9",
+            aspectRatio: window.innerWidth >= 768 ? "16/9" : "1/1",
           }}
         >
           <source src="/video/PhaseOneLong.mov" type="video/mov" />
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="pt-20 max-w-[1600px] mx-auto px-6 lg:px-16 w-full space-y-[6vw]">
-        <h3 className=" font-medium text-center lg:font-bold text-2xl md:text-3xl lg:text-[40px] lg:tracking-tight lg:leading-[150%] leading-[160%] ">
+      <div className="pt-20 lg:pt-32 max-w-[1600px] mx-auto px-6 lg:px-16 w-full space-y-[6vw]">
+        <h3 className=" font-medium text-center text-pretty text-[20px] md:text-3xl lg:text-[35px] lg:tracking-tight leading-[130%] ">
           We work across core sectors where we bring{" "}
-          <span className="text-primary">deep commercial insight</span> and{" "}
-          <span className="text-primary">strong investor networks.</span> The
+          <span className="text-[#0224E9] font-extrabold">deep commercial insight</span> and{" "}
+          <span className="text-[#0224E9] font-extrabold">strong investor networks.</span> The
           PhaseOne model is built to turn that expertise into real outcomes by
           helping the{" "}
-          <span className="text-primary">
+          <span className="text-[#0224E9] font-extrabold">
             right companies and capital connect
           </span>{" "}
           with clarity and confidence. The Time and again, we’ve helped partners
           achieve better results through meticulous preparation and strategic
           positioning.
         </h3>
-        {/* <SplitText
-          text="We work across core sectors where we bring deep commercial insight and strong investor networks. PhaseOne model is built to turn that expertise into real outcomes by helping the right companies and capital connect with clarity and confidence. The Time and again, we’ve helped partners achieve better results through meticulous preparation and strategic positioning"
-          className="font-medium text-center lg:font-bold text-[6.5vw] md:text-[5vw] lg:text-[3vw] lg:tracking-tight lg:leading-[150%] leading-[160%]"
-          tag="h3"
-          textAlign="center"
-          splitType="words"
-          delay={100}
-          duration={0.6}
-          ease="power3.out"
-        /> */}
       </div>
     </section>
   );
