@@ -185,7 +185,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 bg-transparent border-none shadow-none rounded-none",
+        "cursor-pointer absolute size-8 bg-transparent border-none shadow-none rounded-none",
         orientation === "horizontal"
           ? "top-1/2 -left-12 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -196,11 +196,11 @@ function CarouselPrevious({
       {...props}
     >
       <Image
-        src="/icons/right-arrow.svg"
+        src="/icons/blog-arrow-left.svg"
         alt="Previous slide"
-        width={35}
-        height={35}
-        className="rotate-180"
+        width={50}
+        height={50}
+        className=""
       />
       <span className="sr-only">Previous slide</span>
     </Button>
@@ -221,7 +221,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 bg-transparent border-none shadow-none rounded-none",
+        "cursor-pointer absolute size-8 bg-transparent border-none shadow-none rounded-none",
         orientation === "horizontal"
           ? "top-1/2 -right-12 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -232,10 +232,10 @@ function CarouselNext({
       {...props}
     >
       <Image
-        src="/icons/right-arrow.svg"
+        src="/icons/blog-arrow-right.svg"
         alt="Next slide"
-        width={35}
-        height={35}
+        width={50}
+        height={50}
       />
       <span className="sr-only">Next slide</span>
     </Button>

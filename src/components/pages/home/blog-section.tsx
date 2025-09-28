@@ -23,12 +23,12 @@ export default function BlogSection() {
 
 
   return (
-    <section className="py-20  -mt-12 bg-primary/5">
+    <section className="py-20 lg:py-24">
       <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-24">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-12">
-            The latest
+        <div className="text-center lg:mb-16 mb-8">
+          <h2 className="text-3xl md:text-[60px] font-bold font-inter">
+            The Latest
           </h2>
         </div>
 
@@ -41,42 +41,43 @@ export default function BlogSection() {
             }}
             className="w-full"
           >
-            {/* Left Arrow - Outside content area */}
-            <CarouselPrevious className="absolute left-[-60px] top-1/2 -translate-y-1/2 w-12 h-12 hover:bg-transparent hover:pr-2" />
+            {/* Left Arrow - Responsive positioning */}
+            <CarouselPrevious className="absolute lg:left-[-60px] left-0 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 hover:bg-transparent hover:pr-2 z-10" />
 
-            {/* Right Arrow - Outside content area */}
-            <CarouselNext className="absolute right-[-60px] top-1/2 -translate-y-1/2 w-12 h-12 hover:bg-transparent hover:pl-2" />
+            {/* Right Arrow - Responsive positioning */}
+            <CarouselNext className="absolute lg:right-[-60px] right-0 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 hover:bg-transparent hover:pl-2 z-10" />
 
             <CarouselContent className="-ml-6 select-none">
               {blogPosts.map((post) => (
                 <CarouselItem
                   key={post.id}
-                  className="pl-6 md:basis-1/3 "
+                  className="pl-6 md:basis-1/3"
                 >
-                  <div className="h-full flex flex-col md:justify-between gap-3 py-3">
+                  <div className="h-full flex flex-col md:justify-between gap-3 py-3 px-4">
                     {/* Category Label on Top */}
-                    <div className="">
-                      <p className="pb-3 text-2xl w-full text-center font-medium">
+                    <div className="relative">
+                      <p className="px-3  text-[18px] lg:text-[26px] lg:font-medium absolute top-2 left-2 bg-primary/80 text-background rounded-lg w-fit ">
                         {post.category}
                       </p>
+                      
 
                       {/* Image Container */}
                       <Image
                         src={post.image}
                         alt={post.title}
-                        className="w-full  object-cover aspect-video"
+                        className="w-full  object-cover aspect-[4/3]"
                         width={500}
                         height={500}
                       />
 
-                      <h3 className="pt-3 text-center md:px-3 font-bold text-2xl  group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                      <h3 className="pt-3 leading-[130%] font-medium text-[20px]  group-hover:text-primary transition-colors duration-300 line-clamp-2">
                         {post.title}
                       </h3>
                     </div>
-                    <div className="md:px-3 w-fit mx-auto">
+                    <div className="w-full mx-auto pt-2">
                       <Link
                         href="#"
-                        className="w-fit mx-auto hover:cursor-[icons/arrow.svg] inline-flex items-center gap-2 text-primary text-base hover:px-2 font-medium hover:bg-primary hover:text-background transition-all duration-300 group/link"
+                        className="w-full border-3 capitalize border-primary flex items-center justify-center mx-auto rounded-full px-4 py-1 text-center font-medium font-lato hover:cursor-[icons/arrow.svg]  gap-2 text-primary   hover:bg-primary hover:text-background transition-all duration-300 group/link"
                       >
                         Read more
                       </Link>

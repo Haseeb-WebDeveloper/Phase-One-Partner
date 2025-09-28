@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import AnimatedButton from "@/components/ui/animated-button";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -43,42 +44,45 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full h-full pt-32 pb-16 max-w-[1600px] mx-auto px-6 lg:px-16 ">
-      <div className="flex flex-col justify-center text-foreground gap-4 ">
-        <h1 className="text-5xl  md:text-7xl font  line-through  relative">
-      Bussiness Brokers
-        </h1>
-        <h1 className="text-5xl  md:text-7xl font-semibold  relative">
-       Investment Partners
-        </h1>
-        <div className="space-y-2 mt-6  text-2xl max-w-xl font-medium">
-         <p> <strong>The New Era of Deal Origination Starts Here.</strong></p>
-          <p>We connect only the right businesses with the right investors — nothing less.</p>
-        </div>
-        <div className="mt-4">
-          <div
-            ref={buttonRef}
-            className="relative z-10 group flex items-center justify-center w-fit"
+    <section className="w-full h-full pt-28 lg:pt-40 pb-32 lg:pb-36 max-w-[1600px] mx-auto px-6 lg:px-16 z-10">
+      <div className="flex flex-col justify-center text-foreground gap-4 font-manrope">
+        <h3 className="text-5xl leading-[110%] md:text-[78px] font-manrope font-light uppercase relative">
+          <span
+            className="relative inline-block"
+            style={{
+              textDecoration: "line-through",
+              textDecorationColor: "oklch(42.69% 0.24 269.16)", // matches --primary
+              textDecorationThickness: "4px",
+            }}
           >
-            <Button
-              size="xl"
-              className="z-10 group-hover:pr-8 bg-background border-[2px] border-foreground/60 hover:border-[#252acf] hover:bg-[#252acf] hover:text-background text-foreground md:text-lg font-medium rounded-full w-fit transition-all duration-300"
+            Bussiness Brokers
+          </span>
+        </h3>
+        <h1 className="text-5xl leading-[110%] md:text-[78px] lg:font-semibold font-extrabold uppercase text-pretty text-primary relative">
+          Investment Partners
+        </h1>
+        <div className="space-y-6 lg:mt-12 mt-6 z-10">
+          <p className="text-3xl lg:text-[36px] font-bold font-manrope lg:leading-[100%]">
+            The New Era of{" "}
+            <span
+              className="underline"
+              style={{
+                textDecorationColor: "oklch(42.69% 0.24 269.16)", // matches --primary
+                textUnderlineOffset: "4px",
+                textDecorationThickness: "4px",
+              }}
             >
-              Book A Free Discovery Session Today
-            </Button>
-            <div
-              ref={arrowRef}
-              className="hidden md:block absolute right-0 -z-1 cursor-pointer"
-            >
-              <Image
-                src="/icons/right.svg"
-                alt="arrow"
-                width={50}
-                height={50}
-                className="w-14 h-14 -rotate-45"
-              />
-            </div>
-          </div>
+              Deal Origination
+            </span>{" "}
+            Starts Here.
+          </p>
+          <p className="text-xl  lg:text-[29.57px] ">
+            We connect only the right businesses with the right investors —
+            nothing less.
+          </p>
+        </div>
+        <div className="lg:mt-12 mt-6 w-fit">
+          <AnimatedButton text="Book A Free Discovery Session Today" />
         </div>
       </div>
     </section>
