@@ -46,8 +46,8 @@ export default function HomeVideo() {
   }, [videoLoaded]);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    
+    if (typeof window === "undefined") return;
+
     // Register ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
 
@@ -131,7 +131,8 @@ export default function HomeVideo() {
           const y = e.clientY - rect.top;
 
           // Calculate if cursor is near bottom (5vw from bottom)
-          const vwInPixels = (typeof window !== 'undefined' ? window.innerWidth : 1024) / 100;
+          const vwInPixels =
+            (typeof window !== "undefined" ? window.innerWidth : 1024) / 100;
           const bottomThreshold = rect.height - 5 * vwInPixels; // 5vw from bottom
           const currentIsAtBottom = y >= bottomThreshold;
 
@@ -341,14 +342,16 @@ export default function HomeVideo() {
           muted={true} // Always start muted
           playsInline
           controls={
-            videoLoaded && typeof window !== 'undefined' && window.innerWidth >= 768 && hasUserInteracted
+            videoLoaded &&
+            typeof window !== "undefined" &&
+            window.innerWidth >= 768 &&
+            hasUserInteracted
           } // Only show controls on large screens and after user interaction
           preload="auto"
           poster="/images/thumbnail.png" // Using poster attribute for thumbnail
           style={{
             objectFit: "cover",
             objectPosition: "center",
-            aspectRatio: typeof window !== 'undefined' && window.innerWidth >= 768 ? "16/9" : "1/1",
           }}
         >
           <source src="/video/PhaseOneLong.mov" type="video/mov" />
@@ -358,10 +361,15 @@ export default function HomeVideo() {
       <div className="pt-20 lg:pt-32 max-w-[1600px] mx-auto px-6 lg:px-16 w-full space-y-[6vw]">
         <h3 className=" font-medium text-center text-pretty text-[20px] md:text-3xl lg:text-[35px] lg:tracking-tight leading-[130%] ">
           We work across core sectors where we bring{" "}
-          <span className="text-[#0224E9] font-extrabold">deep commercial insight</span> and{" "}
-          <span className="text-[#0224E9] font-extrabold">strong investor networks.</span> The
-          PhaseOne model is built to turn that expertise into real outcomes by
-          helping the{" "}
+          <span className="text-[#0224E9] font-extrabold">
+            deep commercial insight
+          </span>{" "}
+          and{" "}
+          <span className="text-[#0224E9] font-extrabold">
+            strong investor networks.
+          </span>{" "}
+          The PhaseOne model is built to turn that expertise into real outcomes
+          by helping the{" "}
           <span className="text-[#0224E9] font-extrabold">
             right companies and capital connect
           </span>{" "}
