@@ -202,6 +202,8 @@ export default function Navbar() {
 
   // Handle scroll effect
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
@@ -213,6 +215,8 @@ export default function Navbar() {
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {

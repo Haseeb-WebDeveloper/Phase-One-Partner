@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import SplitText from "@/components/ui/split-text";
+// import SplitText from "@/components/ui/split-text";
 
 export default function HomeVideo() {
   const [isPlaying, setIsPlaying] = useState(false); // Start as false - video won't autoplay
@@ -46,6 +46,8 @@ export default function HomeVideo() {
   }, [videoLoaded]);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     // Register ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
 
@@ -129,7 +131,7 @@ export default function HomeVideo() {
           const y = e.clientY - rect.top;
 
           // Calculate if cursor is near bottom (5vw from bottom)
-          const vwInPixels = window.innerWidth / 100;
+          const vwInPixels = (typeof window !== 'undefined' ? window.innerWidth : 1024) / 100;
           const bottomThreshold = rect.height - 5 * vwInPixels; // 5vw from bottom
           const currentIsAtBottom = y >= bottomThreshold;
 
@@ -339,14 +341,14 @@ export default function HomeVideo() {
           muted={true} // Always start muted
           playsInline
           controls={
-            videoLoaded && window.innerWidth >= 768 && hasUserInteracted
+            videoLoaded && typeof window !== 'undefined' && window.innerWidth >= 768 && hasUserInteracted
           } // Only show controls on large screens and after user interaction
           preload="auto"
           poster="/images/thumbnail.png" // Using poster attribute for thumbnail
           style={{
             objectFit: "cover",
             objectPosition: "center",
-            aspectRatio: window.innerWidth >= 768 ? "16/9" : "1/1",
+            aspectRatio: typeof window !== 'undefined' && window.innerWidth >= 768 ? "16/9" : "1/1",
           }}
         >
           <source src="/video/PhaseOneLong.mov" type="video/mov" />
