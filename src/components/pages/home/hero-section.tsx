@@ -55,7 +55,7 @@ export default function HeroSection() {
               textDecorationThickness: "4px",
             }}
           >
-            Bussiness Brokers
+            Business Brokers
           </span>
         </h3>
         <h1 className="text-5xl leading-[110%] md:text-[78px] lg:font-semibold font-extrabold uppercase text-pretty text-primary relative">

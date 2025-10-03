@@ -373,7 +373,7 @@ export default function HomeVideo() {
           <span className="text-[#0224E9] font-extrabold">
             right companies and capital connect
           </span>{" "}
-          with clarity and confidence. The Time and again, we’ve helped partners
+          with clarity and confidence. Time and again, we’ve helped partners
           achieve better results through meticulous preparation and strategic
           positioning.
         </h3>
