@@ -25,9 +25,8 @@ export default function FounderLayout({
   return (
     <div className="bg-gradient-to-b from-primary to-80% to-background min-h-screen">
       <SmoothScrolling> 
-        <Navbar />
+        <Navbar isLight={true} />
         {children}
-        <Footer />
       </SmoothScrolling>
     </div>
   );
