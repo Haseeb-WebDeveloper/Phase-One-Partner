@@ -11,7 +11,7 @@ const sectionData = [
     features: [
       "Direct access to trusted investors",
       "End-to-end support",
-      "Strategic preparation to frames your business correctly",
+      "Strategic preparation to frame your business correctly",
       "Respect for your timeline, privacy, and exit goals",
     ],
     buttonText: "Learn About Our Process",

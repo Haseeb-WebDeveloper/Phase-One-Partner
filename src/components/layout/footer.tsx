@@ -204,8 +204,8 @@ export default function Footer() {
         <div className="mb-8 sm:mb-12">
           <p className="italic text-sm sm:text-base font-inter mb-3 sm:mb-4 leading-relaxed">
             PhaseOne Partners provides origination and introduction services
-            only. We work exclusively with wholesale investors, such as privet
-            equity funds, and our role is limited to facilitating conncections
+            only. We work exclusively with wholesale investors, such as private
+            equity funds, and our role is limited to facilitating connections
             with businesses.
           </p>
           <p className="italic text-sm sm:text-base font-inter leading-relaxed">

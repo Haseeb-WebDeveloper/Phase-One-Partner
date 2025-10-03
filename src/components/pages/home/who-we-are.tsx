@@ -114,14 +114,9 @@ export function WhoWeAre() {
             className="w-full h-full lg:max-h-[500px] max-h-[650px] z-5 rounded-4xl object-cover object-top border-4 border-primary"
             quality={100}
           />
-          <div className="z-20 absolute lg:bottom-12 bottom-6 left-1/2 -translate-x-1/2">
-            <Button
-              size="lg"
-              className="z-10 font-lato group-hover:pr-8  border-[2px] border-primary hover:border-[#252acf] hover:bg-[#252acf]  hover:text-background md:text-lg font-medium rounded-full w-fit transition-all duration-300"
-            >
-              Explore Our Services
-            </Button>
-          </div>
+        </div>
+        <div className="mt-16 w-fit mx-auto">
+          <AnimatedButton text="Explore Our Services" defaultBgColor="bg-primary" />
         </div>
       </div>
     </section>
