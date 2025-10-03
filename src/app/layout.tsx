@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Manrope, Poppins, Lato, Inter } from "next/font/go
 import "./globals.css";
 import Footer from "@/components/layout/footer";
 import SmoothScrolling from "@/components/smooth-scrolling";
+import { ThemeProvider } from "@/components/theme-provided";
 
 const bricol = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -48,10 +49,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bricol.variable} ${manrope.variable} ${poppins.variable} ${lato.variable} ${inter.variable} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
         <SmoothScrolling>
           {children}
           <Footer />
         </SmoothScrolling>
+        </ThemeProvider>
       </body>
     </html>
   );

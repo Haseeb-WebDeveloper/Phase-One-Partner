@@ -195,15 +195,15 @@ const navigation: NavigationItem[] = [
   },
 ];
 
-export default function Navbar() {
+export default function Navbar({ isLight }: { isLight?: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
 
   // Handle scroll effect
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    
+    if (typeof window === "undefined") return;
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
@@ -215,8 +215,8 @@ export default function Navbar() {
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    
+    if (typeof window === "undefined") return;
+
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -288,7 +288,7 @@ export default function Navbar() {
                   alt="PhaseOne Partners"
                   width={600}
                   height={400}
-                  className="lg:h-10 h-6 w-auto"
+                  className={`lg:h-10 h-6 w-auto ${isLight ? "invert" : ""}`}
                   priority
                   quality={100}
                 />
@@ -434,7 +434,7 @@ export default function Navbar() {
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link
                 href="/contact"
-                className="border bg-primary py-[8px] px-[16px] text-[16px] text-background hover:bg-primary/70 transition-colors duration-200 rounded-2xl font-medium"
+                className={`border bg-primary py-[8px] px-[16px] text-[16px] text-background hover:bg-primary/70 transition-colors duration-200 rounded-2xl font-medium ${isLight ? "bg-white text-foreground" : ""}`}
               >
                 Get in Touch
               </Link>
@@ -496,7 +496,10 @@ export default function Navbar() {
                         }`}
                       >
                         {item.dropdown.map((subItem) => (
-                          <div key={subItem.name} className="space-y-2 first:pt-4">
+                          <div
+                            key={subItem.name}
+                            className="space-y-2 first:pt-4"
+                          >
                             {/* Main submenu item */}
                             <Link
                               href={subItem.href}
