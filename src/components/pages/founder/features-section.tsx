@@ -8,9 +8,9 @@ export default function FeaturesSection() {
     
 
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-2 lg:gap-16">
           {/* Left Column */}
-          <div className="space-y-8">
+          <div className="space-y-8 grid grid-rows-3">
             {/* Feature 1 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Right Column */}
-          <div className="space-y-8">
+          <div className="space-y-8 grid grid-rows-3">
             {/* Feature 1 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
