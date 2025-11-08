@@ -268,7 +268,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
 
   return (
     <header
-      className={`relative text-foreground top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`absolute text-foreground top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
         scrolled ? "" : ""
       }`}
     >
@@ -434,7 +434,9 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link
                 href="/contact"
-                className={`border bg-primary py-[8px] px-[16px] text-[16px] text-background hover:bg-primary/70 transition-colors duration-200 rounded-2xl font-medium ${isLight ? "bg-white text-foreground" : ""}`}
+                className={`border  py-[8px] px-[18px] text-[16px] lg:text-[18px] text-background transition-colors duration-200 rounded-full font-medium ${
+                  isLight ? "bg-background text-foreground hover:border-foreground" : "bg-primary hover:bg-primary/70 "
+                }`}
               >
                 Get in Touch
               </Link>
