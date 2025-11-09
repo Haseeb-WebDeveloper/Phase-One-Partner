@@ -267,7 +267,7 @@ export default function ForFounders() {
           </div>
           <div className="relative  z-10 h-[431px] lg:h-full w-full rounded-[12px] overflow-hidden">
             <Image
-              src="/partners-for-growth/2nd-section.png"
+              src="/founder/2nd-section.png"
               alt="Partners for Growth Hero Image"
               width={504}
               height={543}
