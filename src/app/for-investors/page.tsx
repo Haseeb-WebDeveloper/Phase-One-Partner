@@ -1,0 +1,505 @@
+"use client";
+
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import AnimatedButton from "@/components/ui/animated-button";
+
+export default function ForInvestors() {
+  const faqItems = [
+    {
+      question: "What is deal origination in private equity?",
+      answer:
+        "We work with you to analyze your existing customer base, market research, and business goals to identify your ideal target audience. This includes demographic analysis, psychographic profiling, and understanding your value proposition.",
+    },
+    {
+      question: "How is PhaseOne Partners different from a business broker?",
+      answer: "",
+    },
+    {
+      question: "Why should investors care about off-market opportunities?",
+      answer: "",
+    },
+    {
+      question: "How long does the origination process take?",
+      answer: "",
+    },
+    {
+      question: "What types of businesses do you source for investors?",
+      answer: "",
+    },
+    {
+      question: "Do you provide investment advice or execution services?",
+      answer: "",
+    },
+    {
+      question: "Are engagements exclusive?",
+      answer: "",
+    },
+    {
+      question: "How much does deal origination cost?",
+      answer: "",
+    },
+  ];
+
+  const advantages = [
+    {
+      title: "Proprietary deal flow",
+      description:
+        "Access to off-market and founder-led opportunities that aren't showing up in traditional auctions or brokered processes.",
+      imageUrl: "/icons/database.svg", // Placeholder for icon
+    },
+    {
+      title: "Faster pipeline build",
+      description:
+        "A dedicated origination engine that can ramp up quickly, filling your funnel in weeks rather than the 12–18 months it can take to build in-house.",
+      imageUrl: "/icons/fast.svg", // Placeholder for icon
+    },
+    {
+      title: "Sharper sector coverage",
+      description:
+        "Deep industry insight allowing you to identify, prioritise, and pursue the right industries, subsectors, and niches with precision.",
+      imageUrl: "/icons/target.svg", // Placeholder for icon
+    },
+    {
+      title: "Trusted founder engagement",
+      description:
+        "Experienced outreach that builds trust with business owners, creating authentic entry points and more time to understand their goals.",
+      imageUrl: "/icons/money.svg", // Placeholder for icon
+    },
+    {
+      title: "Scalable, flexible resourcing",
+      description:
+        "Dial origination activity up or down based on fund cycles and portfolio demands, without the fixed cost of a permanent team.",
+      imageUrl: "/icons/protection.svg", // Placeholder for icon
+    },
+    {
+      title: "Better use of investment team time",
+      description:
+        "By outsourcing the top of the funnel, your investors stay focused on diligence, execution, and value creation.",
+      imageUrl: "/icons/relationship.svg", // Placeholder for icon
+    },
+  ];
+
+  const phases = [
+    {
+      number: "01.",
+      title: "Mandate and Calibration",
+      description:
+        "Deep intake on criteria, prior bets, red lines and decision cadence. Build target map and proof points.",
+      duration: "2–4 weeks",
+    },
+    {
+      number: "02.",
+      title: "Market Outreach",
+      description:
+        "We introduce you to carefully selected investors who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
+      duration: "2–4 weeks",
+    },
+    {
+      number: "03.",
+      title: "First conversations",
+      description:
+        "Interested investors provide initial offers and letters of intent. We help you evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
+      duration: "2–4 weeks",
+    },
+    {
+      number: "04.",
+      title: "Diligence on live targets",
+      description:
+        "Selected investors conduct thorough due diligence. We coordinate the process, ensuring all necessary documentation is prepared and questions are answered efficiently.",
+      duration: "2–4 weeks",
+    },
+    {
+      number: "05.",
+      title: "Terms and execution",
+      description:
+        "We facilitate final negotiations on terms, valuation, and deal structure. Once agreed, legal documents are prepared and the transaction is finalized with proper documentation.",
+      duration: "2–4 weeks",
+    },
+    {
+      number: "06.",
+      title: "Post-completion support",
+      description:
+        "The deal closes and ownership transitions. We support the handover process, ensuring a smooth transition for your team, customers, and operations.",
+      duration: "2–4 weeks",
+    },
+  ];
+
+  return (
+    <div className="relative w-full overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-b from-[#0224e9] to-[#011483] min-h-[478px] lg:min-h-[976px] pt-[165px] lg:pt-[200.7px]">
+        {/* Background decorative elements Image */}
+        <div className="absolute bottom-0 w-full max-w-[800px] right-0 overflow-hidden pointer-events-none hidden lg:block">
+          <Image
+            src="/bg/investers-1st-section-bg.png"
+            alt="Partners for Growth Hero Background"
+            width={1000}
+            height={1000}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Hero Content */}
+        <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center">
+          <h1 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[74px] text-white uppercase mb-2 lg:mb-4">
+            Leading Investors <br />{" "}
+            <span
+              className=""
+              style={{
+                textDecorationLine: "line-through",
+                textDecorationThickness: "1.5px",
+              }}
+            >
+              Don’t Wait
+            </span>{" "}
+            for Deals.
+          </h1>
+          <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-3xl mx-auto">
+            Deal Origination connects you with founder-led businesses before
+            they even reach the market.
+          </p>
+          <div className="w-fit mx-auto">
+            <AnimatedButton
+              text="Book a Free Discovery Session Today"
+              variant="inverse"
+            />
+          </div>
+        </div>
+
+        {/* Image Gallery - Grid Layout */}
+        <div className="relative z-10 max-w-[1600px] mx-auto w-full mt-12 lg:mt-8 overflow-x-visible">
+          <div className="flex gap-2 lg:gap-6 w-full justify-between px-4 lg:px-16">
+            {/* 1st column  */}
+            <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
+              <div
+                className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/1.svg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+              <div
+                className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/2.svg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+            </div>
+
+            {/* 2nd column  */}
+            <div className="flex flex-col item-center justify-end w-[40%]">
+              <div
+                className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/3.svg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+            </div>
+
+            {/* 3rd column  */}
+            <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
+              <div
+                className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/4.svg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+              <div
+                className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/5.svg')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+            </div>
+
+            {/* absolute poition left right images */}
+            <div className="absolute top-1/2 -translate-y-1/2 md:left-[-270px] left-[-295px]">
+              <div
+                className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/1.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+            </div>
+            <div className="absolute top-1/2 -translate-y-1/2 md:right-[-270px] right-[-295px]">
+              <div
+                className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
+                style={{
+                  backgroundImage: "url('/invester/5.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do Section */}
+      <section className="relative py-12 lg:py-24 mt-4 lg:mt-8 px-[15px] lg:px-[70px] bg-background">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="space-y-6 lg:space-y-[60px]">
+            <div className="space-y-5 lg:space-y-[40px]">
+              <div className="space-y-4 lg:space-y-[30px]">
+                <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide leading-[14px]">
+                  What we do
+                </p>
+                <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
+                  We connect you with{" "}
+                  <span className="text-[#0224e9]">opportunities</span> that
+                  others never see.
+                </h2>
+                <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px]">
+                  Most investors wait for businesses to come to market. Deal
+                  Origination means uncovering founder-led opportunities before
+                  they are even considering a sale.
+                </p>
+              </div>
+              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none">
+                With PhaseOne, you gain access to high quality, oE-market
+                businesses that fit your mandate and move at your pace. Every
+                introduction is discreet, structured, and designed to save you
+                time while strengthening your deal flow.
+              </p>
+            </div>
+            <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
+              Learn how we help
+            </Button>
+          </div>
+          <div className="relative  z-10 h-[431px] lg:h-full w-full flex flex-col justify-end rounded-[12px] overflow-hidden">
+            <Image
+              src="/invester/2nd-section.png"
+              alt="Partners for Growth Hero Image"
+              width={504}
+              height={543}
+              className="w-full h-full max-h-[620px] object-cover"
+            />
+          </div>
+          {/* rihgt side absolute position image */}
+          <div className="absolute md:top-0 bottom-0 right-0 md:bottom-auto z-0">
+            <Image
+              src="/bg/investers-2nd-section-bg.png"
+              alt="Partners for Growth Hero Image"
+              width={504}
+              height={543}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Key Advantages Section */}
+      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-[#f0f0f0]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8 lg:mb-16 space-y-5 lg:space-y-[40px]">
+            <div className="space-y-4 lg:space-y-2">
+              <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
+                Benefits
+              </p>
+              <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
+                What you get with{" "}
+                <span className="text-[#0224e9]">PhaseOne Partners</span>
+              </h2>
+              <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[299px] lg:max-w-[516px] mx-auto leading-[24px] lg:leading-[28px] mt-4 lg:mt-6">
+                Key advantages that make a difference when expanding, growing,
+                or exiting your company
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {advantages.map((advantage, index) => (
+              <div key={index} className="space-y-4 lg:space-y-[26px]">
+                <div className="flex items-start gap-4">
+                  <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
+                    <Image
+                      src={advantage.imageUrl}
+                      alt={advantage.title}
+                      width={35}
+                      height={35}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="font-manrope font-semibold text-[16px] lg:text-[20px] text-black leading-[40.8px]">
+                    {advantage.title}
+                  </h3>
+                </div>
+                <p className="font-inter text-[14px] lg:text-[16px] text-[#333333] leading-[24px] lg:leading-[26px] max-w-[369px] lg:max-w-none">
+                  {advantage.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Phase of Doing a Deal Section */}
+      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="space-y-10 lg:space-y-[60px]">
+            <div className="space-y-5 lg:space-y-[30px]">
+              <p className="font-manrope text-[#0224e9] text-[14px] uppercase tracking-wide">
+                The Phase of Doing a Deal
+              </p>
+              <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
+                From the First Call to Beyond the Signed {""}
+                <span className="text-[#0224e9]">Agreement</span>
+              </h2>
+              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px]">
+                There are 6 simple phases of sourcing and investing in a
+                founder-led business and we guide you through each, with clarity
+                and momentum.
+              </p>
+            </div>
+            <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+              Get Started Today
+            </Button>
+          </div>
+
+          {/* Phases Accordion */}
+          <div className="relative">
+            <Accordion type="single" collapsible className="w-full z-10">
+              {phases.map((phase, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`phase-${index}`}
+                  className="border-b border-[#333333]/20"
+                >
+                  <AccordionTrigger className="hover:no-underline py-4 lg:py-6 cursor-pointer">
+                    <div className="flex flex-col items-start w-full pr-4">
+                      <div className="flex items-center gap-3 lg:gap-4 flex-1">
+                        <h3 className="font-inter font-medium text-[16px] lg:text-[28px] text-[#333333] leading-[40.8px] text-left">
+                          <span className="font-inter font-bold text-[#0224e9]">
+                            {phase.number}
+                          </span>{" "}
+                          {phase.title}
+                        </h3>
+                      </div>
+                      {phase.duration && (
+                        <p className="font-manrope font-semibold text-[#0224e9] text-[12px] leading-[12px] whitespace-nowrap mt-[4px] lg:mt-[8px]">
+                          {phase.duration}
+                        </p>
+                      )}
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[rgba(51,51,51,0.8)] leading-[22px] lg:leading-[28px] pb-4 lg:pb-6 mt-[-6px]">
+                    {phase.description}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+
+            {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
+            <div className="absolute top-1/2 -translate-y-1/2 right-[-100px] z-[0] pointer-events-none">
+              <Image
+                src="/bg/partners-for-growth-3nd-section.png"
+                alt="Partners for Growth 15-Minute Conversation Background"
+                width={584}
+                height={730}
+                className="w-fit h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 15-Minute Conversation CTA Section */}
+      <section className="relative py-12 lg:py-20 px-4 lg:px-16">
+        <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
+          {/* Background decorative elements */}
+          <div className="absolute left-0 bottom-0">
+            <Image
+              src="/bg/partners-for-growth-get-started-desktop.png"
+              alt="Partners for Growth 15-Minute Conversation Background"
+              width={584}
+              height={730}
+              className="w-fit h-[280px] object-cover"
+            />
+          </div>
+          <div className="absolute right-0 top-0 ">
+            <Image
+              src="/bg/partners-for-growth-get-started-2-desktop.png"
+              alt="Partners for Growth 15-Minute Conversation Background"
+              width={584}
+              height={730}
+              className="w-fit h-[300px] object-cover"
+            />
+          </div>
+
+          <div className="relative z-10 space-y-4 lg:space-y-6">
+            <p className="font-manrope text-white text-[10px] lg:text-[16px] uppercase tracking-wide">
+              Next Step
+            </p>
+            <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-white">
+              <span className="block">15-Minute</span>
+              <span className="block">Conversation</span>
+            </h2>
+            <p className="font-inter text-[16px] lg:text-[18px] text-white leading-[26px] lg:leading-[28px] max-w-[359px] lg:max-w-[741px] mx-auto">
+              See what PhaseOne Partners can unlock for your next investment.
+              We'll align with your mandate and priorities, setting the
+              foundation for a tailored origination pipeline.
+            </p>
+            <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+              Get Started Today
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
+        <div className="max-w-[400px] lg:max-w-7xl mx-auto">
+          <div className="text-center mb-8 lg:mb-12 space-y-4 lg:space-y-6">
+            <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
+              FAQ
+            </p>
+            <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
+              Still Got <span className="text-[#0224e9]">Questions</span>
+            </h2>
+            <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[371px] lg:max-w-[805px] mx-auto leading-[24px] lg:leading-[28px]">
+              Explore answers to frequently asked questions about how we support
+              founders in growing, scaling, and achieving their business goals.
+            </p>
+          </div>
+
+          <div className="max-w-[400px] lg:max-w-[1140px] mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqItems.map((item, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border-b border-[#333333]/20"
+                >
+                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] text-left hover:no-underline py-4 lg:py-6 cursor-pointer">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6">
+                    {item.answer || "Answer coming soon..."}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

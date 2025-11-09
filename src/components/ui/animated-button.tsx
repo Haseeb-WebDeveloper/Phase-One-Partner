@@ -56,8 +56,9 @@ export default function AnimatedButton({
     };
   }, []);
 
+  // font-lato is a font-family that is used in the button
   // Decide classes based on variant and defaultBgColor
-  let buttonClass = "z-10 font-lato group-hover:pr-8 md:text-lg font-medium rounded-full w-fit transition-all duration-300";
+  let buttonClass = "z-10 group-hover:pr-8 md:text-lg font-medium rounded-full w-fit transition-all duration-300";
   let bgAndText = "";
 
   if (defaultBgColor) {
