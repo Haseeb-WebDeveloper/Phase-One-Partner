@@ -221,7 +221,15 @@ export default function Footer() {
             © 2025 PhaseOne Partners. All Rights Reserved
           </div>
           <div className="text-[12px] sm:text-[16px] font-inter font-medium text-center sm:text-right">
-            Website Designed & Built by LORE Marketing Agency
+            Website Designed & Built by{" "}
+            <Link
+              href="https://loremarketing.com.au"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors underline"
+            >
+              LORE Marketing Agency
+            </Link>
           </div>
         </div>
       </div>

@@ -12,21 +12,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="bg-[#F0F0F0] lg:min-h-screen relative z-10 rounded-b-4xl">
-        <div className="absolute bottom-0 right-0 lg:w-[80vw] w-[100vw] h-full max-h-[100vh] z-0 ">
-          <div className="w-full h-full relative">
-            <Image
-              src="/hero-bg-chroped-2.png"
-              alt="Hero Gradient Background"
-              width={1000}
-              height={1000}
-              className="w-fit absolute bottom-0 h-full max-h-[1000px] lg:max-h-[800px] right-0"
-            />
-          </div>
-        </div>
         <Navbar />
         <HeroSection />
-      </div>
       <InvestorFounder />
       <HomeVideo />
       <Image

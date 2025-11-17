@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/layout/footer";
 import SmoothScrolling from "@/components/smooth-scrolling";
 import { ThemeProvider } from "@/components/theme-provided";
+import StickyDiscoveryButton from "@/components/ui/sticky-discovery-button";
 
 const bricol = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
         <SmoothScrolling>
+          <StickyDiscoveryButton />
           {children}
           <Footer />
         </SmoothScrolling>
