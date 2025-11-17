@@ -65,7 +65,7 @@ export default function BlogSection() {
                       <Image
                         src={post.image}
                         alt={post.title}
-                        className="w-full  object-cover aspect-[4/3]"
+                        className="w-full object-cover aspect-[4/3] rounded-[12px]"
                         width={500}
                         height={500}
                       />

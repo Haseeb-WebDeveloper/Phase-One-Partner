@@ -71,11 +71,11 @@ const Team = () => {
             </div>
             <div className="py-2 px-4 text-lg font-semibold rounded-t-3xl bg-primary flex items-center justify-center">
               <Image
-                src="/white-logo.svg"
+                src="/logo.png"
                 alt="PhaseOne Partners"
                 width={800}
                 height={800}
-                className="w-fit h-12"
+                className="w-fit h-10 lg:h-12"
                 quality={100}
               />
             </div>

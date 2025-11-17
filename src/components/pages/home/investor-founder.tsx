@@ -1,6 +1,13 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const sectionData = [
   {
@@ -31,6 +38,71 @@ const sectionData = [
 ];
 
 export default function InvestorFounder() {
+  const mobileTagRef = useRef<HTMLImageElement>(null);
+  const mobileHighlightRef = useRef<HTMLParagraphElement>(null);
+
+  // Scroll animations for mobile only
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const isMobile = window.innerWidth < 1024;
+    if (!isMobile) return;
+
+    const mobileTag = mobileTagRef.current;
+    const mobileHighlight = mobileHighlightRef.current;
+
+    if (!mobileTag || !mobileHighlight) return;
+
+    // Animate tag and text together
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: mobileHighlight,
+        start: "top 80%",
+        end: "top 50%",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    // Animate tag on scroll
+    tl.fromTo(
+      mobileTag,
+      {
+        scale: 0.5,
+        opacity: 0,
+        y: -20,
+      },
+      {
+        scale: 1,
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+      }
+    );
+
+    // Animate highlight text
+    tl.fromTo(
+      mobileHighlight,
+      {
+        opacity: 0,
+        y: 10,
+        backgroundColor: "transparent",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        backgroundColor: "#c0c8f9",
+        duration: 0.6,
+        ease: "power2.out",
+      },
+      "-=0.4" // Start slightly before tag animation ends
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <section className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,15 +140,19 @@ export default function InvestorFounder() {
                 What Does Deal Origination
               </h4>
               <div className="relative mt-1 flex gap-3 w-fit text-4xl max-w-4xl mx-auto font-extrabold text-[#333333]">
-                <p className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary leading-[120%]">
+                <p
+                  ref={mobileHighlightRef}
+                  className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary leading-[120%]"
+                >
                   Mean for You
                 </p>
                 <Image
+                  ref={mobileTagRef}
                   src="/logo-tip.svg"
-                  alt="arrow-right"
+                  alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[3.96rem] -top-[1.19rem] w-fit h-5"
+                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-7 lg:h-5"
                   priority
                   quality={100}
                 />

@@ -280,9 +280,11 @@ export default function ForInvestors() {
                 time while strengthening your deal flow.
               </p>
             </div>
-            <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
-              Learn how we help
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
+                Learn how we help
+              </Button>
+            </div>
           </div>
           <div className="relative  z-10 h-[431px] lg:h-full w-full flex flex-col justify-end rounded-[12px] overflow-hidden">
             <Image
@@ -325,28 +327,57 @@ export default function ForInvestors() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="space-y-4 lg:space-y-[26px]">
-                <div className="flex items-start gap-4">
-                  <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
-                    <Image
-                      src={advantage.imageUrl}
-                      alt={advantage.title}
-                      width={35}
-                      height={35}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                  <h3 className="font-manrope font-semibold text-[16px] lg:text-[20px] text-black leading-[40.8px]">
-                    {advantage.title}
-                  </h3>
-                </div>
-                <p className="font-inter text-[14px] lg:text-[16px] text-[#333333] leading-[24px] lg:leading-[26px] max-w-[369px] lg:max-w-none">
-                  {advantage.description}
+          {/* Benefits Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-background z-10 flex flex-col p-8 lg:p-12 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
+              <div className="mb-6">
+                <h3 className="text-2xl lg:text-[34px] font-extrabold text-[#0224e9] mb-2">
+                  What You Get with PhaseOne Partners
+                </h3>
+                <p className="text-sm lg:text-lg text-black uppercase font-semibold tracking-wide">
+                  Key Advantages That Make a Difference
                 </p>
               </div>
-            ))}
+
+              <div className="mb-8 flex-grow">
+                <p className="text-foreground leading-relaxed mb-6 text-base lg:text-lg font-manrope font-medium">
+                  Key advantages that make a difference when expanding, growing,
+                  or exiting your company.
+                </p>
+
+                <ul className="space-y-4 text-foreground">
+                  {advantages.map((advantage, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="flex items-start gap-4 w-full">
+                        <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
+                          <Image
+                            src={advantage.imageUrl}
+                            alt={advantage.title}
+                            width={35}
+                            height={35}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-manrope font-semibold text-[16px] lg:text-[20px] text-black mb-2">
+                            {advantage.title}
+                          </h4>
+                          <p className="font-inter text-[14px] lg:text-[16px] text-[#333333] leading-[24px] lg:leading-[26px]">
+                            {advantage.description}
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="flex justify-center lg:justify-start mt-auto">
+                <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                  View Our Approach
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -369,9 +400,11 @@ export default function ForInvestors() {
                 and momentum.
               </p>
             </div>
-            <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-              Get Started Today
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                Get Started Today
+              </Button>
+            </div>
           </div>
 
           {/* Phases Accordion */}
@@ -421,26 +454,33 @@ export default function ForInvestors() {
         </div>
       </section>
 
+      {/* Page Break Line */}
+      <div className="w-full px-4 lg:px-16 py-8 lg:py-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-[#0224e9] to-transparent opacity-50 blur-[1px]"></div>
+        </div>
+      </div>
+
       {/* 15-Minute Conversation CTA Section */}
       <section className="relative py-12 lg:py-20 px-4 lg:px-16">
         <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
           {/* Background decorative elements */}
-          <div className="absolute left-0 bottom-0">
+          <div className="absolute -left-8 -bottom-8 lg:left-0 lg:bottom-0">
             <Image
               src="/bg/partners-for-growth-get-started-desktop.png"
               alt="Partners for Growth 15-Minute Conversation Background"
               width={584}
               height={730}
-              className="w-fit h-[280px] object-cover"
+              className="w-fit h-[200px] lg:h-[280px] object-cover opacity-80 lg:opacity-100"
             />
           </div>
-          <div className="absolute right-0 top-0 ">
+          <div className="absolute -right-8 -top-8 lg:right-0 lg:top-0">
             <Image
               src="/bg/partners-for-growth-get-started-2-desktop.png"
               alt="Partners for Growth 15-Minute Conversation Background"
               width={584}
               height={730}
-              className="w-fit h-[300px] object-cover"
+              className="w-fit h-[200px] lg:h-[300px] object-cover opacity-80 lg:opacity-100"
             />
           </div>
 
@@ -457,9 +497,11 @@ export default function ForInvestors() {
               We'll align with your mandate and priorities, setting the
               foundation for a tailored origination pipeline.
             </p>
-            <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-              Get Started Today
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                Get Started Today
+              </Button>
+            </div>
           </div>
         </div>
       </section>

@@ -164,7 +164,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/1.svg')",
+                  backgroundImage: "url('/founder/1.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -172,7 +172,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/2.svg')",
+                  backgroundImage: "url('/founder/2.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -184,7 +184,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/3.svg')",
+                  backgroundImage: "url('/founder/3.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -196,7 +196,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/4.svg')",
+                  backgroundImage: "url('/founder/4.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -204,7 +204,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/5.svg')",
+                  backgroundImage: "url('/founder/5.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -216,7 +216,7 @@ export default function ForFounders() {
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/0.svg')",
+                  backgroundImage: "url('/founder/0.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -226,7 +226,7 @@ export default function ForFounders() {
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/5.svg')",
+                  backgroundImage: "url('/founder/5.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -237,8 +237,8 @@ export default function ForFounders() {
       </section>
 
       {/* What We Do Section */}
-      <section className="relative py-12 lg:py-24 mt-12 lg:mt-20 px-[15px] lg:px-[70px] bg-background">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+      <section className="py-12 lg:py-24 mt-12 lg:mt-20 px-[15px] lg:px-[70px] bg-background">
+        <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="space-y-6 lg:space-y-[60px]">
             <div className="space-y-5 lg:space-y-[40px]">
               <div className="space-y-4 lg:space-y-[30px]">
@@ -261,9 +261,11 @@ export default function ForFounders() {
                 complexities.
               </p>
             </div>
-            <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
-              Learn how we help
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
+                Learn how we help
+              </Button>
+            </div>
           </div>
           <div className="relative  z-10 h-[431px] lg:h-full w-full rounded-[12px] overflow-hidden">
             <Image
@@ -275,7 +277,7 @@ export default function ForFounders() {
             />
           </div>
           {/* rihgt side absolute position image */}
-          <div className="absolute md:top-0 bottom-0 right-0 md:bottom-auto z-0">
+          <div className="absolute md:-top-32 -right-36 bottom-0 md:bottom-auto z-0">
             <Image
               src="/bg/partners-for-growth-2nd-section-bg.png"
               alt="Partners for Growth Hero Image"
@@ -305,28 +307,57 @@ export default function ForFounders() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="space-y-4 lg:space-y-[26px]">
-                <div className="flex items-start gap-4">
-                  <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
-                    <Image
-                      src={advantage.imageUrl}
-                      alt={advantage.title}
-                      width={35}
-                      height={35}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                  <h3 className="font-manrope font-semibold text-[16px] lg:text-[20px] text-black leading-[40.8px]">
-                    {advantage.title}
-                  </h3>
-                </div>
-                <p className="font-inter text-[14px] lg:text-[16px] text-[#333333] leading-[24px] lg:leading-[26px] max-w-[369px] lg:max-w-none">
-                  {advantage.description}
+          {/* Benefits Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-background z-10 flex flex-col p-8 lg:p-12 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
+              <div className="mb-6">
+                <h3 className="text-2xl lg:text-[34px] font-extrabold text-[#0224e9] mb-2">
+                  Our Key Advantages
+                </h3>
+                <p className="text-sm lg:text-lg text-black uppercase font-semibold tracking-wide">
+                  Benefits That Make a Difference
                 </p>
               </div>
-            ))}
+
+              <div className="mb-8 flex-grow">
+                <p className="text-foreground leading-relaxed mb-6 text-base lg:text-lg font-manrope font-medium">
+                  Key advantages that make a difference when expanding, growing,
+                  or exiting your company.
+                </p>
+
+                <ul className="space-y-4 text-foreground">
+                  {advantages.map((advantage, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="flex items-start gap-4 w-full">
+                        <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
+                          <Image
+                            src={advantage.imageUrl}
+                            alt={advantage.title}
+                            width={35}
+                            height={35}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-manrope font-semibold text-[16px] lg:text-[20px] text-black mb-2">
+                            {advantage.title}
+                          </h4>
+                          <p className="font-inter text-[14px] lg:text-[16px] text-[#333333] leading-[24px] lg:leading-[26px]">
+                            {advantage.description}
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="flex justify-center lg:justify-start mt-auto">
+                <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                  Learn About Our Process
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -348,9 +379,11 @@ export default function ForFounders() {
                 capital and we handle them all.
               </p>
             </div>
-            <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-              Get Started Today
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                Get Started Today
+              </Button>
+            </div>
           </div>
 
           {/* Phases Accordion */}
@@ -400,26 +433,37 @@ export default function ForFounders() {
         </div>
       </section>
 
+      {/* Page Break Line */}
+      <div className="w-full px-4 lg:px-16 py-8 lg:py-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-[#0224e9] to-transparent opacity-50 blur-[1px]"></div>
+        </div>
+      </div>
+
       {/* 15-Minute Conversation CTA Section */}
       <section className="relative py-12 lg:py-20 px-4 lg:px-16">
         <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
           {/* Background decorative elements */}
-          <div className="absolute left-0 bottom-0">
+          <div className="absolute -left-20 lg:left-0 -bottom-8 lg:bottom-0">
+            {/* 
+              Changed -left-8 -> -left-20 on mobile to move it further left,
+              but kept on desktop (lg:left-0) for original placement.
+            */}
             <Image
               src="/bg/partners-for-growth-get-started-desktop.png"
               alt="Partners for Growth 15-Minute Conversation Background"
               width={584}
               height={730}
-              className="w-fit h-[280px] object-cover"
+              className="w-fit h-[200px] lg:h-[280px] object-cover opacity-80 lg:opacity-100"
             />
           </div>
-          <div className="absolute right-0 top-0 ">
+          <div className="absolute -right-8 -top-8 lg:right-0 lg:top-0">
             <Image
               src="/bg/partners-for-growth-get-started-2-desktop.png"
               alt="Partners for Growth 15-Minute Conversation Background"
               width={584}
               height={730}
-              className="w-fit h-[300px] object-cover"
+              className="w-fit h-[200px] lg:h-[300px] object-cover opacity-80 lg:opacity-100"
             />
           </div>
 
@@ -435,15 +479,27 @@ export default function ForFounders() {
               We'll explain exactly why this investor developed conviction about
               your space. You'll know immediately if it's worth exploring.
             </p>
-            <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-              Get Started Today
-            </Button>
+            {/* Center button on all breakpoints */}
+            <div className="flex justify-center">
+              <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                Get Started Today
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
+        <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[40vw] h-[40vw] z-0">
+          <Image
+            src="/2nd-section-bg.png"
+            alt="bg"
+            width={1000}
+            height={1000}
+            className="object-cover opacity-50 -scale-x-100"
+          />
+        </div>
         <div className="max-w-[400px] lg:max-w-7xl mx-auto">
           <div className="text-center mb-8 lg:mb-12 space-y-4 lg:space-y-6">
             <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">

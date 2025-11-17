@@ -27,6 +27,7 @@ import {
   ThumbsUp,
   Shield,
 } from "lucide-react";
+import { HamburgerIcon } from "@/components/ui/hamburger-icon";
 
 // Type definitions
 interface SubMenuItem {
@@ -288,7 +289,16 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                   alt="PhaseOne Partners"
                   width={600}
                   height={400}
-                  className={`lg:h-10 h-6 w-auto ${isLight ? "invert" : ""}`}
+                  className={`lg:h-10 h-6 w-auto hidden lg:block ${isLight ? "invert" : ""}`}
+                  priority
+                  quality={100}
+                />
+                <Image
+                  src="/logo.png"
+                  alt="PhaseOne Partners"
+                  width={600}
+                  height={400}
+                  className="lg:hidden h-6 w-auto"
                   priority
                   quality={100}
                 />
@@ -306,8 +316,8 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                 {mobileMenuOpen ? (
                   <X className="h-6 w-6 text-foreground" aria-hidden="true" />
                 ) : (
-                  <Menu
-                    className="h-6 w-6 text-foreground"
+                  <HamburgerIcon
+                    className="h-6 w-6 text-primary"
                     aria-hidden="true"
                   />
                 )}
