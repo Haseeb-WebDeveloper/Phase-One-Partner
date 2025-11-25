@@ -497,6 +497,17 @@ export default function ForInvestors() {
               ))}
             </Accordion>
 
+            {/* Left side decorative element */}
+            <div className="absolute top-1/2 -translate-y-1/2 left-[-100px] z-[0] pointer-events-none">
+              <Image
+                src="/left-side-element.png"
+                alt="Left side decorative element"
+                width={584}
+                height={730}
+                className="w-fit h-[400px] object-cover"
+              />
+            </div>
+
             {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
             <div className="absolute top-1/2 -translate-y-1/2 right-[-100px] z-[0] pointer-events-none">
               <Image
