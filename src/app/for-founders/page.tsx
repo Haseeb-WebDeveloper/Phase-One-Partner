@@ -307,20 +307,20 @@ export default function ForFounders() {
             </div>
           </div>
 
-          {/* Benefits Card */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-background z-10 flex flex-col p-8 lg:p-12 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
+          {/* Mobile: Benefits Card */}
+          <div className="max-w-4xl mx-auto lg:hidden">
+            <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
               <div className="mb-6">
-                <h3 className="text-2xl lg:text-[34px] font-extrabold text-[#0224e9] mb-2">
+                <h3 className="text-2xl font-extrabold text-[#0224e9] mb-2">
                   Our Key Advantages
                 </h3>
-                <p className="text-sm lg:text-lg text-black uppercase font-semibold tracking-wide">
+                <p className="text-sm text-black uppercase font-semibold tracking-wide">
                   Benefits That Make a Difference
                 </p>
               </div>
 
               <div className="mb-8 flex-grow">
-                <p className="text-foreground leading-relaxed mb-6 text-base lg:text-lg font-manrope font-medium">
+                <p className="text-foreground leading-relaxed mb-6 text-base font-manrope font-medium">
                   Key advantages that make a difference when expanding, growing,
                   or exiting your company.
                 </p>
@@ -339,10 +339,10 @@ export default function ForFounders() {
                           />
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-manrope font-semibold text-[16px] lg:text-[20px] text-black mb-2">
+                          <h4 className="font-manrope font-semibold text-[16px] text-black mb-2">
                             {advantage.title}
                           </h4>
-                          <p className="font-inter text-[14px] lg:text-[16px] text-[#333333] leading-[24px] lg:leading-[26px]">
+                          <p className="font-inter text-[14px] text-[#333333] leading-[24px]">
                             {advantage.description}
                           </p>
                         </div>
@@ -352,12 +352,49 @@ export default function ForFounders() {
                 </ul>
               </div>
 
-              <div className="flex justify-center lg:justify-start mt-auto">
-                <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+              <div className="flex justify-center mt-auto">
+                <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium">
                   Learn About Our Process
                 </Button>
               </div>
             </div>
+          </div>
+
+          {/* Desktop: Grid Layout */}
+          <div className="hidden lg:grid lg:grid-cols-3 max-w-7xl mx-auto">
+            {advantages.map((advantage, index) => {
+              const isLastColumn = (index + 1) % 3 === 0;
+              const isLastRow = index >= 3;
+              return (
+                <div
+                  key={index}
+                  className={`p-8 flex flex-col space-y-4 ${
+                    !isLastColumn ? "border-r" : ""
+                  } ${!isLastRow ? "border-b" : ""}`}
+                  style={{
+                    borderColor: "#0000000D",
+                    borderWidth: "1px",
+                    borderStyle: "solid",
+                  }}
+                >
+                  <div className="w-[60px] h-[60px] flex-shrink-0">
+                    <Image
+                      src={advantage.imageUrl}
+                      alt={advantage.title}
+                      width={60}
+                      height={60}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <h4 className="font-manrope font-semibold text-[20px] text-black">
+                    {advantage.title}
+                  </h4>
+                  <p className="font-inter text-[16px] text-[#333333] leading-[26px]">
+                    {advantage.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
