@@ -4,13 +4,13 @@ export default function OpportunitySection() {
   return (
     <section className="relative w-full py-12 lg:py-20  px-4 sm:px-6 lg:px-16 border-t border-[#0224E9]">
       {/* Bottom background image */}
-      <div className="pointer-events-none absolute -bottom-[500px] left-1/2 -translate-x-1/2 z-20 flex justify-center w-full max-w-xl  select-none">
+      <div className="pointer-events-none absolute -bottom-[500px] right-0 z-20 flex justify-center w-full max-w-2xl select-none">
         <Image
-          src="/bg-rounded-2.png"
+          src="/2nd-section-bg.png"
           alt=""
           width={1440}
           height={212}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain -scale-x-100 opacity-30"
           style={{
             objectFit: 'contain',
           }}
@@ -31,7 +31,7 @@ export default function OpportunitySection() {
         </p>
 
         {/* Statistics */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-[100px] mb-8 lg:mb-12">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-[100px] mb-8 lg:mb-12 z-30">
           {/* Left Column */}
           <div className="text-center">
             <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-2">
