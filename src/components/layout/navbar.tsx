@@ -269,62 +269,38 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
 
   return (
     <header
-      className={`absolute text-foreground top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent ${
+      className={`absolute text-foreground top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "" : ""
       }`}
     >
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-16">
+      {/* Blue background for desktop */}
+      <div className="hidden lg:block absolute inset-0 bg-[#0224E9]"></div>
+      
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-16 relative">
         <nav
           className={`${
             scrolled ? "" : ""
           } py-4 lg:px-2 rounded-lg transition-all duration-300`}
           aria-label="Global"
         >
-          <div className="flex items-center justify-between bg-background lg:bg-transparent px-6 py-4 lg:px-0 lg:py-0 rounded-full shadow lg:shadow-none ">
+          {/* Desktop: White rounded navbar */}
+          <div className="hidden lg:flex items-center justify-between bg-white px-10 py-4 rounded-full shadow-sm">
             {/* Logo */}
-            <div className="flex lg:flex-1">
-              <Link href="/" className="-m-1.5 p-1.5 inline-block">
+            <div className="flex flex-shrink-0">
+              <Link href="/" className="-m-1.5 p-1.5 flex items-center">
                 <Image
-                  src="/logo.svg"
-                  alt="PhaseOne Partners"
-                  width={600}
-                  height={400}
-                  className={`lg:h-10 h-6 w-auto hidden lg:block ${isLight ? "invert" : ""}`}
+                  src="/icons/logo 1.svg"
+                  alt="PhaseOne Partners Logo"
+                  width={164}
+                  height={39}
+                  className="h-10 w-auto"
                   priority
-                  quality={100}
-                />
-                <Image
-                  src="/logo.png"
-                  alt="PhaseOne Partners"
-                  width={600}
-                  height={400}
-                  className="lg:hidden h-6 w-auto"
-                  priority
-                  quality={100}
                 />
               </Link>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="flex lg:hidden">
-              <button
-                type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                <span className="sr-only">Toggle menu</span>
-                {mobileMenuOpen ? (
-                  <X className="h-6 w-6 text-foreground" aria-hidden="true" />
-                ) : (
-                  <HamburgerIcon
-                    className="h-6 w-6 text-primary"
-                    aria-hidden="true"
-                  />
-                )}
-              </button>
-            </div>
-
-            <div className="hidden lg:flex lg:gap-x-8 bg-background px-10 py-2.5 font-poppins rounded-full">
+            {/* Desktop Navigation Links */}
+            <div className="flex gap-x-8 font-poppins">
               {navigation.map((item) => (
                 <div
                   key={item.name}
@@ -336,10 +312,10 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                 >
                   {item.dropdown ? (
                     <>
-                      <button className="flex items-center gap-1 text-[16px] text-foreground leading-6 cursor-pointer">
+                      <button className="flex items-center gap-1 text-[16px] text-[#333333] leading-6 cursor-pointer">
                         {item.name}
                         <ChevronDown
-                          className={`h-4 w-4 text-foreground transition-transform duration-200 ${
+                          className={`h-4 w-4 text-[#333333] transition-transform duration-200 ${
                             activeDropdown === item.name ? "rotate-180" : ""
                           }`}
                           aria-hidden="true"
@@ -431,7 +407,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-[16px] text-foreground lora-medium  cursor-pointer"
+                      className="text-[16px] text-[#333333] lora-medium cursor-pointer"
                     >
                       {item.name}
                     </Link>
@@ -440,17 +416,50 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            {/* Desktop CTA Button */}
+            <div className="flex flex-shrink-0">
               <Link
                 href="/contact"
-                className={`border  py-[8px] px-[18px] text-[16px] lg:text-[18px] text-background transition-colors duration-200 rounded-full font-medium ${
-                  isLight ? "bg-background text-foreground hover:border-foreground" : "bg-primary hover:bg-primary/70 "
-                }`}
+                className="bg-[#0224e9] text-white py-[8px] px-[18px] text-[16px] lg:text-[18px] transition-colors duration-200 rounded-full font-medium hover:bg-[#0224e9]/90"
               >
                 Get in Touch
               </Link>
             </div>
+          </div>
+          
+          {/* Mobile navbar wrapper */}
+          <div className="lg:hidden flex items-center justify-between bg-background px-6 py-4 rounded-full shadow">
+            {/* Mobile Logo */}
+            <div className="flex">
+              <Link href="/" className="-m-1.5 p-1.5 inline-block">
+                <Image
+                  src="/logo.png"
+                  alt="PhaseOne Partners"
+                  width={600}
+                  height={400}
+                  className="h-6 w-auto"
+                  priority
+                  quality={100}
+                />
+              </Link>
+            </div>
+            
+            {/* Mobile menu button */}
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <span className="sr-only">Toggle menu</span>
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6 text-foreground" aria-hidden="true" />
+              ) : (
+                <HamburgerIcon
+                  className="h-6 w-6 text-primary"
+                  aria-hidden="true"
+                />
+              )}
+            </button>
           </div>
         </nav>
       </div>
