@@ -180,7 +180,7 @@ export default function ForFounders() {
             </div>
 
             {/* 2nd column  */}
-            <div className="flex flex-col item-center justify-end w-[40%]">
+            <div className="flex flex-col items-center justify-end w-[40%]">
               <div
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
@@ -211,7 +211,7 @@ export default function ForFounders() {
               />
             </div>
 
-            {/* absolute poition left right images */}
+            {/* absolute position left right images */}
             <div className="absolute top-1/2 -translate-y-1/2 md:left-[-270px] left-[-295px]">
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
@@ -276,7 +276,7 @@ export default function ForFounders() {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* rihgt side absolute position image */}
+          {/* right side absolute position image */}
           <div className="absolute md:-top-32 -right-36 bottom-0 md:bottom-auto z-0">
             <Image
               src="/bg/partners-for-growth-2nd-section-bg.png"
@@ -368,13 +368,13 @@ export default function ForFounders() {
               const isFirstColumn = index % 3 === 0;
               const isThirdColumn = (index + 1) % 3 === 0;
               const isSecondColumn = index % 3 === 1;
-              
+
               // Determine which borders to show
               const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
               const borderBottom = isSecondRow ? "none" : "1px solid #0000000D";
               const borderLeft = isFirstColumn ? "none" : "1px solid #0000000D";
               const borderRight = isThirdColumn ? "none" : "1px solid #0000000D";
-              
+
               return (
                 <div
                   key={index}
@@ -417,7 +417,7 @@ export default function ForFounders() {
                 The Phase of Doing a Deal
               </p>
               <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                From the First Call to Beyond the Signed {""}
+                From the First Call to Beyond the Signed{" "}
                 <span className="text-[#0224e9]">Agreement</span>
               </h2>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px]">
@@ -465,6 +465,25 @@ export default function ForFounders() {
               ))}
             </Accordion>
 
+            {/* Moved element higher (closer to top) and flipped horizontally */}
+            <div className="absolute top-[10%] -translate-y-0 right-[-200px] z-[0] pointer-events-none opacity-10 ">
+              <Image
+                src="/left-side-element.png"
+                alt="Left side decorative element"
+                width={584}
+                height={730}
+                className="w-fit h-[400px] object-cover -scale-x-100"
+              />
+            </div>
+            <div className="absolute top-[10%] -translate-y-0 right-[-200px] z-[0] pointer-events-none opacity-50 ">
+              <Image
+                src="/images/About-us-images/bg-rounded.png"
+                alt="Left side decorative element"
+                width={584}
+                height={730}
+                className="w-fit h-[400px] object-cover -scale-x-100"
+              />
+            </div>
             {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
             <div className="absolute top-1/2 -translate-y-1/2 right-[-100px] z-[0] pointer-events-none">
               <Image
@@ -537,13 +556,22 @@ export default function ForFounders() {
 
       {/* FAQ Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
-        <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[40vw] h-[40vw] z-0">
+        <div className="absolute top-[40%] -translate-y-0 left-[-100px] z-[0] pointer-events-none opacity-70">
+          {/* <Image
+            src="/bg-rounded.png"
+            alt="Left side decorative element"
+            width={1000}
+            height={730}
+            className="w-fit h-[400px] object-cover" */}
+          {/* /> */}
+        </div>
+        <div className="absolute top-1/2 -translate-y-1/2 left-[-300px] w-[40vw] h-[40vw] z-0 -scale-x-100">
           <Image
             src="/2nd-section-bg.png"
             alt="bg"
             width={1000}
             height={1000}
-            className="object-cover opacity-50 -scale-x-100"
+            className="object-cover opacity-70 -scale-x-200"
           />
         </div>
         <div className="max-w-[400px] lg:max-w-7xl mx-auto">
