@@ -152,7 +152,7 @@ const navigation: NavigationItem[] = [
     dropdown: [
       {
         name: "About",
-        href: "/about",
+        href: "/about-us",
         icon: BookOpen,
         description: "Learn more about PhaseOne Partners.",
       },
@@ -274,7 +274,6 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
       }`}
     >
       {/* Blue background for desktop */}
-      <div className="hidden lg:block absolute inset-0 bg-[#0224E9]"></div>
       
       <div className="max-w-[1600px] mx-auto px-6 lg:px-16 relative">
         <nav
@@ -284,16 +283,16 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
           aria-label="Global"
         >
           {/* Desktop: White rounded navbar */}
-          <div className="hidden lg:flex items-center justify-between bg-white px-10 py-4 rounded-full shadow-sm">
+          <div className="hidden lg:flex items-center justify-between bg-white px-2 py-2 rounded-xl shadow-sm">
             {/* Logo */}
-            <div className="flex flex-shrink-0">
-              <Link href="/" className="-m-1.5 p-1.5 flex items-center">
+            <div className="flex flex-shrink-0 ">
+              <Link href="/" className="ml-1.5 flex items-center">
                 <Image
                   src="/icons/logo 1.svg"
                   alt="PhaseOne Partners Logo"
                   width={164}
                   height={39}
-                  className="h-10 w-auto"
+                  className="h-8 w-auto"
                   priority
                 />
               </Link>
@@ -312,7 +311,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                 >
                   {item.dropdown ? (
                     <>
-                      <button className="flex items-center gap-1 text-[16px] text-[#333333] leading-6 cursor-pointer">
+                      <button className="flex items-center gap-1 text-[14px] text-[#333333] leading-6 cursor-pointer">
                         {item.name}
                         <ChevronDown
                           className={`h-4 w-4 text-[#333333] transition-transform duration-200 ${
@@ -407,7 +406,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-[16px] text-[#333333] lora-medium cursor-pointer"
+                      className="text-[14px] text-[#333333] lora-medium cursor-pointer"
                     >
                       {item.name}
                     </Link>
@@ -420,7 +419,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
             <div className="flex flex-shrink-0">
               <Link
                 href="/contact"
-                className="bg-[#0224e9] text-white py-[8px] px-[18px] text-[16px] lg:text-[18px] transition-colors duration-200 rounded-full font-medium hover:bg-[#0224e9]/90"
+                className="bg-[#0224e9] text-white py-[8px] px-10  text-[14px] ltransition-colors duration-200 rounded-full font-medium hover:bg-[#0224e9]/90"
               >
                 Get in Touch
               </Link>

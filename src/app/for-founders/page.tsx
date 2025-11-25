@@ -363,18 +363,27 @@ export default function ForFounders() {
           {/* Desktop: Grid Layout */}
           <div className="hidden lg:grid lg:grid-cols-3 max-w-7xl mx-auto">
             {advantages.map((advantage, index) => {
-              const isLastColumn = (index + 1) % 3 === 0;
-              const isLastRow = index >= 3;
+              const isFirstRow = index < 3;
+              const isSecondRow = index >= 3;
+              const isFirstColumn = index % 3 === 0;
+              const isThirdColumn = (index + 1) % 3 === 0;
+              const isSecondColumn = index % 3 === 1;
+              
+              // Determine which borders to show
+              const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
+              const borderBottom = isSecondRow ? "none" : "1px solid #0000000D";
+              const borderLeft = isFirstColumn ? "none" : "1px solid #0000000D";
+              const borderRight = isThirdColumn ? "none" : "1px solid #0000000D";
+              
               return (
                 <div
                   key={index}
-                  className={`p-8 flex flex-col space-y-4 ${
-                    !isLastColumn ? "border-r" : ""
-                  } ${!isLastRow ? "border-b" : ""}`}
+                  className="p-8 flex flex-col space-y-4"
                   style={{
-                    borderColor: "#0000000D",
-                    borderWidth: "1px",
-                    borderStyle: "solid",
+                    borderTop,
+                    borderBottom,
+                    borderLeft,
+                    borderRight,
                   }}
                 >
                   <div className="w-[60px] h-[60px] flex-shrink-0">
