@@ -274,9 +274,7 @@ export default function ForInvestors() {
                   What we do
                 </p>
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                  We connect you with{" "}
-                  <span className="text-[#0224e9]">opportunities</span> that
-                  others never see.
+                  We connect you with <span className="text-[#0224e9]">opportunities</span> that others never see.
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px]">
                   Most investors wait for businesses to come to market. Deal
@@ -297,17 +295,17 @@ export default function ForInvestors() {
               </Button>
             </div>
           </div>
-          <div className="relative  z-10 h-[431px] lg:h-full w-full flex flex-col justify-end rounded-[12px] overflow-hidden">
+          <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-end overflow-hidden">
             <Image
               src="/invester/2nd-section.png"
               alt="Partners for Growth Hero Image"
               width={504}
               height={543}
-              className="w-full h-full max-h-[620px] object-cover"
+              className="w-full h-full max-h-[620px] object-cover rounded-[12px]"
             />
           </div>
           {/* rihgt side absolute position image */}
-          <div className="absolute md:top-0 bottom-0 right-0 md:bottom-auto z-0">
+          <div className="absolute md:top-22 bottom-0 -right-0 md:bottom-auto z-0">
             <Image
               src="/bg/investers-2nd-section-bg.png"
               alt="Partners for Growth Hero Image"
@@ -498,7 +496,7 @@ export default function ForInvestors() {
             </Accordion>
 
             {/* Left side decorative element */}
-            <div className="absolute top-1/2 -translate-y-1/2 left-[-100px] z-[0] pointer-events-none">
+            <div className="absolute top-1/2 -translate-y-1/2 right-[-200px] z-[0] pointer-events-none opacity-20">
               <Image
                 src="/left-side-element.png"
                 alt="Left side decorative element"
@@ -509,13 +507,13 @@ export default function ForInvestors() {
             </div>
 
             {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-[-100px] z-[0] pointer-events-none">
+            <div className="absolute top-1/2 -translate-y-1/2 right-[0px] z-[0] pointer-events-none opacity-100">
               <Image
                 src="/bg/partners-for-growth-3nd-section.png"
                 alt="Partners for Growth 15-Minute Conversation Background"
-                width={584}
-                height={730}
-                className="w-fit h-[400px] object-cover"
+                width={1200}
+                height={1200}
+                className="w-fit h-[520px] object-cover opacity-100"
               />
             </div>
           </div>
@@ -607,6 +605,15 @@ export default function ForInvestors() {
                 </AccordionItem>
               ))}
             </Accordion>
+          </div>
+          <div className="absolute left-0 bottom-0 w-[80vw] h-[40vw] flex justify-start items-end z-0 opacity-40 pointer-events-none">
+            <Image
+              src="/bg/partners-for-growth-3nd-section.png"
+              alt="bg"
+              width={1000}
+              height={1000}
+              className="object-cover opacity-70 rotate-90"
+            />
           </div>
         </div>
       </section>

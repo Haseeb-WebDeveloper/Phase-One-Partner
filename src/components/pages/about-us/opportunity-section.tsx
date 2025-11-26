@@ -4,7 +4,7 @@ export default function OpportunitySection() {
   return (
     <section className="relative w-full py-12 lg:py-20  px-4 sm:px-6 lg:px-16 border-t border-[#0224E9]">
       {/* Bottom background image */}
-      <div className="pointer-events-none absolute -bottom-[500px] right-0 z-20 flex justify-center w-full max-w-2xl select-none">
+      <div className="pointer-events-none absolute top-0 left-0 w-full flex justify-center z-0 select-none">
         <Image
           src="/2nd-section-bg.png"
           alt=""
