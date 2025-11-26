@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function OurDifferenceSection() {
   const features = [
     {
@@ -62,8 +64,11 @@ export default function OurDifferenceSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white py-12 lg:py-20 px-4 sm:px-6 lg:px-16">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative w-full bg-white py-12 lg:py-20 px-4 sm:px-6 lg:px-16 overflow-hidden">
+      {/* Top background image */}
+     
+
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Label */}
         <p className="text-center font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide mb-4 lg:mb-6">
           Our Difference

@@ -242,6 +242,7 @@ export default function ForFounders() {
           <div className="space-y-6 lg:space-y-[60px]">
             <div className="space-y-5 lg:space-y-[40px]">
               <div className="space-y-4 lg:space-y-[30px]">
+                
                 <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide leading-[14px]">
                   What we do
                 </p>
@@ -276,7 +277,7 @@ export default function ForFounders() {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* right side absolute position image */}
+          {/* right side absolute position image */}    
           <div className="absolute md:-top-32 -right-36 bottom-0 md:bottom-auto z-0">
             <Image
               src="/bg/partners-for-growth-2nd-section-bg.png"
@@ -409,9 +410,31 @@ export default function ForFounders() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white">
+      <section className="relative py-12 lg:py-20 lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
+        {/* Add centered image at the very top (center aligned vertically) */}
+        {/* <div className="flex justify-center items-center absolute">
+          <Image
+            src="/2nd-section-bg.png"
+            alt="Deal Phase Decorative"
+            width={250}
+            height={250}
+            className="object-contain"
+            priority
+          />
+        </div> */}
+        <div>
+          <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 w-[80vw] h-[40vw] flex justify-center items-center z-0 opacity-40">
+            <Image
+              src="/2nd-section-bg.png"
+              alt="bg"
+              width={1000}
+              height={1000}
+              className="object-cover opacity-70 rotate-90"
+            />
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-10 lg:space-y-[60px]">
+          <div className="space-y-10 lg:space-y-[60px] flex flex-col justify-center h-full">
             <div className="space-y-5 lg:space-y-[30px]">
               <p className="font-manrope text-[#0224e9] text-[14px] uppercase tracking-wide">
                 The Phase of Doing a Deal
@@ -498,13 +521,6 @@ export default function ForFounders() {
         </div>
       </section>
 
-      {/* Page Break Line */}
-      <div className="w-full px-4 lg:px-16 py-8 lg:py-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-[#0224e9] to-transparent opacity-50 blur-[1px]"></div>
-        </div>
-      </div>
-
       {/* 15-Minute Conversation CTA Section */}
       <section className="relative py-12 lg:py-20 px-4 lg:px-16">
         <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
@@ -557,13 +573,13 @@ export default function ForFounders() {
       {/* FAQ Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
         <div className="absolute top-[40%] -translate-y-0 left-[-100px] z-[0] pointer-events-none opacity-70">
-          {/* <Image
+          <Image
             src="/bg-rounded.png"
             alt="Left side decorative element"
             width={1000}
             height={730}
-            className="w-fit h-[400px] object-cover" */}
-          {/* /> */}
+            className="w-fit h-[400px] object-cover"
+          />
         </div>
         <div className="absolute top-1/2 -translate-y-1/2 left-[-300px] w-[40vw] h-[40vw] z-0 -scale-x-100">
           <Image
