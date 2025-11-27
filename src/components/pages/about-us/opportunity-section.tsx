@@ -6,7 +6,7 @@ export default function OpportunitySection() {
            <div className="max-w-7xl mx-auto z-10">
         {/* Label */}
         <p className="text-center font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide mb-6 lg:mb-8">
-          The Opportunity
+          THE OPPORTUNITY
         </p>
 
         {/* Main Heading */}
@@ -20,11 +20,11 @@ export default function OpportunitySection() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-[100px] mb-8 lg:mb-12 z-30">
           {/* Left Column */}
           <div className="text-center">
-            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-2">
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0224e9] mb-2">
               12,000
             </div>
-            <div className="text-base md:text-lg lg:text-xl text-foreground/80">
-              market companies operating in Australia
+            <div className="text-base md:text-lg lg:text-xl text-black">
+              mid-market companies operate in Australia.
             </div>
           </div>
 
@@ -33,11 +33,11 @@ export default function OpportunitySection() {
 
           {/* Middle Column */}
           <div className="text-center">
-            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-2">
-              56%
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0224e9] mb-2">
+              98%
             </div>
-            <div className="text-base md:text-lg lg:text-xl text-foreground/80">
-              average private transaction growth (private M&A)
+            <div className="text-base md:text-lg lg:text-xl text-black">
+              of larger private companies remain privately held.
             </div>
           </div>
 
@@ -46,11 +46,11 @@ export default function OpportunitySection() {
 
           {/* Right Column */}
           <div className="text-center">
-            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-2">
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0224e9] mb-2">
               $60
             </div>
-            <div className="text-base md:text-lg lg:text-xl text-foreground/80">
-              billion private capital is now deploying into private markets
+            <div className="text-base md:text-lg lg:text-xl text-black">
+              billion in private capital is now managed by institutional investors.
             </div>
           </div>
         </div>

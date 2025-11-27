@@ -285,15 +285,15 @@ export default function ForInvestors() {
                 </p>
               </div>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none">
-                With PhaseOne, you gain access to high quality, oE-market
+                With PhaseOne, you gain access to high quality, off-market
                 businesses that fit your mandate and move at your pace. Every
                 introduction is discreet, structured, and designed to save you
                 time while strengthening your deal flow.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
-                Learn how we help
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                Learn How We Help
               </Button>
             </div>
           </div>
@@ -340,7 +340,7 @@ export default function ForInvestors() {
                   Benefits
                 </p>
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                  What you get with{" "}
+                  What you get with<br />
                   <span className="text-[#0224e9]">PhaseOne Partners</span>
                 </h2>
                 <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[299px] lg:max-w-[516px] mx-auto leading-[24px] lg:leading-[28px] mt-4 lg:mt-6">
@@ -585,7 +585,7 @@ export default function ForInvestors() {
               We'll align with your mandate and priorities, setting the
               foundation for a tailored origination pipeline.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
               <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
                 Get Started Today
               </Button>

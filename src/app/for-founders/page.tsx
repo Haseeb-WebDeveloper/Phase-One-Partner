@@ -67,16 +67,16 @@ export default function ForFounders() {
       imageUrl: "/icons/money.svg", // Placeholder for icon
     },
     {
-      title: "Relationships, Not Transactions",
-      description:
-        "We prioritise early, genuine conversations so you can assess cultural fit and alignment before formal discussions begin.",
-      imageUrl: "/icons/relationship.svg", // Placeholder for icon
-    },
-    {
       title: "Protecting Your Legacy",
       description:
         "We help match you with investors who share your vision and will look after your employees, customers, and the culture you've built.",
       imageUrl: "/icons/protection.svg", // Placeholder for icon
+    },
+    {
+      title: "Relationships, Not Transactions",
+      description:
+        "We prioritise early, genuine conversations so you can assess cultural fit and alignment before formal discussions begin.",
+      imageUrl: "/icons/relationship.svg", // Placeholder for icon
     },
   ];
 
@@ -247,9 +247,8 @@ export default function ForFounders() {
                   What we do
                 </p>
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                  We connect you with{" "}
-                  <span className="text-[#0224e9]">opportunities</span> that
-                  others never see.
+                  We guide you through{" "}
+                  <span className="text-[#0224e9]">every phase of the process.</span>
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px]">
                   Selling a business can feel overwhelming, but you don't need
@@ -263,8 +262,8 @@ export default function ForFounders() {
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium capitalize">
-                Learn how we help
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+                Learn How We Help
               </Button>
             </div>
           </div>
