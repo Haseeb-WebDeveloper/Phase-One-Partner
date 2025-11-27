@@ -44,7 +44,8 @@ export default function AboutUsHeroSection() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/images/About-us-images/Rectangle 21.svg')",
+                  backgroundImage:
+                    "url('/images/About-us-images/Rectangle 21.svg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -52,7 +53,8 @@ export default function AboutUsHeroSection() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/images/About-us-images/Rectangle 20.svg')",
+                  backgroundImage:
+                    "url('/images/About-us-images/Rectangle 20.svg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -64,7 +66,8 @@ export default function AboutUsHeroSection() {
               <div
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/images/About-us-images/Rectangle 35.svg')",
+                  backgroundImage:
+                    "url('/images/About-us-images/Rectangle 35.svg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -76,7 +79,8 @@ export default function AboutUsHeroSection() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/images/About-us-images/Rectangle 19.svg')",
+                  backgroundImage:
+                    "url('/images/About-us-images/Rectangle 19.svg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -84,29 +88,8 @@ export default function AboutUsHeroSection() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/images/About-us-images/Rectangle 18.svg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-            </div>
-
-            {/* absolute position left right images */}
-            <div className="absolute top-1/2 -translate-y-1/2 md:left-[-270px] left-[-295px]">
-              <div
-                className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
-                style={{
-                  backgroundImage: "url('/images/About-us-images/background.svg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-            </div>
-            <div className="absolute top-1/2 -translate-y-1/2 md:right-[-270px] right-[-295px]">
-              <div
-                className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
-                style={{
-                  backgroundImage: "url('/images/About-us-images/background.svg')",
+                  backgroundImage:
+                    "url('/images/About-us-images/Rectangle 18.svg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

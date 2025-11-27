@@ -3,21 +3,7 @@ import Image from "next/image";
 export default function OpportunitySection() {
   return (
     <section className="relative w-full py-12 lg:py-20  px-4 sm:px-6 lg:px-16 border-t border-[#0224E9]">
-      {/* Bottom background image */}
-      <div className="pointer-events-none absolute top-0 left-0 w-full flex justify-center z-0 select-none">
-        <Image
-          src="/2nd-section-bg.png"
-          alt=""
-          width={1440}
-          height={212}
-          className="w-full h-full object-contain -scale-x-100 opacity-30"
-          style={{
-            objectFit: 'contain',
-          }}
-          priority
-        />
-      </div>
-      <div className="max-w-7xl mx-auto relative z-10">
+           <div className="max-w-7xl mx-auto z-10">
         {/* Label */}
         <p className="text-center font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide mb-6 lg:mb-8">
           The Opportunity
@@ -72,4 +58,3 @@ export default function OpportunitySection() {
     </section>
   );
 }
-

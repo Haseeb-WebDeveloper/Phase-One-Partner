@@ -28,16 +28,7 @@ export default function MissionSection() {
         </p>
       </div>
 
-      {/* Decorative image, slightly above the bottom, rotated 90 degrees */}
-      <div className="absolute left-1/2 -translate-x-1/2 translate-y-[40%] bottom-0 w-[80vw] h-[40vw] flex justify-center items-center z-0 opacity-40">
-        <Image
-          src="/2nd-section-bg.png"
-          alt="bg"
-          width={1000}
-          height={1000}
-          className="object-cover opacity-50 rotate-90"
-        />
-      </div>
+
     </section> 
   );
 }

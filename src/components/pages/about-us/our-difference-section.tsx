@@ -64,10 +64,19 @@ export default function OurDifferenceSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white py-12 lg:py-20 px-4 sm:px-6 lg:px-16 overflow-hidden">
+    <section className="relative w-full bg-white py-12 lg:py-20 px-4 sm:px-6 lg:px-16">
       {/* Top background image */}
-     
-
+      <Image
+        src="/about/about-3rd-section-bg.png"
+        alt=""
+        width={1500}
+        height={300}
+        className="opacity-60 w-fit h-fit object-contain pointer-events-none absolute -top-[30vw] right-0 flex justify-center z-0 select-none"
+        style={{
+          objectFit: "contain",
+        }}
+        priority
+      />
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Label */}
         <p className="text-center font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide mb-4 lg:mb-6">
@@ -107,4 +116,3 @@ export default function OurDifferenceSection() {
     </section>
   );
 }
-
