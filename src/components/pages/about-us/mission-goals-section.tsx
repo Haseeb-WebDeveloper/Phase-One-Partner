@@ -79,7 +79,7 @@ export default function MissionGoalsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Label */}
         <p className="text-center font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide mb-12 lg:mb-16">
-          Our Mission
+          OUR PURPOSE
         </p>
 
         {/* Goals Grid */}
