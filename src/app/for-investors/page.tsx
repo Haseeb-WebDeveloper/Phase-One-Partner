@@ -274,7 +274,9 @@ export default function ForInvestors() {
                   What we do
                 </p>
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                  We connect you with <span className="text-[#0224e9]">opportunities</span> that others never see.
+                  We connect you with{" "}
+                  <span className="text-[#0224e9]">opportunities</span> that
+                  others never see.
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px]">
                   Most investors wait for businesses to come to market. Deal
@@ -319,120 +321,139 @@ export default function ForInvestors() {
 
       {/* Key Advantages Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-[#f0f0f0]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8 lg:mb-16 space-y-5 lg:space-y-[40px]">
-            <div className="space-y-4 lg:space-y-2">
-              <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
-                Benefits
-              </p>
-              <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                What you get with{" "}
-                <span className="text-[#0224e9]">PhaseOne Partners</span>
-              </h2>
-              <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[299px] lg:max-w-[516px] mx-auto leading-[24px] lg:leading-[28px] mt-4 lg:mt-6">
-                Key advantages that make a difference when expanding, growing,
-                or exiting your company
-              </p>
-            </div>
-          </div>
-
-          {/* Mobile: Benefits Card */}
-          <div className="max-w-4xl mx-auto lg:hidden">
-            <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
-              <div className="mb-6">
-                <h3 className="text-2xl font-extrabold text-[#0224e9] mb-2">
-                  What You Get with PhaseOne Partners
-                </h3>
-                <p className="text-sm text-black uppercase font-semibold tracking-wide">
-                  Key Advantages That Make a Difference
+        {/* <Image
+          src="/2nd-section-bg-2.png"
+          alt=""
+          width={1000}
+          height={500}
+          className="w-fit h-fit object-coatin pointer-events-none absolute -top-[10vw] left-0 flex justify-center z-[-1] select-none"
+          style={{
+            objectFit: "contain",
+          }}
+          priority
+        /> */}
+        <div className="bg-[#f0f0f0] z-30">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-8 lg:mb-16 space-y-5 lg:space-y-[40px]">
+              <div className="space-y-4 lg:space-y-2">
+                <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
+                  Benefits
                 </p>
-              </div>
-
-              <div className="mb-8 flex-grow">
-                <p className="text-foreground leading-relaxed mb-6 text-base font-manrope font-medium">
+                <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
+                  What you get with{" "}
+                  <span className="text-[#0224e9]">PhaseOne Partners</span>
+                </h2>
+                <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[299px] lg:max-w-[516px] mx-auto leading-[24px] lg:leading-[28px] mt-4 lg:mt-6">
                   Key advantages that make a difference when expanding, growing,
-                  or exiting your company.
+                  or exiting your company
                 </p>
-
-                <ul className="space-y-4 text-foreground">
-                  {advantages.map((advantage, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="flex items-start gap-4 w-full">
-                        <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
-                          <Image
-                            src={advantage.imageUrl}
-                            alt={advantage.title}
-                            width={35}
-                            height={35}
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="font-manrope font-semibold text-[16px] text-black mb-2">
-                            {advantage.title}
-                          </h4>
-                          <p className="font-inter text-[14px] text-[#333333] leading-[24px]">
-                            {advantage.description}
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="flex justify-center mt-auto">
-                <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium">
-                  View Our Approach
-                </Button>
               </div>
             </div>
-          </div>
 
-          {/* Desktop: Grid Layout */}
-          <div className="hidden lg:grid lg:grid-cols-3 max-w-7xl mx-auto">
-            {advantages.map((advantage, index) => {
-              const isFirstRow = index < 3;
-              const isSecondRow = index >= 3;
-              const isFirstColumn = index % 3 === 0;
-              const isThirdColumn = (index + 1) % 3 === 0;
-              const isSecondColumn = index % 3 === 1;
-              
-              // Determine which borders to show
-              const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
-              const borderBottom = isSecondRow ? "none" : "1px solid #0000000D";
-              const borderLeft = isFirstColumn ? "none" : "1px solid #0000000D";
-              const borderRight = isThirdColumn ? "none" : "1px solid #0000000D";
-              
-              return (
-                <div
-                  key={index}
-                  className="p-8 flex flex-col space-y-4"
-                  style={{
-                    borderTop,
-                    borderBottom,
-                    borderLeft,
-                    borderRight,
-                  }}
-                >
-                  <div className="w-[60px] h-[60px] flex-shrink-0">
-                    <Image
-                      src={advantage.imageUrl}
-                      alt={advantage.title}
-                      width={60}
-                      height={60}
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                  <h4 className="font-manrope font-semibold text-[20px] text-black">
-                    {advantage.title}
-                  </h4>
-                  <p className="font-inter text-[16px] text-[#333333] leading-[26px]">
-                    {advantage.description}
+            {/* Mobile: Benefits Card */}
+            <div className="max-w-4xl mx-auto lg:hidden">
+              <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-extrabold text-[#0224e9] mb-2">
+                    What You Get with PhaseOne Partners
+                  </h3>
+                  <p className="text-sm text-black uppercase font-semibold tracking-wide">
+                    Key Advantages That Make a Difference
                   </p>
                 </div>
-              );
-            })}
+
+                <div className="mb-8 flex-grow">
+                  <p className="text-foreground leading-relaxed mb-6 text-base font-manrope font-medium">
+                    Key advantages that make a difference when expanding,
+                    growing, or exiting your company.
+                  </p>
+
+                  <ul className="space-y-4 text-foreground">
+                    {advantages.map((advantage, index) => (
+                      <li key={index} className="flex items-start">
+                        <div className="flex items-start gap-4 w-full">
+                          <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
+                            <Image
+                              src={advantage.imageUrl}
+                              alt={advantage.title}
+                              width={35}
+                              height={35}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-manrope font-semibold text-[16px] text-black mb-2">
+                              {advantage.title}
+                            </h4>
+                            <p className="font-inter text-[14px] text-[#333333] leading-[24px]">
+                              {advantage.description}
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="flex justify-center mt-auto">
+                  <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium">
+                    View Our Approach
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop: Grid Layout */}
+            <div className="hidden lg:grid lg:grid-cols-3 max-w-7xl mx-auto">
+              {advantages.map((advantage, index) => {
+                const isFirstRow = index < 3;
+                const isSecondRow = index >= 3;
+                const isFirstColumn = index % 3 === 0;
+                const isThirdColumn = (index + 1) % 3 === 0;
+                const isSecondColumn = index % 3 === 1;
+
+                // Determine which borders to show
+                const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
+                const borderBottom = isSecondRow
+                  ? "none"
+                  : "1px solid #0000000D";
+                const borderLeft = isFirstColumn
+                  ? "none"
+                  : "1px solid #0000000D";
+                const borderRight = isThirdColumn
+                  ? "none"
+                  : "1px solid #0000000D";
+
+                return (
+                  <div
+                    key={index}
+                    className="p-8 flex flex-col space-y-4"
+                    style={{
+                      borderTop,
+                      borderBottom,
+                      borderLeft,
+                      borderRight,
+                    }}
+                  >
+                    <div className="w-[60px] h-[60px] flex-shrink-0">
+                      <Image
+                        src={advantage.imageUrl}
+                        alt={advantage.title}
+                        width={60}
+                        height={60}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <h4 className="font-manrope font-semibold text-[20px] text-black">
+                      {advantage.title}
+                    </h4>
+                    <p className="font-inter text-[16px] text-[#333333] leading-[26px]">
+                      {advantage.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
@@ -496,9 +517,9 @@ export default function ForInvestors() {
             </Accordion>
 
             {/* Left side decorative element */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-[-200px] z-[0] pointer-events-none opacity-20">
+            <div className="absolute top-1/2 -translate-y-1/2 right-[-15vw] z-[0] pointer-events-none">
               <Image
-                src="/left-side-element.png"
+                src="/bg-2.png"
                 alt="Left side decorative element"
                 width={584}
                 height={730}
@@ -507,13 +528,14 @@ export default function ForInvestors() {
             </div>
 
             {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-[0px] z-[0] pointer-events-none opacity-100">
+            <div className="absolute top-1/2 -translate-y-1/2 right-[-5vw] z-1 pointer-events-none opacity-100">
               <Image
                 src="/bg/partners-for-growth-3nd-section.png"
                 alt="Partners for Growth 15-Minute Conversation Background"
                 width={1200}
                 height={1200}
                 className="w-fit h-[520px] object-cover opacity-100"
+                style={{ transform: "scaleX(-1)" }}
               />
             </div>
           </div>
