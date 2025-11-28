@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Briefcase, BarChart2, FileText, Layers } from "lucide-react";
 
 export default function WhatWeDoSection() {
   const services = [
@@ -6,21 +7,25 @@ export default function WhatWeDoSection() {
       title: "Deal Origination",
       description:
         "Sourcing and qualifying high-potential on- and off-market opportunities.",
+      icon: Briefcase,
     },
     {
       title: "Industry and Niche Research",
       description:
         "In-depth market mapping and analysis where value is emerging.",
+      icon: BarChart2,
     },
     {
       title: "Transaction Support",
       description:
         "Managing stakeholder engagement and deal progression with diligence, discretion, and expertise.",
+      icon: FileText,
     },
     {
       title: "Buy and Build",
       description:
         "Enhancing platform strategies through add-on sourcing, integration planning, and ongoing support.",
+      icon: Layers,
     },
   ];
 
@@ -51,28 +56,29 @@ export default function WhatWeDoSection() {
 
           {/* Right Column - Services List */}
           <div className="space-y-0">
-            {services.map((service, index) => (
-              <div key={index}>
-                <div className="py-6 lg:py-8">
-                  <div className="flex items-start gap-4">
-                    <span className="text-[#0224e9] text-2xl lg:text-3xl font-bold leading-none mt-1">
-                      +
-                    </span>
-                    <div className="flex-1">
-                      <h3 className="font-manrope font-medium text-[18px] lg:text-[24px] text-foreground mb-2 lg:mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="font-inter text-[14px] lg:text-[16px] text-foreground/70 leading-[22px] lg:leading-[24px]">
-                        {service.description}
-                      </p>
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <div key={index}>
+                  <div className="py-6 lg:py-8">
+                    <div className="flex items-start gap-4">
+                      <IconComponent className="text-[#0224e9] pt-2 w-8 h-8 lg:w-6 lg:h-6 mt-1 flex-shrink-0" />
+                      <div className="flex-1">
+                        <h3 className="font-manrope font-bold text-[18px] lg:text-[24px] text-foreground mb-2 lg:mb-3">
+                          {service.title}
+                        </h3>
+                        <p className="font-inter text-[14px] lg:text-[16px] text-foreground/70 leading-[22px] lg:leading-[24px]">
+                          {service.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  {index < services.length - 1 && (
+                    <div className="border-t #33333333 opacity-200"></div>
+                  )}
                 </div>
-                {index < services.length - 1 && (
-                  <div className="border-t #33333333 opacity-200"></div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

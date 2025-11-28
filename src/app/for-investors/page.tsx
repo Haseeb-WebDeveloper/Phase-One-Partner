@@ -52,37 +52,37 @@ export default function ForInvestors() {
       title: "Proprietary deal flow",
       description:
         "Access to off-market and founder-led opportunities that aren't showing up in traditional auctions or brokered processes.",
-      imageUrl: "/icons/database.svg", // Placeholder for icon
+      imageUrl: "/icons/database.svg",
     },
     {
       title: "Faster pipeline build",
       description:
         "A dedicated origination engine that can ramp up quickly, filling your funnel in weeks rather than the 12–18 months it can take to build in-house.",
-      imageUrl: "/icons/fast.svg", // Placeholder for icon
+      imageUrl: "/icons/fast.svg",
     },
     {
       title: "Sharper sector coverage",
       description:
         "Deep industry insight allowing you to identify, prioritise, and pursue the right industries, subsectors, and niches with precision.",
-      imageUrl: "/icons/target.svg", // Placeholder for icon
+      imageUrl: "/icons/target.svg",
     },
     {
       title: "Trusted founder engagement",
       description:
         "Experienced outreach that builds trust with business owners, creating authentic entry points and more time to understand their goals.",
-      imageUrl: "/icons/money.svg", // Placeholder for icon
+      imageUrl: "/icons/money.svg",
     },
     {
       title: "Scalable, flexible resourcing",
       description:
         "Dial origination activity up or down based on fund cycles and portfolio demands, without the fixed cost of a permanent team.",
-      imageUrl: "/icons/protection.svg", // Placeholder for icon
+      imageUrl: "/icons/protection.svg",
     },
     {
       title: "Better use of investment team time",
       description:
         "By outsourcing the top of the funnel, your investors stay focused on diligence, execution, and value creation.",
-      imageUrl: "/icons/relationship.svg", // Placeholder for icon
+      imageUrl: "/icons/relationship.svg",
     },
   ];
 
@@ -158,7 +158,7 @@ export default function ForInvestors() {
         </div>
 
         {/* Hero Content */}
-        <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center">
+        <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center flex flex-col items-center">
           <h1 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[74px] text-white uppercase mb-2 lg:mb-4">
             Leading Investors <br />{" "}
             <span
@@ -267,7 +267,7 @@ export default function ForInvestors() {
       {/* What We Do Section */}
       <section className="relative py-12 lg:py-24 mt-4 lg:mt-8 px-[15px] lg:px-[70px] bg-background">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-6 lg:space-y-[60px]">
+          <div className="space-y-6 lg:space-y-[60px] flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[40px]">
               <div className="space-y-4 lg:space-y-[30px]">
                 <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide leading-[14px]">
@@ -278,20 +278,20 @@ export default function ForInvestors() {
                   <span className="text-[#0224e9]">opportunities</span> that
                   others never see.
                 </h2>
-                <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px]">
+                <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px] mx-auto lg:mx-0">
                   Most investors wait for businesses to come to market. Deal
                   Origination means uncovering founder-led opportunities before
                   they are even considering a sale.
                 </p>
               </div>
-              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none">
+              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none mx-auto lg:mx-0">
                 With PhaseOne, you gain access to high quality, off-market
                 businesses that fit your mandate and move at your pace. Every
                 introduction is discreet, structured, and designed to save you
                 time while strengthening your deal flow.
               </p>
             </div>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start w-full">
               <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
                 Learn How We Help
               </Button>
@@ -321,17 +321,6 @@ export default function ForInvestors() {
 
       {/* Key Advantages Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-[#f0f0f0]">
-        {/* <Image
-          src="/2nd-section-bg-2.png"
-          alt=""
-          width={1000}
-          height={500}
-          className="w-fit h-fit object-coatin pointer-events-none absolute -top-[10vw] left-0 flex justify-center z-[-1] select-none"
-          style={{
-            objectFit: "contain",
-          }}
-          priority
-        /> */}
         <div className="bg-[#f0f0f0] z-30">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8 lg:mb-16 space-y-5 lg:space-y-[40px]">
@@ -351,8 +340,8 @@ export default function ForInvestors() {
             </div>
 
             {/* Mobile: Benefits Card */}
-            <div className="max-w-4xl mx-auto lg:hidden">
-              <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
+            <div className="max-w-4xl mx-auto lg:hidden flex justify-center">
+              <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg items-center text-center">
                 <div className="mb-6">
                   <h3 className="text-2xl font-extrabold text-[#0224e9] mb-2">
                     What You Get with PhaseOne Partners
@@ -370,9 +359,9 @@ export default function ForInvestors() {
 
                   <ul className="space-y-4 text-foreground">
                     {advantages.map((advantage, index) => (
-                      <li key={index} className="flex items-start">
-                        <div className="flex items-start gap-4 w-full">
-                          <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1">
+                      <li key={index} className="flex items-center text-left w-full">
+                        <div className="flex items-center gap-4 w-full">
+                          <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1 flex items-center justify-center">
                             <Image
                               src={advantage.imageUrl}
                               alt={advantage.title}
@@ -395,8 +384,8 @@ export default function ForInvestors() {
                   </ul>
                 </div>
 
-                <div className="flex justify-center mt-auto">
-                  <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium">
+                <div className="flex justify-center mt-auto w-full">
+                  <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium w-full max-w-xs">
                     View Our Approach
                   </Button>
                 </div>
@@ -410,7 +399,6 @@ export default function ForInvestors() {
                 const isSecondRow = index >= 3;
                 const isFirstColumn = index % 3 === 0;
                 const isThirdColumn = (index + 1) % 3 === 0;
-                const isSecondColumn = index % 3 === 1;
 
                 // Determine which borders to show
                 const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
@@ -461,22 +449,22 @@ export default function ForInvestors() {
       {/* The Phase of Doing a Deal Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-10 lg:space-y-[60px]">
+          <div className="space-y-10 lg:space-y-[60px] flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
               <p className="font-manrope text-[#0224e9] text-[14px] uppercase tracking-wide">
                 The Phase of Doing a Deal
               </p>
               <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                From the First Call to Beyond the Signed {""}
+                From the First Call to Beyond the Signed{" "}
                 <span className="text-[#0224e9]">Agreement</span>
               </h2>
-              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px]">
+              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] mx-auto lg:mx-0">
                 There are 6 simple phases of sourcing and investing in a
                 founder-led business and we guide you through each, with clarity
                 and momentum.
               </p>
             </div>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start w-full">
               <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
                 Get Started Today
               </Button>
@@ -484,7 +472,7 @@ export default function ForInvestors() {
           </div>
 
           {/* Phases Accordion */}
-          <div className="relative">
+          <div className="relative flex flex-col items-center w-full">
             <Accordion type="single" collapsible className="w-full z-10">
               {phases.map((phase, index) => (
                 <AccordionItem
@@ -527,7 +515,7 @@ export default function ForInvestors() {
               />
             </div>
 
-            {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
+            {/* Overlay image */}
             <div className="absolute top-1/2 -translate-y-1/2 right-[-5vw] z-1 pointer-events-none opacity-100">
               <Image
                 src="/bg/partners-for-growth-3nd-section.png"
@@ -572,7 +560,7 @@ export default function ForInvestors() {
             />
           </div>
 
-          <div className="relative z-10 space-y-4 lg:space-y-6">
+          <div className="relative z-10 space-y-4 lg:space-y-6 flex flex-col items-center justify-center w-full">
             <p className="font-manrope text-white text-[10px] lg:text-[16px] uppercase tracking-wide">
               Next Step
             </p>
@@ -585,8 +573,8 @@ export default function ForInvestors() {
               We'll align with your mandate and priorities, setting the
               foundation for a tailored origination pipeline.
             </p>
-            <div className="flex justify-center">
-              <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
+            <div className="flex justify-center w-full">
+              <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium w-full max-w-xs">
                 Get Started Today
               </Button>
             </div>
@@ -596,7 +584,7 @@ export default function ForInvestors() {
 
       {/* FAQ Section */}
       <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
-        <div className="max-w-[400px] lg:max-w-7xl mx-auto">
+        <div className="max-w-[400px] lg:max-w-7xl mx-auto flex flex-col items-center">
           <div className="text-center mb-8 lg:mb-12 space-y-4 lg:space-y-6">
             <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
               FAQ
@@ -610,7 +598,7 @@ export default function ForInvestors() {
             </p>
           </div>
 
-          <div className="max-w-[400px] lg:max-w-[1140px] mx-auto">
+          <div className="max-w-[400px] lg:max-w-[1140px] mx-auto w-full flex flex-col items-center">
             <Accordion type="single" collapsible className="w-full">
               {faqItems.map((item, index) => (
                 <AccordionItem
@@ -618,10 +606,10 @@ export default function ForInvestors() {
                   value={`item-${index}`}
                   className="border-b border-[#333333]/20"
                 >
-                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] text-left hover:no-underline py-4 lg:py-6 cursor-pointer">
-                    {item.question}
+                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] hover:no-underline py-4 lg:py-6 cursor-pointer relative justify-center lg:justify-between [&>svg]:absolute [&>svg]:right-0 [&>svg]:lg:relative [&>svg]:lg:right-auto">
+                    <span className="w-full text-center lg:text-left pr-6 lg:pr-0">{item.question}</span>
                   </AccordionTrigger>
-                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6">
+                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6 text-center lg:text-left">
                     {item.answer || "Answer coming soon..."}
                   </AccordionContent>
                 </AccordionItem>

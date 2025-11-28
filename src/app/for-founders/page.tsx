@@ -239,7 +239,7 @@ export default function ForFounders() {
       {/* What We Do Section */}
       <section className="py-12 lg:py-24 mt-12 lg:mt-20 px-[15px] lg:px-[70px] bg-background">
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-6 lg:space-y-[60px]">
+          <div className="space-y-6 lg:space-y-[60px] text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[40px]">
               <div className="space-y-4 lg:space-y-[30px]">
                 
@@ -250,12 +250,12 @@ export default function ForFounders() {
                   We guide you through{" "}
                   <span className="text-[#0224e9]">every phase of the process.</span>
                 </h2>
-                <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px]">
+                <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px] mx-auto lg:mx-0">
                   Selling a business can feel overwhelming, but you don't need
                   to go through it alone.
                 </p>
               </div>
-              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none">
+              <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none mx-auto lg:mx-0">
                 With PhaseOne, every stage is structured, managed, & supported,
                 so you can focus on running your business while we handle the
                 complexities.
@@ -409,7 +409,7 @@ export default function ForFounders() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section className="relative py-12 lg:py-20 lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
         {/* Add centered image at the very top (center aligned vertically) */}
         {/* <div className="flex justify-center items-center absolute">
           <Image
@@ -432,8 +432,8 @@ export default function ForFounders() {
             />
           </div>
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="space-y-10 lg:space-y-[60px] flex flex-col justify-center h-full">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+          <div className="space-y-10 lg:space-y-[60px] flex flex-col justify-center h-full text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
               <p className="font-manrope text-[#0224e9] text-[14px] uppercase tracking-wide">
                 The Phase of Doing a Deal
@@ -455,7 +455,7 @@ export default function ForFounders() {
           </div>
 
           {/* Phases Accordion */}
-          <div className="relative">
+          <div className="relative w-full px-4 lg:px-0">
             <Accordion type="single" collapsible className="w-full z-10">
               {phases.map((phase, index) => (
                 <AccordionItem
@@ -480,7 +480,7 @@ export default function ForFounders() {
                       )}
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[rgba(51,51,51,0.8)] leading-[22px] lg:leading-[28px] pb-4 lg:pb-6 mt-[-6px]">
+                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[rgba(51,51,51,0.8)] leading-[22px] lg:leading-[28px] pb-4 lg:pb-6 mt-[-6px] text-left">
                     {phase.description}
                   </AccordionContent>
                 </AccordionItem>
@@ -611,10 +611,10 @@ export default function ForFounders() {
                   value={`item-${index}`}
                   className="border-b border-[#333333]/20"
                 >
-                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] text-left hover:no-underline py-4 lg:py-6 cursor-pointer">
-                    {item.question}
+                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] hover:no-underline py-4 lg:py-6 cursor-pointer relative justify-center lg:justify-between [&>svg]:absolute [&>svg]:right-0 [&>svg]:lg:relative [&>svg]:lg:right-auto">
+                    <span className="w-full text-center lg:text-left pr-6 lg:pr-0">{item.question}</span>
                   </AccordionTrigger>
-                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6">
+                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6 text-center lg:text-left">
                     {item.answer || "Answer coming soon..."}
                   </AccordionContent>
                 </AccordionItem>

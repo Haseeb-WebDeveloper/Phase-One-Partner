@@ -68,12 +68,12 @@ export default function FAQSection() {
           {/* Left Column */}
           <div className="space-y-6">
             {faqs.slice(0, 3).map((faq) => (
-              <div key={faq.id} className="group">
+              <div key={faq.id} className="group flex flex-col items-center lg:items-start">
                 <button
                   onClick={() => toggleFAQ(faq.id)}
-                  className="w-full flex items-center justify-between py-6 text-left hover:bg-muted/30 transition-all duration-200 rounded-lg px-4 -mx-4 border-b border-border/50 last:border-b-0"
+                  className="w-full flex items-center justify-center lg:justify-between py-6 hover:bg-muted/30 transition-all duration-200 rounded-lg px-4 -mx-4 border-b border-border/50 last:border-b-0 text-center lg:text-left"
                 >
-                  <h3 className="font-semibold text-foreground text-base md:text-lg pr-4">
+                  <h3 className="font-semibold text-foreground text-base md:text-lg pr-4 w-full text-center lg:text-left">
                     {faq.question}
                   </h3>
                   <ChevronDownIcon 
@@ -84,8 +84,8 @@ export default function FAQSection() {
                 </button>
                 
                 {expandedFAQ === faq.id && (
-                  <div className=" pb-6 animate-in slide-in-from-top-2 duration-200">
-                    <p className="text-muted-foreground leading-relaxed">
+                  <div className="pb-6 animate-in slide-in-from-top-2 duration-200 w-full">
+                    <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
                       {faq.answer}
                     </p>
                   </div>
@@ -97,12 +97,12 @@ export default function FAQSection() {
           {/* Right Column */}
           <div className="space-y-6">
             {faqs.slice(3, 6).map((faq) => (
-              <div key={faq.id} className="group">
+              <div key={faq.id} className="group flex flex-col items-center lg:items-start">
                 <button
                   onClick={() => toggleFAQ(faq.id)}
-                  className="w-full flex items-center justify-between py-6 text-left hover:bg-muted/30 transition-all duration-200 rounded-lg px-4 -mx-4 border-b border-border/50 last:border-b-0"
+                  className="w-full flex items-center justify-center lg:justify-between py-6 hover:bg-muted/30 transition-all duration-200 rounded-lg px-4 -mx-4 border-b border-border/50 last:border-b-0 text-center lg:text-left"
                 >
-                  <h3 className="font-semibold text-foreground text-base md:text-lg pr-4">
+                  <h3 className="font-semibold text-foreground text-base md:text-lg pr-4 w-full text-center lg:text-left">
                     {faq.question}
                   </h3>
                   <ChevronDownIcon 
@@ -113,8 +113,8 @@ export default function FAQSection() {
                 </button>
                 
                 {expandedFAQ === faq.id && (
-                  <div className=" pb-6 animate-in slide-in-from-top-2 duration-200">
-                    <p className="text-muted-foreground leading-relaxed">
+                  <div className="pb-6 animate-in slide-in-from-top-2 duration-200 w-full">
+                    <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
                       {faq.answer}
                     </p>
                   </div>

@@ -167,13 +167,18 @@ export default function InvestorFounder() {
           </p>
         </div>
 
+        {/* Center align on mobile, left on desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative pt-16">
           {sectionData.map((section, index) => (
             <div
               key={index}
-              className={`bg-background z-10 flex flex-col p-10 lg:p-12 border-2 border-primary rounded-4xl font-manrope`}
+              className={`
+                bg-background z-10 flex flex-col p-10 lg:p-12 border-2 border-primary rounded-4xl font-manrope
+                items-center text-center
+                lg:items-start lg:text-left
+              `}
             >
-              <div className="z-10">
+              <div className="z-10 w-full">
                 <div className="mb-6">
                   <h2 className="text-3xl lg:text-[34px] font-extrabold text-primary mb-2">
                     For {section.title}
@@ -191,22 +196,22 @@ export default function InvestorFounder() {
                   <ul
                     className={`space-y-3 text-foreground ${
                       index === 0 ? "" : "lg:pt-12"
-                    }`}
+                    } flex flex-col items-center text-center lg:items-start lg:text-left`}
                   >
                     {section.features.map((feature, featureIndex) => (
                       <li
                         key={featureIndex}
-                        className="flex text-xl lg:font-extrabold font-semibold"
+                        className="flex text-xl lg:font-extrabold font-semibold items-start"
                       >
                         <span className="mr-3 text-2xl">•</span>
-                        <span className="text-[#333333] ">{feature}</span>
+                        <span className="text-[#333333]">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
 
-              <Button className="py-6 w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
+              <Button className="py-6 w-fit mx-auto lg:mx-0 px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
                 {section.buttonText}
               </Button>
             </div>

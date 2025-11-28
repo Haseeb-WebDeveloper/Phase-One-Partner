@@ -58,7 +58,7 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center text-foreground gap-4 font-manrope">
+      <div className="flex flex-col justify-center text-foreground gap-4 font-manrope text-center">
         <h3 className="text-5xl leading-[110%] md:text-[78px] font-manrope font-light uppercase relative">
           <span
             className="relative inline-block"
@@ -94,7 +94,7 @@ export default function HeroSection() {
             nothing less.
           </p>
         </div>
-        <div className="lg:mt-12 mt-6 w-fit mx-auto lg:mx-0">
+        <div className="lg:mt-12 mt-6 w-fit mx-auto">
           <AnimatedButton text="Book A Free Discovery Session Today" />
         </div>
       </div>
