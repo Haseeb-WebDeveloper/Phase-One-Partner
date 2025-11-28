@@ -71,7 +71,7 @@ const Team = () => {
             </div>
             <div className="py-2 px-4 text-lg font-semibold rounded-t-3xl bg-primary flex items-center justify-center">
               <Image
-                src="/logo.png"
+                src="/white-logo.png"
                 alt="PhaseOne Partners"
                 width={800}
                 height={800}

@@ -451,10 +451,10 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
             >
               <span className="sr-only">Toggle menu</span>
               {mobileMenuOpen ? (
-                <X className="h-6 w-6 text-foreground" aria-hidden="true" />
+                <X className="h-8 w-8 lg:h-6 lg:w-6 text-foreground" aria-hidden="true" />
               ) : (
                 <HamburgerIcon
-                  className="h-6 w-6 text-primary"
+                  className="h-8 w-8 lg:h-6 lg:w-6 text-primary"
                   aria-hidden="true"
                 />
               )}
