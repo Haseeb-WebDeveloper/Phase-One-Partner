@@ -311,20 +311,7 @@ export default function ForFounders() {
           <div className="max-w-4xl mx-auto lg:hidden">
             <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
               <div className="mb-6">
-                <h3 className="text-2xl font-extrabold text-[#0224e9] mb-2">
-                  Our Key Advantages
-                </h3>
-                <p className="text-sm text-black uppercase font-semibold tracking-wide">
-                  Benefits That Make a Difference
-                </p>
-              </div>
-
-              <div className="mb-8 flex-grow">
-                <p className="text-foreground leading-relaxed mb-6 text-base font-manrope font-medium">
-                  Key advantages that make a difference when expanding, growing,
-                  or exiting your company.
-                </p>
-
+            
                 <ul className="space-y-4 text-foreground">
                   {advantages.map((advantage, index) => (
                     <li key={index} className="flex items-start">

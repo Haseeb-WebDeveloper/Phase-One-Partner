@@ -44,7 +44,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full h-full pt-28 lg:pt-40 pb-32 lg:pb-36 max-w-[1600px] mx-auto pl-6 lg:pl-16 lg:min-h-screen [@media(min-width:1600px)]:min-h-auto relative z-10 bg-[#f0f0f0]">
+    <section className="w-full h-full pt-28 lg:pt-40 pb-32 lg:pb-36 max-w-[1600px] mx-auto px-6 lg:pl-16 lg:pr-0 lg:min-h-screen [@media(min-width:1600px)]:min-h-auto relative z-10 bg-[#f0f0f0]">
 
 
       <div className="absolute bottom-0 right-0 lg:w-[80vw] w-[100vw] h-full max-h-[100vh] z-0 ">
@@ -58,7 +58,7 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center text-foreground gap-4 font-manrope text-center">
+      <div className="flex flex-col justify-center text-foreground gap-4 font-manrope text-center mx-auto max-w-full">
         <h3 className="text-5xl leading-[110%] md:text-[78px] font-manrope font-light uppercase relative">
           <span
             className="relative inline-block"

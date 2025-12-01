@@ -42,7 +42,7 @@ export default function WhatWeDoSection() {
       <div className=" bg-[#F0F0F0] z-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch min-h-[400px]">
           {/* Left Column */}
-          <div className="flex flex-col justify-center space-y-5 lg:space-y-6 h-full">
+          <div className="flex flex-col justify-center space-y-5 lg:space-y-6 h-full text-center lg:text-left">
             <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px]">
               <span className="text-foreground">What</span>{" "}
               <span className="text-[#0224e9]">We Do</span>
