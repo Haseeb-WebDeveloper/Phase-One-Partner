@@ -75,7 +75,7 @@ const Team = () => {
                 alt="PhaseOne Partners"
                 width={800}
                 height={800}
-                className="w-fit h-10 lg:h-12"
+                className="w-auto h-10 lg:h-12 object-contain max-w-full"
                 quality={100}
               />
             </div>
