@@ -52,45 +52,48 @@ export default function InvestorFounder() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
-    const header = headerRef.current;
+    const section = sectionRef.current;
 
-    if (!mobileTag || !mobileHighlight || !header) return;
+    if (!mobileTag || !mobileHighlight || !section) return;
+
+    // Set initial states immediately
+    gsap.set(mobileTag, {
+      scale: 0.8,
+      opacity: 0.3,
+      y: -10,
+    });
+    gsap.set(mobileHighlight, {
+      opacity: 0,
+      y: 10,
+      backgroundColor: "transparent",
+    });
 
     // Animate tag and text together - trigger at section start
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: header,
-        start: "top bottom", // Trigger as soon as header enters viewport
-        end: "top 60%",
-        toggleActions: "play none none none", // No reverse - stay visible
+        trigger: section,
+        start: "top bottom-=200", // Trigger 200px before section enters viewport
+        end: "top 50%",
+        toggleActions: "play reverse play reverse", // Enable reverse scrolling
       },
     });
 
-    // Animate tag on scroll - start visible but slightly scaled
-    tl.fromTo(
+    // Animate tag on scroll
+    tl.to(
       mobileTag,
-      {
-        scale: 0.8,
-        opacity: 0.3,
-        y: -10,
-      },
       {
         scale: 1,
         opacity: 1,
         y: 0,
         duration: 0.6,
         ease: "back.out(1.7)",
-      }
+      },
+      0 // Start at time 0
     );
 
-    // Animate highlight text - start at same time
-    tl.fromTo(
+    // Animate highlight text - start at exact same time
+    tl.to(
       mobileHighlight,
-      {
-        opacity: 0,
-        y: 10,
-        backgroundColor: "transparent",
-      },
       {
         opacity: 1,
         y: 0,
@@ -98,7 +101,7 @@ export default function InvestorFounder() {
         duration: 0.6,
         ease: "power2.out",
       },
-      "-=0.5" // Start almost at the same time as tag
+      0 // Start at time 0 - same as tag
     );
 
     return () => {
@@ -155,7 +158,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-10 lg:h-5"
+                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-12 lg:h-5"
                   priority
                   quality={100}
                 />
