@@ -18,9 +18,6 @@ export function WhoWeAre() {
   const mobileHighlightRef = useRef<HTMLParagraphElement>(null);
   const desktopTagRef = useRef<HTMLImageElement>(null);
   const desktopHighlightRef = useRef<HTMLParagraphElement>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const headingRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const buttonElement = buttonRef.current;
@@ -65,48 +62,44 @@ export function WhoWeAre() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
-    const heading = headingRef.current;
 
-    if (!mobileTag || !mobileHighlight || !heading) return;
+    if (!mobileTag || !mobileHighlight) return;
 
-    // Set initial states immediately
-    gsap.set(mobileTag, {
-      scale: 0.8,
-      opacity: 0.3,
-      y: -10,
-    });
-    gsap.set(mobileHighlight, {
-      opacity: 0,
-      y: 10,
-      backgroundColor: "transparent",
-    });
-
-    // Animate tag and text together - trigger when heading enters viewport
+    // Animate tag and text together
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: heading,
-        start: "top bottom", // Trigger as soon as heading top reaches viewport bottom
-        end: "top 80%",
-        toggleActions: "play reverse play reverse", // Enable reverse scrolling
+        trigger: mobileHighlight,
+        start: "top 80%",
+        end: "top 50%",
+        toggleActions: "play none none reverse",
       },
     });
 
     // Animate tag on scroll
-    tl.to(
+    tl.fromTo(
       mobileTag,
+      {
+        scale: 0.5,
+        opacity: 0,
+        y: -20,
+      },
       {
         scale: 1,
         opacity: 1,
         y: 0,
-        duration: 0.6,
+        duration: 0.8,
         ease: "back.out(1.7)",
-      },
-      0 // Start at time 0
+      }
     );
 
-    // Animate highlight text - start at exact same time
-    tl.to(
+    // Animate highlight text
+    tl.fromTo(
       mobileHighlight,
+      {
+        opacity: 0,
+        y: 10,
+        backgroundColor: "transparent",
+      },
       {
         opacity: 1,
         y: 0,
@@ -114,7 +107,7 @@ export function WhoWeAre() {
         duration: 0.6,
         ease: "power2.out",
       },
-      0 // Start at time 0 - same as tag
+      "-=0.4" // Start slightly before tag animation ends
     );
 
     return () => {
@@ -123,7 +116,7 @@ export function WhoWeAre() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative z-10">
+    <section className="relative z-10">
       <Image
         src="/2nd-section-bg.png"
         alt="Who we are"
@@ -139,7 +132,6 @@ export function WhoWeAre() {
         className="z-10 object-cover w-fit h-fit max-h-[800px] absolute -top-40 -left-12 opacity-50"
       />
       <div
-        ref={contentRef}
         className="max-w-[1200px] rounded-4xl mx-auto py-24 lg:py-24 px-6 lg:px-12 bg-background"
         style={{
           boxShadow:
@@ -164,7 +156,7 @@ export function WhoWeAre() {
         </div>
 
         {/* Mobile */}
-        <div ref={headingRef} className="lg:hidden relative flex gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
+        <div className="lg:hidden relative flex gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
           <p>We Get To </p>
           <p
             ref={mobileHighlightRef}
@@ -178,7 +170,7 @@ export function WhoWeAre() {
             alt="PhaseOne tag"
             width={400}
             height={400}
-            className="absolute -right-[3.5rem] -top-[1.8rem] w-fit h-12 lg:h-5"
+            className="absolute -right-[3.5rem] -top-[1.8rem] w-fit h-7 lg:h-5"
             priority
             quality={100}
           />
