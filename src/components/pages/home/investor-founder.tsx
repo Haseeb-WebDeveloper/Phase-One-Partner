@@ -57,25 +57,25 @@ export default function InvestorFounder() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: mobileHighlight,
-        start: "top 80%",
-        end: "top 50%",
+        start: "top 100%",
+        end: "top 70%",
         toggleActions: "play none none reverse",
       },
     });
 
-    // Animate tag on scroll
+    // Animate tag on scroll - start visible but slightly scaled
     tl.fromTo(
       mobileTag,
       {
-        scale: 0.5,
-        opacity: 0,
-        y: -20,
+        scale: 0.8,
+        opacity: 0.3,
+        y: -10,
       },
       {
         scale: 1,
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.6,
         ease: "back.out(1.7)",
       }
     );
@@ -152,7 +152,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-7 lg:h-5"
+                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-9 lg:h-5"
                   priority
                   quality={100}
                 />
