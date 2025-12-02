@@ -40,6 +40,8 @@ const sectionData = [
 export default function InvestorFounder() {
   const mobileTagRef = useRef<HTMLImageElement>(null);
   const mobileHighlightRef = useRef<HTMLParagraphElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
 
   // Scroll animations for mobile only
   useEffect(() => {
@@ -50,16 +52,17 @@ export default function InvestorFounder() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
+    const header = headerRef.current;
 
-    if (!mobileTag || !mobileHighlight) return;
+    if (!mobileTag || !mobileHighlight || !header) return;
 
-    // Animate tag and text together
+    // Animate tag and text together - trigger at section start
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: mobileHighlight,
-        start: "top 100%",
-        end: "top 70%",
-        toggleActions: "play none none reverse",
+        trigger: header,
+        start: "top bottom", // Trigger as soon as header enters viewport
+        end: "top 60%",
+        toggleActions: "play none none none", // No reverse - stay visible
       },
     });
 
@@ -80,7 +83,7 @@ export default function InvestorFounder() {
       }
     );
 
-    // Animate highlight text
+    // Animate highlight text - start at same time
     tl.fromTo(
       mobileHighlight,
       {
@@ -95,7 +98,7 @@ export default function InvestorFounder() {
         duration: 0.6,
         ease: "power2.out",
       },
-      "-=0.4" // Start slightly before tag animation ends
+      "-=0.5" // Start almost at the same time as tag
     );
 
     return () => {
@@ -104,10 +107,10 @@ export default function InvestorFounder() {
   }, []);
 
   return (
-    <section className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative">
+    <section ref={sectionRef} className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center font-manrope">
+        <div ref={headerRef} className="text-center font-manrope">
           <div className="mb-8">
             <p className="tracking-wider text-primary uppercase font-light mb-4">
               Deal Origination
@@ -152,7 +155,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-9 lg:h-5"
+                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-10 lg:h-5"
                   priority
                   quality={100}
                 />

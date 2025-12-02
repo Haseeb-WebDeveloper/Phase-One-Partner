@@ -18,6 +18,8 @@ export function WhoWeAre() {
   const mobileHighlightRef = useRef<HTMLParagraphElement>(null);
   const desktopTagRef = useRef<HTMLImageElement>(null);
   const desktopHighlightRef = useRef<HTMLParagraphElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const buttonElement = buttonRef.current;
@@ -62,16 +64,17 @@ export function WhoWeAre() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
+    const content = contentRef.current;
 
-    if (!mobileTag || !mobileHighlight) return;
+    if (!mobileTag || !mobileHighlight || !content) return;
 
-    // Animate tag and text together
+    // Animate tag and text together - trigger at section start
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: mobileHighlight,
-        start: "top 100%",
-        end: "top 70%",
-        toggleActions: "play none none reverse",
+        trigger: content,
+        start: "top bottom", // Trigger as soon as content enters viewport
+        end: "top 60%",
+        toggleActions: "play none none none", // No reverse - stay visible
       },
     });
 
@@ -92,7 +95,7 @@ export function WhoWeAre() {
       }
     );
 
-    // Animate highlight text
+    // Animate highlight text - start at same time
     tl.fromTo(
       mobileHighlight,
       {
@@ -107,7 +110,7 @@ export function WhoWeAre() {
         duration: 0.6,
         ease: "power2.out",
       },
-      "-=0.4" // Start slightly before tag animation ends
+      "-=0.5" // Start almost at the same time as tag
     );
 
     return () => {
@@ -116,7 +119,7 @@ export function WhoWeAre() {
   }, []);
 
   return (
-    <section className="relative z-10">
+    <section ref={sectionRef} className="relative z-10">
       <Image
         src="/2nd-section-bg.png"
         alt="Who we are"
@@ -132,6 +135,7 @@ export function WhoWeAre() {
         className="z-10 object-cover w-fit h-fit max-h-[800px] absolute -top-40 -left-12 opacity-50"
       />
       <div
+        ref={contentRef}
         className="max-w-[1200px] rounded-4xl mx-auto py-24 lg:py-24 px-6 lg:px-12 bg-background"
         style={{
           boxShadow:
@@ -170,7 +174,7 @@ export function WhoWeAre() {
             alt="PhaseOne tag"
             width={400}
             height={400}
-            className="absolute -right-[3.5rem] -top-[1.8rem] w-fit h-9 lg:h-5"
+            className="absolute -right-[3.5rem] -top-[1.8rem] w-fit h-10 lg:h-5"
             priority
             quality={100}
           />
