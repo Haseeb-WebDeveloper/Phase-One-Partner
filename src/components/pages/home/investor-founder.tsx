@@ -40,9 +40,6 @@ const sectionData = [
 export default function InvestorFounder() {
   const mobileTagRef = useRef<HTMLImageElement>(null);
   const mobileHighlightRef = useRef<HTMLParagraphElement>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
-  const headingRef = useRef<HTMLDivElement>(null);
 
   // Scroll animations for mobile only
   useEffect(() => {
@@ -53,48 +50,44 @@ export default function InvestorFounder() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
-    const heading = headingRef.current;
 
-    if (!mobileTag || !mobileHighlight || !heading) return;
+    if (!mobileTag || !mobileHighlight) return;
 
-    // Set initial states immediately
-    gsap.set(mobileTag, {
-      scale: 0.8,
-      opacity: 0.3,
-      y: -10,
-    });
-    gsap.set(mobileHighlight, {
-      opacity: 0,
-      y: 10,
-      backgroundColor: "transparent",
-    });
-
-    // Animate tag and text together - trigger when heading enters viewport
+    // Animate tag and text together
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: heading,
-        start: "top bottom", // Trigger as soon as heading top reaches viewport bottom
-        end: "top 80%",
-        toggleActions: "play reverse play reverse", // Enable reverse scrolling
+        trigger: mobileHighlight,
+        start: "top 80%",
+        end: "top 50%",
+        toggleActions: "play none none reverse",
       },
     });
 
     // Animate tag on scroll
-    tl.to(
+    tl.fromTo(
       mobileTag,
+      {
+        scale: 0.5,
+        opacity: 0,
+        y: -20,
+      },
       {
         scale: 1,
         opacity: 1,
         y: 0,
-        duration: 0.6,
+        duration: 0.8,
         ease: "back.out(1.7)",
-      },
-      0 // Start at time 0
+      }
     );
 
-    // Animate highlight text - start at exact same time
-    tl.to(
+    // Animate highlight text
+    tl.fromTo(
       mobileHighlight,
+      {
+        opacity: 0,
+        y: 10,
+        backgroundColor: "transparent",
+      },
       {
         opacity: 1,
         y: 0,
@@ -102,7 +95,7 @@ export default function InvestorFounder() {
         duration: 0.6,
         ease: "power2.out",
       },
-      0 // Start at time 0 - same as tag
+      "-=0.4" // Start slightly before tag animation ends
     );
 
     return () => {
@@ -111,10 +104,10 @@ export default function InvestorFounder() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative">
+    <section className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div ref={headerRef} className="text-center font-manrope">
+        <div className="text-center font-manrope">
           <div className="mb-8">
             <p className="tracking-wider text-primary uppercase font-light mb-4">
               Deal Origination
@@ -146,7 +139,7 @@ export default function InvestorFounder() {
               <h4 className="text-4xl max-w-4xl mx-auto font-extrabold text-[#333333] leading-[120%]">
                 What Does Deal Origination
               </h4>
-              <div ref={headingRef} className="relative mt-1 flex gap-3 w-fit text-4xl max-w-4xl mx-auto font-extrabold text-[#333333]">
+              <div className="relative mt-1 flex gap-3 w-fit text-4xl max-w-4xl mx-auto font-extrabold text-[#333333]">
                 <p
                   ref={mobileHighlightRef}
                   className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary leading-[120%]"
@@ -159,7 +152,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-12 lg:h-5"
+                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-7 lg:h-5"
                   priority
                   quality={100}
                 />
