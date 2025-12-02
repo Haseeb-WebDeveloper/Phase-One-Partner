@@ -42,6 +42,7 @@ export default function InvestorFounder() {
   const mobileHighlightRef = useRef<HTMLParagraphElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLDivElement>(null);
 
   // Scroll animations for mobile only
   useEffect(() => {
@@ -52,9 +53,9 @@ export default function InvestorFounder() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
-    const section = sectionRef.current;
+    const heading = headingRef.current;
 
-    if (!mobileTag || !mobileHighlight || !section) return;
+    if (!mobileTag || !mobileHighlight || !heading) return;
 
     // Set initial states immediately
     gsap.set(mobileTag, {
@@ -68,12 +69,12 @@ export default function InvestorFounder() {
       backgroundColor: "transparent",
     });
 
-    // Animate tag and text together - trigger at section start
+    // Animate tag and text together - trigger when heading enters viewport
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: section,
-        start: "top bottom-=200", // Trigger 200px before section enters viewport
-        end: "top 50%",
+        trigger: heading,
+        start: "top bottom", // Trigger as soon as heading top reaches viewport bottom
+        end: "top 80%",
         toggleActions: "play reverse play reverse", // Enable reverse scrolling
       },
     });
@@ -145,7 +146,7 @@ export default function InvestorFounder() {
               <h4 className="text-4xl max-w-4xl mx-auto font-extrabold text-[#333333] leading-[120%]">
                 What Does Deal Origination
               </h4>
-              <div className="relative mt-1 flex gap-3 w-fit text-4xl max-w-4xl mx-auto font-extrabold text-[#333333]">
+              <div ref={headingRef} className="relative mt-1 flex gap-3 w-fit text-4xl max-w-4xl mx-auto font-extrabold text-[#333333]">
                 <p
                   ref={mobileHighlightRef}
                   className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary leading-[120%]"

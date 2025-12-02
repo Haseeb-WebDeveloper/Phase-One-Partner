@@ -20,6 +20,7 @@ export function WhoWeAre() {
   const desktopHighlightRef = useRef<HTMLParagraphElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const buttonElement = buttonRef.current;
@@ -64,9 +65,9 @@ export function WhoWeAre() {
 
     const mobileTag = mobileTagRef.current;
     const mobileHighlight = mobileHighlightRef.current;
-    const section = sectionRef.current;
+    const heading = headingRef.current;
 
-    if (!mobileTag || !mobileHighlight || !section) return;
+    if (!mobileTag || !mobileHighlight || !heading) return;
 
     // Set initial states immediately
     gsap.set(mobileTag, {
@@ -80,12 +81,12 @@ export function WhoWeAre() {
       backgroundColor: "transparent",
     });
 
-    // Animate tag and text together - trigger at section start
+    // Animate tag and text together - trigger when heading enters viewport
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: section,
-        start: "top bottom-=200", // Trigger 200px before section enters viewport
-        end: "top 50%",
+        trigger: heading,
+        start: "top bottom", // Trigger as soon as heading top reaches viewport bottom
+        end: "top 80%",
         toggleActions: "play reverse play reverse", // Enable reverse scrolling
       },
     });
@@ -163,7 +164,7 @@ export function WhoWeAre() {
         </div>
 
         {/* Mobile */}
-        <div className="lg:hidden relative flex gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
+        <div ref={headingRef} className="lg:hidden relative flex gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
           <p>We Get To </p>
           <p
             ref={mobileHighlightRef}
