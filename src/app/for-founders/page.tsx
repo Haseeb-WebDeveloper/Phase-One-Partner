@@ -290,7 +290,7 @@ export default function ForFounders() {
       </section>
 
       {/* Key Advantages Section */}
-      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-[#f0f0f0]">
+      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-[#f0f0f0] border-t border-b border-primary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 lg:mb-16 space-y-5 lg:space-y-[40px]">
             <div className="space-y-4 lg:space-y-2">
