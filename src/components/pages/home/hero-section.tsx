@@ -44,7 +44,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full h-full pt-28 lg:pt-40 pb-32 lg:pb-36 max-w-[1600px] mx-auto px-6 lg:pl-16 lg:pr-0 lg:min-h-screen [@media(min-width:1600px)]:min-h-auto relative z-10 bg-[#f0f0f0]">
+    <section className="w-full h-full pt-28 lg:pt-40 pb-32 lg:pb-36 max-w-[1600px] mx-auto px-6 lg:px-16 lg:min-h-screen [@media(min-width:1600px)]:min-h-auto relative z-10 bg-[#f0f0f0]">
 
 
       <div className="absolute bottom-0 right-0 lg:w-[80vw] w-[100vw] h-full max-h-[100vh] z-0 ">
