@@ -211,7 +211,7 @@ export default function InvestorFounder() {
                 </div>
               </div>
 
-              <Button className="py-6 w-fit mx-auto lg:mx-0 px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
+              <Button className="py-6 w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
                 {section.buttonText}
               </Button>
             </div>

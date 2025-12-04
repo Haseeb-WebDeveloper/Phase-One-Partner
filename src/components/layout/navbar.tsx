@@ -57,96 +57,6 @@ const navigation: NavigationItem[] = [
   { name: "For Founders", href: "/for-founders" },
   { name: "For Investors", href: "/for-investors" },
   {
-    name: "Services",
-    href: "#",
-    dropdown: [
-      {
-        name: "Origination Services",
-        href: "/services/origination-services",
-        icon: Search,
-        description: "Identifying and sourcing high-potential deals.",
-        submenu: [
-          {
-            name: "Deal Sourcing",
-            href: "/services/deal-sourcing",
-            icon: BarChart2,
-            description: "Finding the right investment opportunities.",
-          },
-          {
-            name: "Marketing Mapping",
-            href: "/services/marketing-mapping",
-            icon: Globe,
-            description: "Mapping and analyzing market opportunities.",
-          },
-          {
-            name: "Business Outreach",
-            href: "/services/business-outreach",
-            icon: Users,
-            description: "Connecting with key business stakeholders.",
-          },
-        ],
-      },
-      {
-        name: "Transaction Support",
-        href: "/services/transaction-support",
-        icon: FileText,
-        description: "Guidance and support throughout transactions.",
-        submenu: [
-          {
-            name: "Due Diligence",
-            href: "/services/due-diligence",
-            icon: Search,
-            description: "Comprehensive due diligence for investments.",
-          },
-          {
-            name: "Stakeholder Engagement",
-            href: "/services/stakeholder-engagement",
-            icon: Heart,
-            description: "Engaging and managing stakeholders effectively.",
-          },
-          {
-            name: "Valuation",
-            href: "/services/valuation",
-            icon: TrendingUp,
-            description: "Accurate business and asset valuation services.",
-          },
-          {
-            name: "Post Acquisition Planning",
-            href: "/services/post-acquisition-planning",
-            icon: Edit3,
-            description: "Strategic planning after acquisition.",
-          },
-        ],
-      },
-      {
-        name: "Buy & Build",
-        href: "/services/buy-and-build",
-        icon: Database,
-        description: "Growth through acquisition and integration.",
-        submenu: [
-          {
-            name: "Platform Identification",
-            href: "/services/platform-identification",
-            icon: Monitor,
-            description: "Identifying scalable platform businesses.",
-          },
-          {
-            name: "Target Sourcing",
-            href: "/services/target-sourcing",
-            icon: Target,
-            description: "Finding and evaluating acquisition targets.",
-          },
-          {
-            name: "Growth Roadmaps",
-            href: "/services/growth-roadmaps",
-            icon: TrendingUp,
-            description: "Strategic roadmaps for business growth.",
-          },
-        ],
-      },
-    ],
-  },
-  {
     name: "Explore",
     href: "#",
     dropdown: [
@@ -155,24 +65,6 @@ const navigation: NavigationItem[] = [
         href: "/about-us",
         icon: BookOpen,
         description: "Learn more about PhaseOne Partners.",
-      },
-      {
-        name: "Grow Your Business",
-        href: "/grow-your-business",
-        icon: Zap,
-        description: "Accelerate your business growth with us.",
-      },
-      {
-        name: "Portfolio",
-        href: "/portfolio",
-        icon: Award,
-        description: "See our track record and portfolio companies.",
-      },
-      {
-        name: "Insights",
-        href: "/insights",
-        icon: FileText,
-        description: "Latest news, articles, and industry insights.",
       },
       {
         name: "Terms and Conditions",

@@ -93,35 +93,35 @@ export default function ForFounders() {
       title: "Early Investor Engagement",
       description:
         "We introduce you to carefully selected investors who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
-      duration: "2–4 weeks",
+      duration: "3–6 weeks",
     },
     {
       number: "03.",
       title: "Indicative Offers / LOIs",
       description:
         "Interested investors provide initial offers and letters of intent. We help you evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
-      duration: "2–4 weeks",
+      duration: "2–3 weeks",
     },
     {
       number: "04.",
       title: "Due Diligence",
       description:
         "Selected investors conduct thorough due diligence. We coordinate the process, ensuring all necessary documentation is prepared and questions are answered efficiently.",
-      duration: "2–4 weeks",
+      duration: "8–12 weeks",
     },
     {
       number: "05.",
       title: "Final Negotiation & Signing",
       description:
         "We facilitate final negotiations on terms, valuation, and deal structure. Once agreed, legal documents are prepared and the transaction is finalized with proper documentation.",
-      duration: "2–4 weeks",
+      duration: "3–5 weeks",
     },
     {
       number: "06.",
       title: "Completion & Transition",
       description:
         "The deal closes and ownership transitions. We support the handover process, ensuring a smooth transition for your team, customers, and operations.",
-      //   duration: "1-2 Weeks",
+      duration: "2–4 weeks & ongoing handover",
     },
   ];
 
@@ -164,7 +164,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/1.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/craftsman-in-grey-work-clothes-puts-grout-on-a-flo-2025-03-17-20-57-05-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -172,7 +172,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/2.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/grape-harvest-2025-02-21-17-07-43-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -184,7 +184,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/3.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/skilled-mechanic-working-on-large-truck-repair-2025-10-08-10-22-08-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -196,7 +196,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/4.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/man-working-on-machine-in-industrial-factory-2024-09-13-19-48-20-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -204,7 +204,7 @@ export default function ForFounders() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/5.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/senior-male-warehouse-worker-or-a-supervisor-unloa-2025-10-09-08-16-48-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -216,7 +216,7 @@ export default function ForFounders() {
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/0.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/technician-installing-air-conditioning-unit-at-res-2025-03-16-03-53-07-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -226,7 +226,7 @@ export default function ForFounders() {
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/founder/5.webp')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/senior-male-warehouse-worker-or-a-supervisor-unloa-2025-10-09-08-16-48-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
