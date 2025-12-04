@@ -45,7 +45,7 @@ export default function AboutUsHeroSection() {
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
                   backgroundImage:
-                    "url('/images/About-us-images/Rectangle 21.svg')",
+                    "url('/about/about-updated-images/worker-in-grey-clothes-spreading-concrete-floor-du-2025-10-08-11-28-32-utc.png')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -54,7 +54,7 @@ export default function AboutUsHeroSection() {
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
                   backgroundImage:
-                    "url('/images/About-us-images/Rectangle 20.svg')",
+                    "url('/about/about-updated-images/construction-site-for-new-highrise-buildings-2025-03-08-12-36-16-utc.png')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -67,7 +67,7 @@ export default function AboutUsHeroSection() {
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
                   backgroundImage:
-                    "url('/images/About-us-images/Rectangle 35.svg')",
+                    "url('/about/about-updated-images/sustainable-energy-industry-engineers-working-at-2025-02-03-09-37-38-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -80,7 +80,7 @@ export default function AboutUsHeroSection() {
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
                   backgroundImage:
-                    "url('/images/About-us-images/Rectangle 19.svg')",
+                    "url('/about/about-updated-images/workman-servicing-air-conditioning-or-heat-pump-wi-2025-03-15-20-52-18-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -89,7 +89,7 @@ export default function AboutUsHeroSection() {
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
                   backgroundImage:
-                    "url('/images/About-us-images/Rectangle 18.svg')",
+                    "url('/about/about-updated-images/big-garden-grass-field-mowing-by-caucasian-gardene.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

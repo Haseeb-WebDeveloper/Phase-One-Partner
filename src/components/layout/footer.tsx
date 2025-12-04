@@ -96,47 +96,6 @@ export default function Footer() {
                     For Investors
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
-                Services
-              </h4>
-              <ul className="space-y-1 sm:space-y-2">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
-                  >
-                    Origination Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
-                  >
-                    Transaction Support
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
-                  >
-                    Buy & Build
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -152,22 +111,6 @@ export default function Footer() {
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
                     About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
-                  >
-                    Insights
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
-                  >
-                    Portfolio
                   </Link>
                 </li>
               </ul>
@@ -194,6 +137,31 @@ export default function Footer() {
                   >
                     Privacy Policy
                   </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Get in touch */}
+            <div>
+              <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
+                Get in touch
+              </h4>
+              <ul className="space-y-1 sm:space-y-2">
+                <li>
+                  <a
+                    href="tel:+61416825603"
+                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
+                  >
+                    Call Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:lincoln.stollery@phaseonepartners.com.au"
+                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
+                  >
+                    Email Us
+                  </a>
                 </li>
               </ul>
             </div>

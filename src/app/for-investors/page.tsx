@@ -92,42 +92,42 @@ export default function ForInvestors() {
       title: "Mandate and Calibration",
       description:
         "Deep intake on criteria, prior bets, red lines and decision cadence. Build target map and proof points.",
-      duration: "2–4 weeks",
+      duration: "1–2 weeks",
     },
     {
       number: "02.",
       title: "Market Outreach",
       description:
         "We introduce you to carefully selected investors who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
-      duration: "2–4 weeks",
+      duration: "3–6 weeks",
     },
     {
       number: "03.",
       title: "First conversations",
       description:
         "Interested investors provide initial offers and letters of intent. We help you evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
-      duration: "2–4 weeks",
+      duration: "2–3 weeks",
     },
     {
       number: "04.",
       title: "Diligence on live targets",
       description:
         "Selected investors conduct thorough due diligence. We coordinate the process, ensuring all necessary documentation is prepared and questions are answered efficiently.",
-      duration: "2–4 weeks",
+      duration: "8–12 weeks",
     },
     {
       number: "05.",
       title: "Terms and execution",
       description:
         "We facilitate final negotiations on terms, valuation, and deal structure. Once agreed, legal documents are prepared and the transaction is finalized with proper documentation.",
-      duration: "2–4 weeks",
+      duration: "3–5 weeks",
     },
     {
       number: "06.",
       title: "Post-completion support",
       description:
         "The deal closes and ownership transitions. We support the handover process, ensuring a smooth transition for your team, customers, and operations.",
-      duration: "2–4 weeks",
+      duration: "2–4 weeks, then as needed",
     },
   ];
 
@@ -192,7 +192,7 @@ export default function ForInvestors() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/1.svg')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/warehouse-worker-driver-in-uniform-delivery-and-lo-2024-11-29-23-36-18-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -200,7 +200,7 @@ export default function ForInvestors() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/2.svg')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/technician-and-engineer-working-on-a-windmill-turb-2025-09-22-12-07-12-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -212,7 +212,7 @@ export default function ForInvestors() {
               <div
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/3.svg')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/happy-businessman-and-his-female-colleague-working-2025-09-10-06-37-54-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -224,7 +224,7 @@ export default function ForInvestors() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/4.svg')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/anonymous-male-factory-workers-working-in-industri-2025-01-09-06-04-48-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -232,7 +232,7 @@ export default function ForInvestors() {
               <div
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/5.svg')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/two-caucasian-professional-technician-or-engineer-2025-03-07-05-05-38-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -244,7 +244,7 @@ export default function ForInvestors() {
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/1.png')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/group-of-diverse-businesspeople-standing-in-meetin-2025-03-26-13-30-41-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -254,7 +254,7 @@ export default function ForInvestors() {
               <div
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/invester/5.png')",
+                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/two-caucasian-professional-technician-or-engineer-2025-03-07-05-05-38-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

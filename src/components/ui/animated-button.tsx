@@ -76,7 +76,7 @@ export default function AnimatedButton({
   return (
     <div
       ref={buttonRef}
-      className={`z-20 group flex items-center w-fit relative mx-auto lg:mx-0 ${className}`}
+      className={`z-20 group flex items-center w-fit relative mx-auto ${className}`}
     >
       <Button size="xl" className={`${buttonClass} ${bgAndText}`}>
         {text}

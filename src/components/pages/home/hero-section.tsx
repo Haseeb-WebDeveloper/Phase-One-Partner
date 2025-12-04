@@ -95,7 +95,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="lg:mt-12 mt-6 w-fit mx-auto">
-          <AnimatedButton text="Book A Free Discovery Session Today" />
+          <AnimatedButton text="Book A Free Discovery Session Today" className="mx-auto" />
         </div>
       </div>
     </section>
