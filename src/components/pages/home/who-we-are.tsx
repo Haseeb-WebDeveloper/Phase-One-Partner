@@ -156,24 +156,24 @@ export function WhoWeAre() {
         </div>
 
         {/* Mobile */}
-        <div className="lg:hidden relative flex gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
+        <div className="lg:hidden relative flex gap-2 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
           <p>We Get To </p>
           <p
             ref={mobileHighlightRef}
-            className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary"
+            className="bg-[#c0c8f9] rounded-l-lg pl-2 pr-1 border-r-5 border-primary leading-[120%]"
           >
             Work
+            <Image
+              ref={mobileTagRef}
+              src="/logo-tip.svg"
+              alt="PhaseOne tag"
+              width={400}
+              height={400}
+              className="absolute -right-[70%] -top-[1.7rem]  w-full  h-7 lg:h-5"
+              priority
+              quality={100}
+            />
           </p>
-          <Image
-            ref={mobileTagRef}
-            src="/logo-tip.svg"
-            alt="PhaseOne tag"
-            width={400}
-            height={400}
-            className="absolute -right-[3.5rem] -top-[1.8rem] w-fit h-7 lg:h-5"
-            priority
-            quality={100}
-          />
         </div>
 
         <p className="text-xl lg:text-[26px] text-pretty pt-6 text-[#333333] text-center">

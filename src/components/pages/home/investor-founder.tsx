@@ -104,7 +104,7 @@ export default function InvestorFounder() {
   }, []);
 
   return (
-    <section className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative">
+    <section className="w-full pt-24 lg:pt-32 pb-12 bg-white z-20 rounded-t-4xl -mt-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center font-manrope">
@@ -136,13 +136,13 @@ export default function InvestorFounder() {
 
             {/* Mobile */}
             <div className="lg:hidden space-y-1.5">
-              <h4 className="text-4xl max-w-4xl mx-auto font-extrabold text-[#333333] leading-[120%]">
+              <h4 className="text-3xl max-w-4xl mx-auto font-extrabold text-[#333333] leading-[120%]">
                 What Does Deal Origination
               </h4>
-              <div className="relative mt-1 flex gap-3 w-fit text-4xl max-w-4xl mx-auto font-extrabold text-[#333333]">
+              <div className="relative mt-1 flex gap-3 w-fit text-3xl max-w-4xl mx-auto font-extrabold text-[#333333]">
                 <p
                   ref={mobileHighlightRef}
-                  className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary leading-[120%]"
+                  className="bg-[#c0c8f9] rounded-l-lg pl-2 pr-1 border-r-5 border-primary leading-[120%]"
                 >
                   Mean for You
                 </p>
@@ -152,7 +152,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[3.5rem] -top-[1.5rem] w-fit h-7 lg:h-5"
+                  className="absolute -right-[70.4%] -top-[1.7rem]  w-full  h-7 lg:h-5"
                   priority
                   quality={100}
                 />
@@ -211,7 +211,7 @@ export default function InvestorFounder() {
                 </div>
               </div>
 
-              <Button className="py-6 w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
+              <Button className="py-6  w-full lg:w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
                 {section.buttonText}
               </Button>
             </div>
