@@ -103,21 +103,7 @@ export default function ContactFormSection() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-manrope font-semibold text-lg text-[#333333] mb-1">
-                    Visit Us
-                  </h3>
-                  <p className="font-inter text-base text-[#333333]">
-                    123 Business Street<br />
-                    Suite 100<br />
-                    City, State 12345
-                  </p>
-                </div>
-              </div>
+             
             </div>
           </div>
 
