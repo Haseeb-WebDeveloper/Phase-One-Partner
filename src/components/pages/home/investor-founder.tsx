@@ -152,7 +152,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute -right-[70.4%] -top-[1.7rem]  w-full  h-7 lg:h-5"
+                  className="absolute -right-[65.4%] -top-[1.7rem]  w-full  h-7 lg:h-5"
                   priority
                   quality={100}
                 />

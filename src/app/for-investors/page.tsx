@@ -11,42 +11,6 @@ import {
 import AnimatedButton from "@/components/ui/animated-button";
 
 export default function ForInvestors() {
-  const faqItems = [
-    {
-      question: "What is deal origination in private equity?",
-      answer:
-        "We work with you to analyze your existing customer base, market research, and business goals to identify your ideal target audience. This includes demographic analysis, psychographic profiling, and understanding your value proposition.",
-    },
-    {
-      question: "How is PhaseOne Partners different from a business broker?",
-      answer: "",
-    },
-    {
-      question: "Why should investors care about off-market opportunities?",
-      answer: "",
-    },
-    {
-      question: "How long does the origination process take?",
-      answer: "",
-    },
-    {
-      question: "What types of businesses do you source for investors?",
-      answer: "",
-    },
-    {
-      question: "Do you provide investment advice or execution services?",
-      answer: "",
-    },
-    {
-      question: "Are engagements exclusive?",
-      answer: "",
-    },
-    {
-      question: "How much does deal origination cost?",
-      answer: "",
-    },
-  ];
-
   const advantages = [
     {
       title: "Proprietary deal flow",
@@ -212,7 +176,7 @@ export default function ForInvestors() {
               <div
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/happy-businessman-and-his-female-colleague-working-2025-09-10-06-37-54-utc.webp')",
+                  backgroundImage: "url('/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -299,7 +263,7 @@ export default function ForInvestors() {
           </div>
           <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-end overflow-hidden">
             <Image
-              src="/invester/2nd-section.png"
+              src="/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg"
               alt="Partners for Growth Hero Image"
               width={504}
               height={543}
@@ -566,52 +530,6 @@ export default function ForInvestors() {
                 Get Started Today
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
-        <div className="max-w-[400px] lg:max-w-7xl mx-auto flex flex-col items-center">
-          <div className="text-center mb-8 lg:mb-12 space-y-4 lg:space-y-6">
-            <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
-              FAQ
-            </p>
-            <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-              Still Got <span className="text-[#0224e9]">Questions</span>
-            </h2>
-            <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[371px] lg:max-w-[805px] mx-auto leading-[24px] lg:leading-[28px]">
-              Explore answers to frequently asked questions about how we support
-              founders in growing, scaling, and achieving their business goals.
-            </p>
-          </div>
-
-          <div className="max-w-[400px] lg:max-w-[1140px] mx-auto w-full flex flex-col items-center">
-            <Accordion type="single" collapsible className="w-full">
-              {faqItems.map((item, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="border-b border-[#333333]/20"
-                >
-                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] hover:no-underline py-4 lg:py-6 cursor-pointer relative justify-center lg:justify-between [&>svg]:absolute [&>svg]:right-0 [&>svg]:lg:relative [&>svg]:lg:right-auto">
-                    <span className="w-full text-center lg:text-left pr-6 lg:pr-0">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6 text-center lg:text-left">
-                    {item.answer || "Answer coming soon..."}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-          <div className="absolute left-0 bottom-0 w-[80vw] h-[40vw] flex justify-start items-end z-0 opacity-40 pointer-events-none">
-            <Image
-              src="/bg/partners-for-growth-3nd-section.png"
-              alt="bg"
-              width={1000}
-              height={1000}
-              className="object-cover opacity-70 rotate-90"
-            />
           </div>
         </div>
       </section>

@@ -11,36 +11,6 @@ import {
 import AnimatedButton from "@/components/ui/animated-button";
 
 export default function ForFounders() {
-  const faqItems = [
-    {
-      question: "How do I determine my target audience?",
-      answer:
-        "We work with you to analyze your existing customer base, market research, and business goals to identify your ideal target audience. This includes demographic analysis, psychographic profiling, and understanding your value proposition.",
-    },
-    {
-      question: "How much does social media advertising cost?",
-      answer: "",
-    },
-    {
-      question: "What social media ad packages do you offer?",
-      answer: "",
-    },
-    {
-      question: "How do I measure ROI on social media ads?",
-      answer: "",
-    },
-    {
-      question:
-        "What's the difference between social media marketing and paid ads?",
-      answer: "",
-    },
-    {
-      question:
-        "What's the difference between a boosted post and an ad on Facebook?",
-      answer: "",
-    },
-  ];
-
   const advantages = [
     {
       title: "Direct Access to Investors",
@@ -552,61 +522,6 @@ export default function ForFounders() {
                 Get Started Today
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[150px] bg-white">
-        <div className="absolute top-[40%] -translate-y-0 left-[-100px] z-[0] pointer-events-none opacity-70">
-          <Image
-            src="/bg-rounded.png"
-            alt="Left side decorative element"
-            width={1000}
-            height={730}
-            className="w-fit h-[400px] object-cover"
-          />
-        </div>
-        <div className="absolute top-1/2 -translate-y-1/2 left-[-300px] w-[40vw] h-[40vw] z-0 -scale-x-100">
-          <Image
-            src="/2nd-section-bg.png"
-            alt="bg"
-            width={1000}
-            height={1000}
-            className="object-cover opacity-70 -scale-x-200"
-          />
-        </div>
-        <div className="max-w-[400px] lg:max-w-7xl mx-auto">
-          <div className="text-center mb-8 lg:mb-12 space-y-4 lg:space-y-6">
-            <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide">
-              FAQ
-            </p>
-            <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-              Still Got <span className="text-[#0224e9]">Questions</span>
-            </h2>
-            <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[371px] lg:max-w-[870px] mx-auto leading-[24px] lg:leading-[28px]">
-              Explore answers to frequently asked questions about how we support
-              founders in growing, scaling, and achieving their business goals.
-            </p>
-          </div>
-
-          <div className="max-w-[400px] lg:max-w-[1140px] mx-auto">
-            <Accordion type="single" collapsible className="w-full">
-              {faqItems.map((item, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="border-b border-[#333333]/20"
-                >
-                  <AccordionTrigger className="font-inter font-medium text-[14px] lg:text-[26px] text-[#333333] hover:no-underline py-4 lg:py-6 cursor-pointer relative justify-center lg:justify-between [&>svg]:absolute [&>svg]:right-0 [&>svg]:lg:relative [&>svg]:lg:right-auto">
-                    <span className="w-full text-center lg:text-left pr-6 lg:pr-0">{item.question}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="font-inter text-[14px] lg:text-[18px] text-[#333333] leading-[24px] lg:leading-[28px] pb-4 lg:pb-6 text-center lg:text-left">
-                    {item.answer || "Answer coming soon..."}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
           </div>
         </div>
       </section>
