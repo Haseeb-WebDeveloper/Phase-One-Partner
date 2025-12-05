@@ -82,7 +82,7 @@ export default function Footer() {
               <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/for-founders"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
                     For Business Owners
@@ -90,7 +90,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/for-investors"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
                     For Investors
@@ -107,10 +107,18 @@ export default function Footer() {
               <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link
-                    href="#"
+                    href="/about-us"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
                     About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
+                  >
+                    Contact
                   </Link>
                 </li>
               </ul>
