@@ -69,7 +69,7 @@ export function WhoWeAre() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: mobileHighlight,
-        start: "top 80%",
+        start: "top 150%",
         end: "top 50%",
         toggleActions: "play none none reverse",
       },
