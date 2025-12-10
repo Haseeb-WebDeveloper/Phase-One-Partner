@@ -366,7 +366,7 @@ export default function HomeVideo() {
         {/* Video element */}
         <video
           ref={videoRef}
-          className="w-full h-fit max-w-4xl mx-auto object-cover aspect-square lg:aspect-video rounded-2xl poster"
+          className="w-full h-fit max-w-4xl mx-auto rounded-2xl poster aspect-video"
           onClick={handleVideoClick}
           onTouchEnd={handleVideoClick}
           loop
@@ -381,7 +381,7 @@ export default function HomeVideo() {
           preload="metadata"
           poster="/images/thumbnail.png" // Using poster attribute for thumbnail
           style={{
-            objectFit: "cover",
+            objectFit: "contain",
             objectPosition: "center",
           }}
         >
