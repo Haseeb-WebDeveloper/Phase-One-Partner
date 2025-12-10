@@ -223,31 +223,61 @@ export default function HomeVideo() {
     if (!video) return;
 
     const handleCanPlay = () => {
+      console.log("✅ Video can play - loaded successfully");
       setVideoLoaded(true);
     };
 
+    const handleLoadedMetadata = () => {
+      console.log("✅ Video metadata loaded", {
+        duration: video.duration,
+        videoWidth: video.videoWidth,
+        videoHeight: video.videoHeight,
+        src: video.currentSrc || video.src,
+      });
+    };
+
+    const handleLoadStart = () => {
+      console.log("🔄 Video load started", video.currentSrc || video.src);
+    };
+
     const handlePlay = () => {
+      console.log("▶️ Video playing");
       setIsPlaying(true);
     };
 
     const handlePause = () => {
+      console.log("⏸️ Video paused");
       setIsPlaying(false);
     };
 
     const handleError = (e: Event) => {
-      console.error("Video error:", e);
+      const video = e.target as HTMLVideoElement;
+      console.error("❌ Video error:", {
+        error: video.error,
+        code: video.error?.code,
+        message: video.error?.message,
+        networkState: video.networkState,
+        readyState: video.readyState,
+        src: video.currentSrc || video.src,
+        allSources: Array.from(video.querySelectorAll('source')).map(s => s.src),
+      });
     };
 
+    video.addEventListener("loadstart", handleLoadStart);
     video.addEventListener("canplay", handleCanPlay);
+    video.addEventListener("loadedmetadata", handleLoadedMetadata);
     video.addEventListener("play", handlePlay);
     video.addEventListener("pause", handlePause);
     video.addEventListener("error", handleError);
 
     // Load the video
+    console.log("🔄 Attempting to load video...");
     video.load();
 
     return () => {
+      video.removeEventListener("loadstart", handleLoadStart);
       video.removeEventListener("canplay", handleCanPlay);
+      video.removeEventListener("loadedmetadata", handleLoadedMetadata);
       video.removeEventListener("play", handlePlay);
       video.removeEventListener("pause", handlePause);
       video.removeEventListener("error", handleError);
@@ -355,8 +385,8 @@ export default function HomeVideo() {
             objectPosition: "center",
           }}
         >
+          <source src="/video/showcase.mp4" type="video/mp4" />
           <source src="/PhaseOne-video.mov" type="video/quicktime" />
-          <source src="/PhaseOne-video.mov" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
