@@ -32,6 +32,7 @@ export default function AboutUsHeroSection() {
             <AnimatedButton
               text="Book a Free Discovery Session Today"
               variant="inverse"
+              href="/contact"
             />
           </div>
         </div>

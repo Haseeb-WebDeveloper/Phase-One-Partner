@@ -2,6 +2,7 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./button";
 
 // variant = "primary" | "secondary"
@@ -13,11 +14,13 @@ export default function AnimatedButton({
   className = "",
   defaultBgColor,
   variant = "primary",
+  href,
 }: {
   text: string;
   className?: string;
   defaultBgColor?: string;
   variant?: "primary" | "inverse";
+  href?: string;
 }) {
   const buttonRef = useRef<HTMLDivElement>(null);
   const arrowRef = useRef<HTMLDivElement>(null);
@@ -78,9 +81,15 @@ export default function AnimatedButton({
       ref={buttonRef}
       className={`z-20 group flex items-center w-fit relative mx-auto ${className}`}
     >
-      <Button size="xl" className={`${buttonClass} ${bgAndText}`}>
-        {text}
-      </Button>
+      {href ? (
+        <Button size="xl" className={`${buttonClass} ${bgAndText}`} asChild>
+          <Link href={href}>{text}</Link>
+        </Button>
+      ) : (
+        <Button size="xl" className={`${buttonClass} ${bgAndText}`}>
+          {text}
+        </Button>
+      )}
       <div
         ref={arrowRef}
         className="hidden md:block absolute right-0 cursor-pointer"

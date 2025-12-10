@@ -38,7 +38,7 @@ export default function FounderHeroSection() {
 
           {/* Call to Action Button */}
           <div className="flex justify-center">
-            <AnimatedButton text="Book A Free Discovery Session Today" />
+            <AnimatedButton text="Book A Free Discovery Session Today" href="/contact" />
           </div>
         </div>
       </div>

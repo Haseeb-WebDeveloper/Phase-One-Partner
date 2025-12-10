@@ -161,7 +161,7 @@ const Team = () => {
         <div className="mt-20 flex flex-col justify-center w-fit mx-auto items-center text-center">
           <h3 className="text-3xl md:text-[60px] font-extrabold text-primary mb-2">Next Steps</h3>
           <p className="text-xl lg:text-[26px] font-medium mb-6">It all starts with one simple call.</p>
-          <AnimatedButton text="Schedule Discovery Call" defaultBgColor="bg-primary" />
+          <AnimatedButton text="Schedule Discovery Call" defaultBgColor="bg-primary" href="/contact" />
         </div>
       </div>
     </section>

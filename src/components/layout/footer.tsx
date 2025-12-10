@@ -73,7 +73,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 w-full lg:w-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 w-full lg:w-auto">
             {/* Phase One Partners */}
             <div>
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
@@ -100,7 +100,7 @@ export default function Footer() {
             </div>
 
             {/* Explore */}
-            <div>
+            <div style={{ paddingLeft: "36px" }}>
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
                 Explore
               </h4>
@@ -125,7 +125,7 @@ export default function Footer() {
             </div>
 
             {/* Legal */}
-            <div>
+            <div style={{ paddingLeft: "30px" }}>
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
                 Legal
               </h4>

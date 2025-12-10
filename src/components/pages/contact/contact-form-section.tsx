@@ -156,7 +156,7 @@ export default function ContactFormSection() {
                   type="tel"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+1 (234) 567-890"
+                  placeholder="+61 4XX XXX XXX"
                   className="h-12 text-base"
                 />
               </div>

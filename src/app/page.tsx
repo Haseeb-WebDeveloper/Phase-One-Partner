@@ -39,7 +39,7 @@ export default function Home() {
         height={1000}
         className="max-w-[1200px] mx-auto px-4 md:px-0 w-full h-full object-cover object-center"
       />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <About />
     </>
   );

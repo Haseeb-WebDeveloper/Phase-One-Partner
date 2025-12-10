@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -144,6 +145,7 @@ export default function ForInvestors() {
             <AnimatedButton
               text="Book a Free Discovery Session Today"
               variant="inverse"
+              href="/contact"
             />
           </div>
         </div>
@@ -256,15 +258,15 @@ export default function ForInvestors() {
               </p>
             </div>
             <div className="flex justify-center lg:justify-start w-full">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-                Learn How We Help
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+                <Link href="#phases-of-deal">Learn How We Help</Link>
               </Button>
             </div>
           </div>
           <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-end overflow-hidden">
             <Image
-              src="/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg"
-              alt="Partners for Growth Hero Image"
+              src="/outdoor-couple.jpg"
+              alt="Outdoor couple"
               width={504}
               height={543}
               className="w-full h-full max-h-[620px] object-cover rounded-[12px]"
@@ -336,11 +338,6 @@ export default function ForInvestors() {
                   </ul>
                 </div>
 
-                <div className="flex justify-center mt-auto w-full">
-                  <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium w-full max-w-xs">
-                    View Our Approach
-                  </Button>
-                </div>
               </div>
             </div>
 
@@ -399,7 +396,7 @@ export default function ForInvestors() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white">
+      <section id="phases-of-deal" className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-10 lg:space-y-[60px] flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
@@ -417,8 +414,8 @@ export default function ForInvestors() {
               </p>
             </div>
             <div className="flex justify-center lg:justify-start w-full">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-                Get Started Today
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+                <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
           </div>
@@ -526,8 +523,8 @@ export default function ForInvestors() {
               foundation for a tailored origination pipeline.
             </p>
             <div className="flex justify-center w-full">
-              <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium w-full max-w-xs">
-                Get Started Today
+              <Button className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium w-full max-w-xs" asChild>
+                <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
           </div>

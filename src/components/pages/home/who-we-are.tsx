@@ -191,7 +191,7 @@ export function WhoWeAre() {
           />
         </div>
         <div className="mt-16 w-fit mx-auto">
-          <AnimatedButton text="Explore Our Services" defaultBgColor="bg-primary" />
+          <AnimatedButton text="Learn More About Us" defaultBgColor="bg-primary" href="/about-us" />
         </div>
       </div>
     </section>

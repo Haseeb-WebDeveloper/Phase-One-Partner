@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -122,6 +123,7 @@ export default function ForFounders() {
             <AnimatedButton
               text="Book a Free Discovery Session Today"
               variant="inverse"
+              href="/contact"
             />
           </div>
         </div>
@@ -232,8 +234,8 @@ export default function ForFounders() {
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-                Learn How We Help
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+                <Link href="#phases-of-deal">Learn How We Help</Link>
               </Button>
             </div>
           </div>
@@ -309,11 +311,6 @@ export default function ForFounders() {
                 </ul>
               </div>
 
-              <div className="flex justify-center mt-auto">
-                <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] text-[12px] font-manrope font-medium">
-                  Learn About Our Process
-                </Button>
-              </div>
             </div>
           </div>
 
@@ -366,7 +363,7 @@ export default function ForFounders() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
+      <section id="phases-of-deal" className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
         {/* Add centered image at the very top (center aligned vertically) */}
         {/* <div className="flex justify-center items-center absolute">
           <Image
@@ -405,8 +402,8 @@ export default function ForFounders() {
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-                Get Started Today
+              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+                <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
           </div>
@@ -518,8 +515,8 @@ export default function ForFounders() {
             </p>
             {/* Center button on all breakpoints */}
             <div className="flex justify-center">
-              <Button className="bg-white text-[#0224e9] hover:bg-white/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium">
-                Get Started Today
+              <Button className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+                <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>
           </div>

@@ -255,7 +255,7 @@ export default function HomeVideo() {
   }, [canAutoplay]);
 
   const handleVideoClick = async (
-    e: React.MouseEvent<HTMLButtonElement | HTMLVideoElement | HTMLDivElement>
+    e: React.MouseEvent<HTMLButtonElement | HTMLVideoElement | HTMLDivElement> | React.TouchEvent<HTMLVideoElement>
   ) => {
     // Prevent default behavior to avoid conflicts with native controls
     e.preventDefault();
@@ -338,6 +338,7 @@ export default function HomeVideo() {
           ref={videoRef}
           className="w-full h-fit max-w-4xl mx-auto object-cover aspect-square lg:aspect-video rounded-2xl poster"
           onClick={handleVideoClick}
+          onTouchEnd={handleVideoClick}
           loop
           muted={true} // Always start muted
           playsInline
@@ -347,14 +348,15 @@ export default function HomeVideo() {
             window.innerWidth >= 768 &&
             hasUserInteracted
           } // Only show controls on large screens and after user interaction
-          preload="auto"
+          preload="metadata"
           poster="/images/thumbnail.png" // Using poster attribute for thumbnail
           style={{
             objectFit: "cover",
             objectPosition: "center",
           }}
         >
-          <source src="/video/PhaseOneLong.mov" type="video/mov" />
+          <source src="/PhaseOne-video.mov" type="video/quicktime" />
+          <source src="/PhaseOne-video.mov" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

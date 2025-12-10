@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -211,8 +212,10 @@ export default function InvestorFounder() {
                 </div>
               </div>
 
-              <Button className="py-6  w-full lg:w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato">
-                {section.buttonText}
+              <Button className="py-6  w-full lg:w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato" asChild>
+                <Link href={index === 0 ? "/for-founders" : "/for-investors"}>
+                  {section.buttonText}
+                </Link>
               </Button>
             </div>
           ))}
