@@ -10,6 +10,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import AnimatedButton from "@/components/ui/animated-button";
+import FAQSectionFounders from "@/components/pages/founder/faq-section-founders";
+import { ImagePreloader } from "@/components/ui/image-preloader";
+import { LazyBackgroundImage } from "@/components/ui/lazy-background-image";
 
 export default function ForFounders() {
   const advantages = [
@@ -96,20 +99,28 @@ export default function ForFounders() {
     },
   ];
 
+  // Preload critical hero images
+  const heroImages = [
+    "/bg/partners-for-growth-hero-bg.png",
+    "/founder-optimized-images/skilled-mechanic-working-on-large-truck-repair-2025-10-08-10-22-08-utc_11zon.webp",
+    "/founder-optimized-images/craftsman-in-grey-work-clothes-puts-grout-on-a-flo-2025-03-17-20-57-05-utc_11zon.webp",
+  ];
+
   return (
     <div className="relative w-full overflow-hidden">
+      <ImagePreloader images={heroImages} />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-[#0224e9] to-[#011483] min-h-[478px] lg:min-h-[976px] pt-[165px] lg:pt-[266.7px]">
-        {/* Background decorative elements Image */}
-        <div className="absolute top-0 left-0 right-0 overflow-hidden pointer-events-none hidden lg:block">
-          <Image
-            src="/bg/partners-for-growth-hero-bg.png"
-            alt="Partners for Growth Hero Background"
-            width={1000}
-            height={1000}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="relative bg-gradient-to-b from-[#0224e9] to-[#011483] min-h-[478px] lg:min-h-[976px] pt-[165px] lg:pt-[266.7px] overflow-hidden">
+        {/* Wavy Background Image, centered and full size */}
+        <Image
+          src="/invester/founderpage-wave.png"
+          alt="Hero Section Background Wave"
+          fill
+          priority
+          className="absolute rotate-260 scale-180 mt-10 ml-10 object-contain object-center z-0
+         opacity-40"
+          style={{ zIndex: 0 }}
+        />
 
         {/* Hero Content */}
         <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center">
@@ -117,7 +128,7 @@ export default function ForFounders() {
             Partners FOR <span className="text-[#0085F2]">GROWTH</span>
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-none mx-auto">
-            Helping entrepreneurs achieve their vision.
+            Helping entrepreneurs ach6eve their vision.
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
@@ -133,75 +144,82 @@ export default function ForFounders() {
           <div className="flex gap-2 lg:gap-6 w-full justify-between px-4 lg:px-16">
             {/* 1st column  */}
             <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
-              <div
+              <LazyBackgroundImage
+                src="/founder-optimized-images/craftsman-in-grey-work-clothes-puts-grout-on-a-flo-2025-03-17-20-57-05-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/craftsman-in-grey-work-clothes-puts-grout-on-a-flo-2025-03-17-20-57-05-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="eager"
               />
-              <div
+              <LazyBackgroundImage
+                src="/founder-optimized-images/grape-harvest-2025-02-21-17-07-43-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/grape-harvest-2025-02-21-17-07-43-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
 
             {/* 2nd column  */}
             <div className="flex flex-col items-center justify-end w-[40%]">
-              <div
+              <LazyBackgroundImage
+                src="/founder-optimized-images/skilled-mechanic-working-on-large-truck-repair-2025-10-08-10-22-08-utc_11zon.webp"
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/skilled-mechanic-working-on-large-truck-repair-2025-10-08-10-22-08-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="eager"
               />
             </div>
 
             {/* 3rd column  */}
             <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
-              <div
+              <LazyBackgroundImage
+                src="/founder-optimized-images/man-working-on-machine-in-industrial-factory-2024-09-13-19-48-20-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/man-working-on-machine-in-industrial-factory-2024-09-13-19-48-20-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
-              <div
+              <LazyBackgroundImage
+                src="/founder-optimized-images/senior-male-warehouse-worker-or-a-supervisor-unloa-2025-10-09-08-16-48-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/senior-male-warehouse-worker-or-a-supervisor-unloa-2025-10-09-08-16-48-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
 
             {/* absolute position left right images */}
             <div className="absolute top-1/2 -translate-y-1/2 md:left-[-270px] left-[-295px]">
-              <div
+              <LazyBackgroundImage
+                src="/founder-optimized-images/technician-installing-air-conditioning-unit-at-res-2025-03-16-03-53-07-utc_11zon.webp"
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/technician-installing-air-conditioning-unit-at-res-2025-03-16-03-53-07-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
             <div className="absolute top-1/2 -translate-y-1/2 md:right-[-270px] right-[-295px]">
-              <div
+              <LazyBackgroundImage
+                src="/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg"
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/senior-male-warehouse-worker-or-a-supervisor-unloa-2025-10-09-08-16-48-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -365,27 +383,6 @@ export default function ForFounders() {
       {/* The Phase of Doing a Deal Section */}
       <section id="phases-of-deal" className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
         {/* Add centered image at the very top (center aligned vertically) */}
-        {/* <div className="flex justify-center items-center absolute">
-          <Image
-            src="/2nd-section-bg.png"
-            alt="Deal Phase Decorative"
-            width={250}
-            height={250}
-            className="object-contain"
-            priority
-          />
-        </div> */}
-        <div>
-          <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 w-[80vw] h-[40vw] flex justify-center items-center z-0 opacity-40">
-            <Image
-              src="/2nd-section-bg.png"
-              alt="bg"
-              width={1000}
-              height={1000}
-              className="object-cover opacity-70 rotate-90"
-            />
-          </div>
-        </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div className="space-y-10 lg:space-y-[60px] flex flex-col justify-center h-full text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
@@ -473,6 +470,9 @@ export default function ForFounders() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSectionFounders />
 
       {/* 15-Minute Conversation CTA Section */}
       <section className="relative py-12 lg:py-20 px-4 lg:px-16">

@@ -186,6 +186,8 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                   height={39}
                   className="h-8 w-auto"
                   priority
+                  quality={100}
+                  unoptimized
                 />
               </Link>
             </div>
@@ -331,6 +333,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
                   className="h-6 w-auto"
                   priority
                   quality={100}
+                  unoptimized
                 />
               </Link>
             </div>

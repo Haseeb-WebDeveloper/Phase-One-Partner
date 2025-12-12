@@ -10,6 +10,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import AnimatedButton from "@/components/ui/animated-button";
+import FAQSectionInvestors from "@/components/pages/investor/faq-section-investors";
+import { ImagePreloader } from "@/components/ui/image-preloader";
+import { LazyBackgroundImage } from "@/components/ui/lazy-background-image";
 
 export default function ForInvestors() {
   const advantages = [
@@ -96,8 +99,16 @@ export default function ForInvestors() {
     },
   ];
 
+  // Preload critical hero images
+  const heroImages = [
+    "/bg/investers-1st-section-bg.png",
+    "/Mask group (2).png",
+    "/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg",
+  ];
+
   return (
     <div className="relative w-full overflow-hidden">
+      <ImagePreloader images={heroImages} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-[#0224e9] to-[#011483] min-h-[478px] lg:min-h-[976px] pt-[165px] lg:pt-[200.7px]">
         {/* Background decorative elements Image */}
@@ -108,6 +119,9 @@ export default function ForInvestors() {
             width={1000}
             height={1000}
             className="w-full h-full object-cover"
+            priority
+            fetchPriority="high"
+            quality={85}
           />
         </div>
         {/* Mask group decorative element */}
@@ -119,6 +133,8 @@ export default function ForInvestors() {
             height={1000}
             className="h-full w-auto object-contain opacity-100"
             priority
+            fetchPriority="high"
+            quality={85}
           />
         </div>
 
@@ -155,75 +171,82 @@ export default function ForInvestors() {
           <div className="flex gap-2 lg:gap-6 w-full justify-between px-4 lg:px-16">
             {/* 1st column  */}
             <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
-              <div
+              <LazyBackgroundImage
+                src="/investor-optimized-images/warehouse-worker-driver-in-uniform-delivery-and-lo-2024-11-29-23-36-18-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/warehouse-worker-driver-in-uniform-delivery-and-lo-2024-11-29-23-36-18-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="eager"
               />
-              <div
+              <LazyBackgroundImage
+                src="/investor-optimized-images/technician-and-engineer-working-on-a-windmill-turb-2025-09-22-12-07-12-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/technician-and-engineer-working-on-a-windmill-turb-2025-09-22-12-07-12-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
 
             {/* 2nd column  */}
             <div className="flex flex-col item-center justify-end w-[40%]">
-              <div
+              <LazyBackgroundImage
+                src="/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg"
                 className="w-full h-[80%] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/images/colleagues-on-business-meeting-in-conference-room-2025-12-01-08-09-07-utc.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="eager"
               />
             </div>
 
             {/* 3rd column  */}
             <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
-              <div
+              <LazyBackgroundImage
+                src="/investor-optimized-images/anonymous-male-factory-workers-working-in-industri-2025-01-09-06-04-48-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/anonymous-male-factory-workers-working-in-industri-2025-01-09-06-04-48-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
-              <div
+              <LazyBackgroundImage
+                src="/investor-optimized-images/two-caucasian-professional-technician-or-engineer-2025-03-07-05-05-38-utc_11zon.webp"
                 className="w-full h-[72px] md:h-[236px] md:rounded-t-[12px] rounded-t-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/two-caucasian-professional-technician-or-engineer-2025-03-07-05-05-38-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
 
             {/* absolute poition left right images */}
             <div className="absolute top-1/2 -translate-y-1/2 md:left-[-270px] left-[-295px]">
-              <div
+              <LazyBackgroundImage
+                src="/investor-optimized-images/group-of-diverse-businesspeople-standing-in-meetin-2025-03-26-13-30-41-utc_11zon.webp"
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/group-of-diverse-businesspeople-standing-in-meetin-2025-03-26-13-30-41-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
             <div className="absolute top-1/2 -translate-y-1/2 md:right-[-270px] right-[-295px]">
-              <div
+              <LazyBackgroundImage
+                src="/investor-optimized-images/metal-sheet.webp"
                 className="w-[300px] h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
-                  backgroundImage: "url('/about/about-updated-images/founder-updated-images/investor-updated-images/two-caucasian-professional-technician-or-engineer-2025-03-07-05-05-38-utc.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -265,7 +288,7 @@ export default function ForInvestors() {
           </div>
           <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-end overflow-hidden">
             <Image
-              src="/outdoor-couple.jpg"
+              src="/investor-optimized-images/outdoor-couple.jpg"
               alt="Outdoor couple"
               width={504}
               height={543}
@@ -478,6 +501,9 @@ export default function ForInvestors() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSectionInvestors />
 
       {/* Page Break Line */}
       <div className="w-full px-4 lg:px-16 py-8 lg:py-12">
