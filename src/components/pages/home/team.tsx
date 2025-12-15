@@ -98,7 +98,7 @@ const Team = () => {
                 >
                   {/* Feature Name */}
                   <div
-                    className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[15px] flex items-center font-medium text-black leading-[130%] "
+                    className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[13.5px] flex items-center font-medium text-black leading-[130%] break-words min-w-0 pr-2 md:pr-6"
                   >
                     {row.feature}
                   </div>

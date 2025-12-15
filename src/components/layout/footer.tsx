@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-12 mb-8 sm:mb-12">
           {/* Follow Us Section */}
-          <div className="w-full lg:w-auto">
+          <div className="w-full lg:w-auto flex flex-col items-center lg:items-start">
             <div className="text-[16px] sm:text-[12px] font-extrabold uppercase mb-2 flex gap-4 items-center">
               <p>FOLLOW US</p>
               <div className="flex gap-2 items-center">
@@ -73,9 +73,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 w-full lg:w-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 w-full lg:w-auto justify-items-center lg:justify-items-start">
             {/* Phase One Partners */}
-            <div>
+            <div className="text-center lg:text-left">
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
                 Phase One Partners
               </h4>
@@ -100,7 +100,7 @@ export default function Footer() {
             </div>
 
             {/* Explore */}
-            <div style={{ paddingLeft: "36px" }}>
+            <div className="text-center lg:text-left lg:pl-[36px]">
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
                 Explore
               </h4>
@@ -125,7 +125,7 @@ export default function Footer() {
             </div>
 
             {/* Legal */}
-            <div style={{ paddingLeft: "30px" }}>
+            <div className="text-center lg:text-left lg:pl-[30px]">
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
                 Legal
               </h4>
@@ -150,7 +150,7 @@ export default function Footer() {
             </div>
 
             {/* Get in touch */}
-            <div>
+            <div className="text-center lg:text-left">
               <h4 className="font-extrabold text-[16px] sm:text-[18px] lg:text-[28px] mb-4 sm:mb-6 lg:mb-8">
                 Get in touch
               </h4>
@@ -177,7 +177,7 @@ export default function Footer() {
         </div>
 
         {/* Disclaimer Section */}
-        <div className="mb-8 sm:mb-12">
+        <div className="mb-8 sm:mb-12 text-center lg:text-left">
           <p className="italic text-sm sm:text-base font-inter mb-3 sm:mb-4 leading-relaxed">
             PhaseOne Partners provides origination and introduction services
             only. We work exclusively with wholesale investors, such as private
@@ -192,11 +192,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-4 gap-2 sm:gap-0">
-          <div className="text-[14px] sm:text-[16px] font-inter font-medium">
+        <div className="flex flex-col sm:flex-row justify-center lg:justify-between items-center pt-4 gap-2 sm:gap-0">
+          <div className="text-[14px] sm:text-[16px] font-inter font-medium text-center lg:text-left">
             © 2025 PhaseOne Partners. All Rights Reserved
           </div>
-          <div className="text-[12px] sm:text-[16px] font-inter font-medium text-center sm:text-right">
+          <div className="text-[12px] sm:text-[16px] font-inter font-medium text-center">
             Website Designed & Built by{" "}
             <Link
               href="https://loremarketing.com.au"
