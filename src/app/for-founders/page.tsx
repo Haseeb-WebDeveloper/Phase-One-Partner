@@ -381,8 +381,7 @@ export default function ForFounders() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section id="phases-of-deal" className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center overflow-hidden">
-        {/* Add centered image at the very top (center aligned vertically) */}
+      <section id="phases-of-deal" className="py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div className="space-y-10 lg:space-y-[60px] flex flex-col justify-center h-full text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
@@ -406,7 +405,7 @@ export default function ForFounders() {
           </div>
 
           {/* Phases Accordion */}
-          <div className="relative w-full px-4 lg:px-0">
+          <div className="w-full px-4 lg:px-0">
             <Accordion type="single" collapsible className="w-full z-10">
               {phases.map((phase, index) => (
                 <AccordionItem
@@ -437,78 +436,6 @@ export default function ForFounders() {
                 </AccordionItem>
               ))}
             </Accordion>
-
-            {/* Moved element higher (closer to top) and flipped horizontally */}
-            <div 
-              className="absolute top-[10%] z-[0] pointer-events-none opacity-10"
-              style={{
-                right: '-200px',
-                transform: 'scaleX(-1) translateZ(0)',
-                WebkitTransform: 'scaleX(-1) translateZ(0)',
-                willChange: 'transform',
-              }}
-            >
-              <Image
-                src="/left-side-element.png"
-                alt="Left side decorative element"
-                width={584}
-                height={730}
-                className="h-[400px]"
-                style={{
-                  width: 'auto',
-                  height: '400px',
-                  objectFit: 'cover',
-                  display: 'block',
-                }}
-              />
-            </div>
-            <div 
-              className="absolute top-[10%] z-[0] pointer-events-none opacity-50"
-              style={{
-                right: '-200px',
-                transform: 'scaleX(-1) translateZ(0)',
-                WebkitTransform: 'scaleX(-1) translateZ(0)',
-                willChange: 'transform',
-              }}
-            >
-              <Image
-                src="/images/About-us-images/bg-rounded.png"
-                alt="Left side decorative element"
-                width={584}
-                height={730}
-                className="h-[400px]"
-                style={{
-                  width: 'auto',
-                  height: '400px',
-                  objectFit: 'cover',
-                  display: 'block',
-                }}
-              />
-            </div>
-            {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
-            <div 
-              className="absolute top-1/2 z-[0] pointer-events-none"
-              style={{
-                right: '-100px',
-                transform: 'translateY(-50%) translateZ(0)',
-                WebkitTransform: 'translateY(-50%) translateZ(0)',
-                willChange: 'transform',
-              }}
-            >
-              <Image
-                src="/bg/partners-for-growth-3nd-section.png"
-                alt="Partners for Growth 15-Minute Conversation Background"
-                width={584}
-                height={730}
-                className="h-[400px]"
-                style={{
-                  width: 'auto',
-                  height: '400px',
-                  objectFit: 'cover',
-                  display: 'block',
-                }}
-              />
-            </div>
           </div>
         </div>
       </section>
