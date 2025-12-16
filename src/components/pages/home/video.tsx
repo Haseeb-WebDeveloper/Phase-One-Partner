@@ -9,22 +9,12 @@ import Image from "next/image";
 export default function HomeVideo() {
   const [isPlaying, setIsPlaying] = useState(false); // Start as false - video won't autoplay
   const [isMuted, setIsMuted] = useState(true); // Must start muted for autoplay
-  const [isControlsHovered, setIsControlsHovered] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [canAutoplay, setCanAutoplay] = useState(false);
-  const [isNearBottom, setIsNearBottom] = useState(false);
   const [hasUserInteracted, setHasUserInteracted] = useState(false); // Track if user has clicked video
-  const [isMouseInVideo, setIsMouseInVideo] = useState(false); // Track if mouse is inside video area
-
-  // Add refs to track timeouts and prevent race conditions
-  const nearBottomTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const videoRef = useRef<HTMLVideoElement>(null);
-  const cursorRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // Store timeout references outside of effects
-  const hideControlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Check if autoplay is supported (but don't autoplay)
   useEffect(() => {
@@ -102,120 +92,7 @@ export default function HomeVideo() {
       });
     }
 
-    // Setup cursor animation - independent of cursor visibility
-    if (cursorRef.current && containerRef.current) {
-      const cursor = cursorRef.current;
-      const container = containerRef.current;
-
-      // Position cursor at the center initially
-      const centerX = container.offsetWidth / 2;
-      const centerY = container.offsetHeight / 2;
-
-      gsap.set(cursor, {
-        x: centerX,
-        y: centerY,
-        scale: 1,
-        opacity: 0, // Hide cursor by default
-      });
-
-      // Only add mouse tracking on large screens
-      if (isLargeScreen) {
-        const onMouseEnter = () => {
-          // Show cursor when mouse enters video area
-          setIsMouseInVideo(true);
-        };
-
-        const onMouseMove = (e: MouseEvent) => {
-          const rect = container.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-
-          // Calculate if cursor is near bottom (5vw from bottom)
-          const vwInPixels =
-            (typeof window !== "undefined" ? window.innerWidth : 1024) / 100;
-          const bottomThreshold = rect.height - 5 * vwInPixels; // 5vw from bottom
-          const currentIsAtBottom = y >= bottomThreshold;
-
-          // Update isNearBottom state whenever cursor position changes
-          setIsNearBottom(currentIsAtBottom);
-
-          // Clear any pending timeout
-          if (nearBottomTimeoutRef.current) {
-            clearTimeout(nearBottomTimeoutRef.current);
-            nearBottomTimeoutRef.current = null;
-          }
-
-          // Handle controls visibility based on cursor position
-          if (currentIsAtBottom) {
-            // Show controls immediately when entering bottom area
-            setIsControlsHovered(true);
-            // Clear any existing hide timeout
-            if (hideControlsTimeoutRef.current) {
-              clearTimeout(hideControlsTimeoutRef.current);
-              hideControlsTimeoutRef.current = null;
-            }
-          } else {
-            // When leaving bottom area, use normal controls behavior
-            setIsControlsHovered(false);
-          }
-
-          // Always update cursor position
-          gsap.to(cursor, {
-            x: x,
-            y: y,
-            duration: 0.5,
-            ease: "power2.out",
-          });
-        };
-
-        const onMouseLeave = () => {
-          // Return to center when mouse leaves
-          gsap.to(cursor, {
-            x: centerX,
-            y: centerY,
-            duration: 1.2,
-            ease: "power2.out",
-          });
-
-          // Reset states when leaving container
-          setIsNearBottom(false);
-          setIsControlsHovered(false);
-        };
-
-        container.addEventListener("mouseenter", onMouseEnter);
-        container.addEventListener("mousemove", onMouseMove);
-        container.addEventListener("mouseleave", onMouseLeave);
-
-        return () => {
-          container.removeEventListener("mouseenter", onMouseEnter);
-          container.removeEventListener("mousemove", onMouseMove);
-          container.removeEventListener("mouseleave", onMouseLeave);
-        };
-      } else {
-        // For small screens, show cursor at center and make it visible
-        setIsMouseInVideo(true);
-        gsap.to(cursor, {
-          opacity: 1,
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      }
-    }
-  }, []); // No dependencies to avoid re-running on hover state changes
-
-  // Separate effect for cursor visibility - depends on mouse position and controls state
-  useEffect(() => {
-    if (cursorRef.current) {
-      const shouldShowCursor =
-        isMouseInVideo && !isControlsHovered && !isNearBottom;
-      gsap.to(cursorRef.current, {
-        opacity: shouldShowCursor ? 1 : 0,
-        duration: 0.15,
-        overwrite: true, // Important: prevent animation conflicts
-        ease: "power2.out",
-      });
-    }
-  }, [isMouseInVideo, isControlsHovered, isNearBottom]);
+  }, []);
 
   // Set up video event listeners
   useEffect(() => {
@@ -287,14 +164,9 @@ export default function HomeVideo() {
   const handleVideoClick = async (
     e: React.MouseEvent<HTMLButtonElement | HTMLVideoElement | HTMLDivElement> | React.TouchEvent<HTMLVideoElement>
   ) => {
-    // Prevent default behavior to avoid conflicts with native controls
+    // Prevent default behavior
     e.preventDefault();
     e.stopPropagation();
-
-    // Prevent click handling if clicked on controls area (bottom of video)
-    if (isNearBottom) {
-      return;
-    }
 
     if (videoRef.current) {
       try {
@@ -313,15 +185,6 @@ export default function HomeVideo() {
             await videoRef.current.play();
           }
         }
-
-        // Animate cursor scale on play/pause
-        if (cursorRef.current) {
-          gsap.to(cursorRef.current, {
-            scale: 1,
-            duration: 0.3,
-            ease: "power2.out",
-          });
-        }
       } catch (error) {
         console.error("Play/pause error:", error);
       }
@@ -332,37 +195,9 @@ export default function HomeVideo() {
     <section className="pb-40 pt-6">
       <div
         ref={containerRef}
-        className="relative max-w-4xl px-6 lg:px-0 mx-auto h-fit  md:cursor-none cursor-pointer group overflow-hidden"
+        className="relative max-w-4xl px-6 lg:px-0 mx-auto h-fit cursor-pointer group overflow-hidden"
         id="video-container"
-        style={{
-          cursor: isNearBottom ? "default" : undefined,
-        }}
       >
-        {/* Custom cursor */}
-        <div
-          ref={cursorRef}
-          className="pointer-events-none absolute top-0 left-0 z-[20]"
-        >
-          <div
-            className="flex items-center justify-center"
-            style={{
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            <Image
-              src={
-                !isPlaying
-                  ? "/icons/stop-icon.svg"
-                  : "/icons/play-video-icon.svg"
-              }
-              alt={isPlaying ? "stop" : "play"}
-              width={100}
-              height={100}
-              className="w-[15vw] h-[15vw] md:w-[7vw] md:h-[7vw]"
-            />
-          </div>
-        </div>
-
         {/* Video element */}
         <video
           ref={videoRef}
@@ -372,12 +207,7 @@ export default function HomeVideo() {
           loop
           muted={true} // Always start muted
           playsInline
-          controls={
-            videoLoaded &&
-            typeof window !== "undefined" &&
-            window.innerWidth >= 768 &&
-            hasUserInteracted
-          } // Only show controls on large screens and after user interaction
+          controls={false} // No controls on any device
           preload="metadata"
           poster="/images/thumbnail.png" // Using poster attribute for thumbnail
           style={{
