@@ -439,32 +439,74 @@ export default function ForFounders() {
             </Accordion>
 
             {/* Moved element higher (closer to top) and flipped horizontally */}
-            <div className="absolute top-[10%] -translate-y-0 right-[-200px] z-[0] pointer-events-none opacity-10 ">
+            <div 
+              className="absolute top-[10%] z-[0] pointer-events-none opacity-10"
+              style={{
+                right: '-200px',
+                transform: 'scaleX(-1) translateZ(0)',
+                WebkitTransform: 'scaleX(-1) translateZ(0)',
+                willChange: 'transform',
+              }}
+            >
               <Image
                 src="/left-side-element.png"
                 alt="Left side decorative element"
                 width={584}
                 height={730}
-                className="w-fit h-[400px] object-cover -scale-x-100"
+                className="h-[400px]"
+                style={{
+                  width: 'auto',
+                  height: '400px',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
               />
             </div>
-            <div className="absolute top-[10%] -translate-y-0 right-[-200px] z-[0] pointer-events-none opacity-50 ">
+            <div 
+              className="absolute top-[10%] z-[0] pointer-events-none opacity-50"
+              style={{
+                right: '-200px',
+                transform: 'scaleX(-1) translateZ(0)',
+                WebkitTransform: 'scaleX(-1) translateZ(0)',
+                willChange: 'transform',
+              }}
+            >
               <Image
                 src="/images/About-us-images/bg-rounded.png"
                 alt="Left side decorative element"
                 width={584}
                 height={730}
-                className="w-fit h-[400px] object-cover -scale-x-100"
+                className="h-[400px]"
+                style={{
+                  width: 'auto',
+                  height: '400px',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
               />
             </div>
             {/* Fix: Make overlay image ignore pointer events so accordion is clickable */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-[-100px] z-[0] pointer-events-none">
+            <div 
+              className="absolute top-1/2 z-[0] pointer-events-none"
+              style={{
+                right: '-100px',
+                transform: 'translateY(-50%) translateZ(0)',
+                WebkitTransform: 'translateY(-50%) translateZ(0)',
+                willChange: 'transform',
+              }}
+            >
               <Image
                 src="/bg/partners-for-growth-3nd-section.png"
                 alt="Partners for Growth 15-Minute Conversation Background"
                 width={584}
                 height={730}
-                className="w-fit h-[400px] object-cover"
+                className="h-[400px]"
+                style={{
+                  width: 'auto',
+                  height: '400px',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
               />
             </div>
           </div>
