@@ -257,10 +257,10 @@ export default function ForFounders() {
               </Button>
             </div>
           </div>
-          <div className="relative  z-10 h-[431px] lg:h-full w-full rounded-[12px] overflow-hidden">
+          <div className="relative z-10 h-[431px] lg:h-full w-full rounded-[12px] overflow-hidden">
             <Image
-              src="/founder/2nd-section.png"
-              alt="Partners for Growth Hero Image"
+              src="/about/about-updated-images/founder-updated-images/investor-updated-images/woman-training-coach.webp"
+              alt="Training Coach Woman"
               width={504}
               height={543}
               className="w-full h-full object-cover"

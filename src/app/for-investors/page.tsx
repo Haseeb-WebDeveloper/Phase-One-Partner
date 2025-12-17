@@ -288,8 +288,8 @@ export default function ForInvestors() {
           </div>
           <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-end overflow-hidden">
             <Image
-              src="/investor-optimized-images/outdoor-couple.jpg"
-              alt="Outdoor couple"
+              src="/about/about-updated-images/founder-updated-images/investor-updated-images/businesspeople-discussing-strategy-on-couch.webp"
+              alt="Businesspeople discussing strategy on couch"
               width={504}
               height={543}
               className="w-full h-full max-h-[620px] object-cover rounded-[12px]"

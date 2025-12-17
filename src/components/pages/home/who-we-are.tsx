@@ -182,11 +182,11 @@ export function WhoWeAre() {
         </p>
         <div className="relative flex items-center justify-center mt-16">
           <Image
-            src="/images/we-are.jpg"
+            src="/about/about-updated-images/founder-updated-images/investor-updated-images/group-of-coworkers.webp"
             alt="Who we are"
             width={800}
             height={800}
-            className="w-full h-full lg:max-h-[500px] max-h-[650px] z-5 rounded-4xl object-cover object-top border-4 border-primary"
+            className="w-full h-full lg:max-h-[500px] max-h-[650px] z-5 rounded-4xl object-cover object-bottom border-4 border-primary"
             quality={100}
           />
         </div>
