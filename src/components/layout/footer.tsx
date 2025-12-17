@@ -13,18 +13,13 @@ export default function Footer() {
           <div className="w-full lg:w-auto flex flex-col items-center lg:items-start">
             <div className="text-[16px] sm:text-[12px] font-extrabold uppercase mb-2 flex gap-4 items-center">
               <p>FOLLOW US</p>
-              {/* Desktop: Keep all original social media buttons */}
+              {/* Desktop: Facebook and LinkedIn only */}
               <div className="hidden lg:flex gap-2 items-center">
-                <Link href="#">
-                  <Image
-                    src="/logo/twitter.svg"
-                    alt="twitter"
-                    width={13}
-                    height={13}
-                    className="w-4 h-4 sm:w-[13px] sm:h-[13px]"
-                  />
-                </Link>
-                <Link href="#">
+                <Link 
+                  href="https://www.facebook.com/61581009058267/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/logo/facebook.svg"
                     alt="facebook"
@@ -33,16 +28,11 @@ export default function Footer() {
                     className="w-4 h-4 sm:w-[13px] sm:h-[13px]"
                   />
                 </Link>
-                <Link href="#">
-                  <Image
-                    src="/logo/instagram.svg"
-                    alt="instagram"
-                    width={13}
-                    height={13}
-                    className="w-4 h-4 sm:w-[13px] sm:h-[13px]"
-                  />
-                </Link>
-                <Link href="#">
+                <Link 
+                  href="https://www.linkedin.com/company/phaseone-partners/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/logo/linkedin.svg"
                     alt="linkedin"
