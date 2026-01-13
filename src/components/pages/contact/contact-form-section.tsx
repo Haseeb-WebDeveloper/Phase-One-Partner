@@ -191,6 +191,7 @@ export default function ContactFormSection() {
                 />
               </div>
 
+
               {submitStatus === "success" && (
                 <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                   <p className="text-green-800 font-inter text-sm">
@@ -207,6 +208,7 @@ export default function ContactFormSection() {
                 </div>
               )}
 
+
               <Button
                 type="submit"
                 disabled={isSubmitting}
@@ -221,4 +223,6 @@ export default function ContactFormSection() {
     </section>
   );
 }
+
+
 
