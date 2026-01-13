@@ -49,7 +49,7 @@ export default function WhatWeDoSection() {
             </h2>
             <p className="font-inter text-[14px] lg:text-[18px] text-foreground/80 leading-[24px] lg:leading-[28px]">
               We design origination programs that extend reach and sharpen focus
-              for investors, while guiding founders through every stage of
+              for capital partners, while guiding founders through every stage of
               engagement.
             </p>
           </div>

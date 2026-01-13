@@ -120,7 +120,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
                 <ul className="font-inter text-base lg:text-lg text-[#333333] leading-relaxed space-y-2 list-disc list-inside ml-4">
                   <li>You may receive newsletters, event invitations, or industry updates from us.</li>
-                  <li>You can unsubscribe at any time using the link in our emails or by contacting us directly.</li>
+                  <li>You can unsubscribe at any time using the link in our emails or by contactingPhaseOne Partnersdirectly.</li>
                   <li>We will not add you to marketing lists without your consent.</li>
                 </ul>
               </div>
@@ -191,10 +191,10 @@ export default function PrivacyPolicyPage() {
                 </p>
               </div>
 
-              {/* Section 13: Contact Us */}
+              {/* Section 13: ContactPhaseOne Partners*/}
               <div className="bg-white rounded-lg p-6 lg:p-8 shadow-sm border border-gray-100">
                 <h2 className="font-manrope font-bold text-2xl lg:text-3xl text-[#333333] mb-4">
-                  13. Contact Us
+                  13. PhaseOne Partners
                 </h2>
                 <p className="font-inter text-base lg:text-lg text-[#333333] leading-relaxed mb-4">
                   For questions, concerns, or requests regarding your privacy:
@@ -204,7 +204,7 @@ export default function PrivacyPolicyPage() {
                     <strong>PhaseOne Partners</strong>
                   </p>
                   <p>
-                    <strong>Contact:</strong> Lincoln Stollery, Founder & Managing Director
+                    <strong>Contact:</strong> Lincoln Stollery, Founder and Managing Director
                   </p>
                   <p>
                     <strong>Website:</strong>{" "}
@@ -220,10 +220,10 @@ export default function PrivacyPolicyPage() {
                   <p>
                     <strong>Email:</strong>{" "}
                     <a 
-                      href="mailto:lincoln.stollery@phaseonepartners.com.au" 
+                      href="mailto:info@phaseonepartners.com.au" 
                       className="text-primary hover:underline"
                     >
-                      lincoln.stollery@phaseonepartners.com.au
+                      info@phaseonepartners.com.au
                     </a>
                   </p>
                   <p>

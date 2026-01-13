@@ -37,7 +37,7 @@ export default function MissionGoalsSection() {
       ),
     },
     {
-      text: "To help investors uncover businesses that others overlook.",
+      text: "To help capital partners uncover businesses that others overlook.",
       icon: (
         <svg
           className="w-6 h-6"
@@ -102,4 +102,3 @@ export default function MissionGoalsSection() {
     </section>
   );
 }
-

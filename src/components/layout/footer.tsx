@@ -9,10 +9,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-12 mb-8 sm:mb-12">
-          {/* Follow Us Section */}
+          {/* FollowPhaseOne PartnersSection */}
           <div className="w-full lg:w-auto flex flex-col items-center lg:items-start">
-            <div className="text-[16px] sm:text-[12px] font-extrabold uppercase mb-2 flex gap-4 items-center">
-              <p>FOLLOW US</p>
+            <div className="text-[16px] sm:text-[12px] font-extrabold mb-2 flex gap-4 items-center">
+              <p>Follow PhaseOne Partners</p>
               {/* Desktop: Facebook and LinkedIn only */}
               <div className="hidden lg:flex gap-2 items-center">
                 <Link 
@@ -84,7 +84,7 @@ export default function Footer() {
                     href="/for-investors"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    For Investors
+                    For Capital Partners
                   </Link>
                 </li>
               </ul>
@@ -101,7 +101,7 @@ export default function Footer() {
                     href="/about-us"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    About Us
+                    About PhaseOne Partners
                   </Link>
                 </li>
                 <li>
@@ -126,7 +126,7 @@ export default function Footer() {
                     href="/terms-and-conditions"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    Terms & Conditions
+                    Terms and Conditions
                   </Link>
                 </li>
                 <li>
@@ -151,19 +151,19 @@ export default function Footer() {
                     href="tel:+61416825603"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    Call Us
+                    Call PhaseOne Partners
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:lincoln.stollery@phaseonepartners.com.au"
+                    href="mailto:info@phaseonepartners.com.au"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    Email Us
+                    Email PhaseOne Partners
                   </a>
                 </li>
               </ul>
-              {/* Mobile: Social media icons under Email Us */}
+              {/* Mobile: Social media icons under EmailPhaseOne Partners*/}
               <div className="flex gap-2 items-center justify-center lg:hidden mt-4">
                 <Link 
                   href="https://www.facebook.com/61581009058267/about/"
@@ -198,14 +198,11 @@ export default function Footer() {
 
         {/* Disclaimer Section */}
         <div className="mb-8 sm:mb-12 text-center lg:text-left">
-          <p className="italic text-sm sm:text-base font-inter mb-3 sm:mb-4 leading-relaxed">
-            PhaseOne Partners provides origination and introduction services
-            only. We work exclusively with wholesale investors, such as private
-            equity funds, and our role is limited to facilitating connections
-            with businesses.
-          </p>
           <p className="italic text-sm sm:text-base font-inter leading-relaxed">
-            We do not provide financial product advice, recommendations, or deal
+            PhaseOne Partners provides origination and introduction services
+            only. We work exclusively with wholesale capital partners, such as private
+            equity funds, and our role is limited to facilitating connections
+            with businesses. We do not provide financial product advice, recommendations, or deal
             structuring services. All investment assessments and decisions are
             made independently by the fund, or manager.
           </p>
@@ -217,7 +214,7 @@ export default function Footer() {
             © 2025 PhaseOne Partners. All Rights Reserved
           </div>
           <div className="text-[12px] sm:text-[16px] font-inter font-medium text-center">
-            Website Designed & Built by{" "}
+            Website Designed and Built by{" "}
             <Link
               href="https://loremarketing.com.au"
               target="_blank"

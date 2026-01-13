@@ -24,7 +24,7 @@ export default function MissionSection() {
 
         {/* Description Paragraph */}
         <p className="text-base md:text-lg lg:text-xl text-foreground leading-relaxed font-inter max-w-2xl mx-auto">
-          PhaseOne believes successful outcomes start long before a deal is secured. We help founders grow and investors achieve the best possible outcome.
+          PhaseOne believes successful outcomes start long before a deal is secured. We help founders grow and capital partners achieve the best possible outcome.
         </p>
       </div>
 

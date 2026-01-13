@@ -13,11 +13,11 @@ if (typeof window !== "undefined") {
 const sectionData = [
   {
     title: "Founders",
-    subtitle: "A Smarter Way to Sell Your Business",
+    subtitle: "A Smarter Way to Exit Your Business",
     description:
-      "We don’t just list your company and hope the right buyer comes along. We work with you to position the opportunity, find aligned investors, and manage the process all the way through.",
+      "We don't just list your company and hope the right buyer comes along. We work with you to position the opportunity, find aligned capital partners, and manage the process all the way through.",
     features: [
-      "Direct access to trusted investors",
+      "Direct access to trusted capital partners",
       "End-to-end support",
       "Strategic preparation to frame your business correctly",
       "Respect for your timeline, privacy, and exit goals",
@@ -25,14 +25,14 @@ const sectionData = [
     buttonText: "Learn About Our Process",
   },
   {
-    title: "Investors",
+    title: "Capital Partners",
     subtitle: "High-Quality Deals, Curated to Your Portfolio",
     description:
       "We bring you deals that are aligned with your investment. Each one is pre-qualified, prepared, and ready to progress.",
     features: [
       "Targeted introductions based on sector, strategy, and scale",
-      "Pre-vetted opportunities with founder buy-in",
-      "Thoughtful presentation — no generic IMs",
+      "pre‑vetted opportunities with clearly aligned next steps",
+      "Tailor‑made and purpose‑built materials — never generic IMs",
     ],
     buttonText: "View Our Approach",
   },
@@ -110,8 +110,8 @@ export default function InvestorFounder() {
         {/* Section Header */}
         <div className="text-center font-manrope">
           <div className="mb-8">
-            <p className="tracking-wider text-primary uppercase font-light mb-4">
-              Deal Origination
+            <p className="tracking-wider text-primary font-light mb-4">
+            PhaseOne Partners
             </p>
             {/* Desktop */}
             <div className="hidden lg:block">
@@ -163,8 +163,8 @@ export default function InvestorFounder() {
 
           <p className="text-xl lg:text-[25px] text-[#333333] font-poppins max-w-6xl mx-auto leading-relaxed text-pretty">
             Whether you're preparing to exit or searching for your next
-            investment, deal origination is the service that connects
-            high-quality businesses with aligned investors.
+            growth opportunity, deal origination is the service that connects
+            high-quality businesses with aligned capital partners.
           </p>
         </div>
 

@@ -29,7 +29,7 @@ export default function CTASection() {
         {/* Descriptive Paragraph */}
         <div className="mb-12 max-w-2xl mx-auto">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            We'll explain exactly why this investor developed conviction about your space. 
+            We'll explain exactly why this capital partner developed conviction about your space. 
             You'll know immediately if it's worth exploring.
           </p>
         </div>

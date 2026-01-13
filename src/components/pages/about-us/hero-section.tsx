@@ -23,10 +23,10 @@ export default function AboutUsHeroSection() {
         {/* Hero Content */}
         <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center">
           <h1 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[74px] text-white uppercase mb-2 lg:mb-4">
-            ABOUT US
+            About PhaseOne Partners
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-none mx-auto">
-            Connecting founders & investors for lasting success.
+            Connecting founders and capital partners for lasting success.
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton

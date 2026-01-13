@@ -4,7 +4,7 @@ export default function OurDifferenceSection() {
   const features = [
     {
       title: "Proactive",
-      description: "We build opportunities rather than waiting for them.",
+      description: "We seek out and build lasting partnerships rather than waiting for them. ",
       icon: (
         <svg
           className="w-6 h-6"
@@ -24,7 +24,7 @@ export default function OurDifferenceSection() {
     {
       title: "Tailored",
       description:
-        "Each mandate & engagement is measured against specific goals.",
+        "Each engagement is measured against specific goals.",
       icon: (
         <svg
           className="w-6 h-6"
@@ -85,7 +85,7 @@ export default function OurDifferenceSection() {
 
         {/* Tagline */}
         <p className="text-center font-inter text-[20px] md:text-[24px] lg:text-[28px] leading-[34px] text-black mb-12 lg:mb-16">
-          We are not brokers. We are partners in origination.
+          We are partners on your growth journey
         </p>
 
         {/* Feature Blocks */}

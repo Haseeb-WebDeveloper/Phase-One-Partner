@@ -64,7 +64,7 @@ export default function ContactFormSection() {
               </h2>
               <p className="text-lg lg:text-[20px] font-inter text-[#333333] leading-relaxed">
                 {/* Switched to text-[#333333] for body text */}
-                Whether you're a founder looking for investment or an investor seeking opportunities, we're here to help you make the right connections.
+                Whether you're a founder looking for investment or a capital partner seeking opportunities, we're here to help you make the right connections.
               </p>
             </div>
 
@@ -75,13 +75,13 @@ export default function ContactFormSection() {
                 </div>
                 <div>
                   <span className="font-manrope font-bold text-lg text-[#333333] mb-1 block">
-                    Email Us
+                    Email PhaseOne Partners
                   </span>
                   <a
-                    href="mailto:lincoln.stollery@phaseonepartners.com.au"
+                    href="mailto:info@phaseonepartners.com.au"
                     className="font-inter text-base text-[#333333] hover:text-primary transition-colors block break-all"
                   >
-                    lincoln.stollery@phaseonepartners.com.au
+                    info@phaseonepartners.com.au
                   </a>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function ContactFormSection() {
                 </div>
                 <div>
                   <span className="font-manrope font-bold text-lg text-[#333333] mb-1 block">
-                    Call Us
+                    Call PhaseOne Partners
                   </span>
                   <a
                     href="tel:+61416825603"
@@ -110,7 +110,7 @@ export default function ContactFormSection() {
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-lg">
             <h3 className="text-2xl lg:text-[32px] font-manrope font-bold text-[#333333] mb-6">
-              Send Us a Message
+              Send PhaseOne Partners a Message
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -186,7 +186,7 @@ export default function ContactFormSection() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your inquiry..."
+                  placeholder="Tell PhaseOne Partners about your inquiry..."
                   className="min-h-[120px] text-base resize-none"
                 />
               </div>

@@ -44,16 +44,16 @@ export default function TermsAndConditionsPage() {
               {/* Contact Information */}
               <div className="bg-white rounded-lg p-6 lg:p-8 shadow-sm border border-gray-100">
                 <h3 className="font-manrope font-semibold text-xl lg:text-2xl text-[#333333] mb-4">
-                  Contact Us
+                  PhaseOne Partners
                 </h3>
                 <div className="space-y-2 font-inter text-base lg:text-lg text-[#333333]">
                   <p>
                     <strong>Email:</strong>{" "}
                     <a 
-                      href="mailto:lincoln.stollery@phaseonepartners.com.au" 
+                      href="mailto:info@phaseonepartners.com.au" 
                       className="text-primary hover:underline"
                     >
-                      lincoln.stollery@phaseonepartners.com.au
+                      info@phaseonepartners.com.au
                     </a>
                   </p>
                   <p>

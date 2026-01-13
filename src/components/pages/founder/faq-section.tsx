@@ -10,17 +10,17 @@ export default function FAQSection() {
     {
       id: 1,
       question: "How do I determine my target audience?",
-      answer: "We work with you to analyze your existing customer base, market research, and business goals to identify your ideal target audience. This includes demographic analysis, psychographic profiling, and understanding your value proposition."
+      answer: "We work with you to analyse your existing customer base, market research, and business goals to identify your ideal target audience. This includes demographic analysis, psychographic profiling, and understanding your value proposition."
     },
     {
       id: 2,
       question: "How much does social media advertising cost?",
-      answer: "Social media advertising costs vary based on your industry, target audience, and campaign objectives. We provide transparent pricing and work within your budget to maximize ROI. Contact us for a customized quote based on your specific needs."
+      answer: "Social media advertising costs vary based on your industry, target audience, and campaign objectives. We provide transparent pricing and work within your budget to maximise ROI. ContactPhaseOne Partnersfor a customised quote based on your specific needs."
     },
     {
       id: 3,
       question: "What kind of social media advertising packages do you offer?",
-      answer: "We offer comprehensive packages including campaign strategy, creative development, ad management, and performance optimization. Our packages are tailored to your business size and goals, from startup packages to enterprise-level solutions."
+      answer: "We offer comprehensive packages including campaign strategy, creative development, ad management, and performance optimisation. Our packages are tailored to your business size and goals, from startup packages to enterprise-level solutions."
     },
     {
       id: 4,

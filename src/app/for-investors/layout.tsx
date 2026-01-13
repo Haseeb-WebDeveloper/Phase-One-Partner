@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Navbar from "@/components/layout/navbar";
 
 export const metadata: Metadata = {
-  title: "For Investors - PhaseOne Partners",
+  title: "For Capital Partners - PhaseOne Partners",
   description:
-    "For investors - Connecting you with founder-led businesses before they even reach the market.",
+    "For Capital Partners - Connecting you with founder-led businesses before they even reach the market.",
 };
 
-export default function ForInvestorsLayout({
+export default function ForinvestorsLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

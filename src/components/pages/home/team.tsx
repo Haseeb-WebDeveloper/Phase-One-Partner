@@ -4,7 +4,7 @@ import Image from "next/image";
 const Team = () => {
   const comparisonData = [
     {
-      feature: "Direct access to Investors",
+      feature: "Direct access to capital partners",
       phaseOne:
         "Direct introductions to a small set of aligned, serious PE funds",
       traditional:
@@ -24,8 +24,8 @@ const Team = () => {
         "Broker-driven timelines designed to maximise speed and fees",
     },
     {
-      feature: "Legacy & Culture",
-      phaseOne: "Focus on finding investors who respect your people and vision",
+      feature: "Legacy and Culture",
+      phaseOne: "Focus on finding capital partners who respect your people and vision",
       traditional: "Legacy and culture often secondary to transaction value",
     },
     {
@@ -36,13 +36,13 @@ const Team = () => {
     },
     {
       feature: "Process Efficiency",
-      phaseOne: "Pre-qualified investors mean fewer wasted conversations",
-      traditional: "Many exploratory calls with investors who may not be a fit",
+      phaseOne: "Pre-qualified capital partners mean fewer wasted conversations",
+      traditional: "Many exploratory calls with capital partners who may not be a fit",
     },
     {
       feature: "Incentives",
       phaseOne:
-        "Paid for by the investors - no success fees, no pressure to transact",
+        "Paid for by the capital partners - no success fees, no pressure to transact",
       traditional:
         "Success fees drive pressure to close, even if not the best fit",
     },
@@ -54,7 +54,7 @@ const Team = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-            Why Deal Origination?
+          Why Deal Origination works for Founders and Business Owners?
           </h2>
           <p className="text-xl md:text-[26px] max-w-4xl mx-auto">
             A side-by-side comparison of how we work differently to traditional
@@ -71,7 +71,7 @@ const Team = () => {
             </div>
             <div className="py-2 px-4 text-lg font-semibold rounded-t-3xl bg-primary flex items-center justify-center">
               <Image
-                src="/white-logo.png"
+                src="/logo.webp"
                 alt="PhaseOne Partners"
                 width={800}
                 height={800}

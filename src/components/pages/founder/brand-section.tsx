@@ -14,7 +14,7 @@ export default function BrandSection() {
               </h2>
               
               <h3 className="text-xl md:text-2xl text-black-foreground font-medium">
-                Selling a business can feel overwhelming, but you don't need to go through it alone.
+                Exiting a business can feel overwhelming, but you don't need to go through it alone.
               </h3>
             </div>
             <p className="text-lg text-foreground leading-relaxed">

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Navbar from "@/components/layout/navbar";
 
 export const metadata: Metadata = {
-  title: "About Us - PhaseOne Partners",
+  title: "AboutPhaseOne Partners- PhaseOne Partners",
   description:
-    "Connecting founders & investors for lasting success.",
+    "Connecting founders and capital partners for lasting success.",
 };
 
 export default function AboutUsLayout({

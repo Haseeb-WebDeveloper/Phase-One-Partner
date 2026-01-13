@@ -10,12 +10,29 @@ export default function FAQSectionFounders() {
     {
       id: 1,
       question: "Who are you, and what do you do?",
-      answer: "PhaseOne Partners is a specialist, proprietary deal origination firm dedicated to helping founders and business owners connect with likeminded institutional investors, including private equity firms, family offices, and corporate investors. We are reaching out because your business was identified through detailed market research as having the specific characteristics our investment partner is seeking, such as a strong market position, growth trajectory, or unique capabilities. The fact that you haven't marketed your business is exactly the point: the best strategic partnerships often form before a formal sale process begins. We are seeking to explore mutual interest in a strategic partnership, not pressure you into a transaction. Many successful business owners are open to discussing growth capital, succession planning, or partnering with investors who can accelerate their vision. This is a confidential, no-pressure conversation to explore strategic fit."
+      answer: "PhaseOne Partners is a specialist, proprietary deal origination firm dedicated to helping founders and business owners connect with likeminded institutional capital partners, including private equity firms, family offices, and corporate capital partners. We are reaching out because your business was identified through detailed market research as having the specific characteristics our investment partner is seeking, such as a strong market position, growth trajectory, or unique capabilities. The fact that you haven't marketed your business is exactly the point: the best strategic partnerships often form before a formal sale process begins. We are seeking to explore mutual interest in a strategic partnership, not pressure you into a transaction. Many successful business owners are open to discussing growth capital, succession planning, or partnering with capital partners who can accelerate their vision. This is a confidential, no-pressure conversation to explore strategic fit."
     },
     {
       id: 2,
-      question: "How is this different from when investment bankers, M&A advisors or business brokers have approached me in the past?",
-      answer: "The key difference is representation: Traditional advisors and brokers represent sellers; we represent the buyer. Advisors and brokers: They are hired by you, the seller, to run a competitive auction process, maximize price, and charge you a fee (typically 3 and up to 10% of the transaction value). PhaseOne Partners: We are paid by the investment partner (the buyer). We are not trying to sell your business for you. We explore whether your business is a strategic fit for our client and help connect you with the people who understand your industry, and are aligned with your vision. This means: 1. No auction pressure: We offer exploratory, relationship-driven conversations, not a competitive auction process. 2. Proprietary relationship: You engage with a serious, committed investment partner, which often leads to smoother transactions and better strategic alignment than competitive processes. 3. No advisory fees from you: You explore the opportunity on your terms, free of any fee pressure."
+      question: "How is this different from when investment bankers, M and A advisors or business brokers have approached me in the past?",
+      answer: (
+        <>
+          <p>
+            The key difference is representation: Traditional advisors and brokers represent exiting businesses; we represent the buyer. Advisors and brokers: They are hired by you, the business owner looking to exit, to run a competitive auction process, maximise price, and charge you a fee (typically 3 and up to 10% of the transaction value). PhaseOne Partners: We are paid by the investment partner (the buyer). We are not trying to exit your business for you. We explore whether your business is a strategic fit for our client and help connect you with the people who understand your industry, and are aligned with your vision. This means:
+          </p>
+          <ul className="list-disc space-y-2 pl-5 mt-3 text-left">
+            <li>
+              <span className="font-semibold">No auction pressure:</span> We offer exploratory, relationship-driven conversations, not a competitive auction process.
+            </li>
+            <li>
+              <span className="font-semibold">Proprietary relationship:</span> You engage with a serious, committed investment partner, which often leads to smoother transactions and better strategic alignment than competitive processes.
+            </li>
+            <li>
+              <span className="font-semibold">No advisory fees from you:</span> You explore the opportunity on your terms, free of any fee pressure.
+            </li>
+          </ul>
+        </>
+      )
     },
     {
       id: 3,
@@ -25,7 +42,7 @@ export default function FAQSectionFounders() {
     {
       id: 4,
       question: "What happens if we explore this and I decide it's not the right fit?",
-      answer: "If you decide the fit is not right, we will respect that decision completely and immediately. We only connect you with institutional investors who are actively interested in investing in your industry, and do not advertise businesses for sale, but understand that sometimes things change. All conversations are kept confidential, and any information shared remains as such. Many business owners find they benefit from the strategic market insights gained, even without a transaction. If you are open to a confidential conversation to learn more about our partner's investment approach and explore alignment, we would welcome the opportunity."
+      answer: "If you decide the fit is not right, we will respect that decision completely and immediately. We only connect you with institutional capital partners who are actively interested in investing in your industry, and do not advertise businesses for sale, but understand that sometimes things change. All conversations are kept confidential, and any information shared remains as such. Many business owners find they benefit from the strategic market insights gained, even without a transaction. If you are open to a confidential conversation to learn more about our partner's investment approach and explore alignment, we would welcome the opportunity."
     }
   ];
 
@@ -75,9 +92,9 @@ export default function FAQSectionFounders() {
                 
                 {expandedFAQ === faq.id && (
                   <div className="pb-6 animate-in slide-in-from-top-2 duration-200 w-full">
-                    <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
+                    <div className="text-muted-foreground leading-relaxed text-center lg:text-left space-y-3">
                       {faq.answer}
-                    </p>
+                    </div>
                   </div>
                 )}
               </div>
@@ -104,9 +121,9 @@ export default function FAQSectionFounders() {
                 
                 {expandedFAQ === faq.id && (
                   <div className="pb-6 animate-in slide-in-from-top-2 duration-200 w-full">
-                    <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
+                    <div className="text-muted-foreground leading-relaxed text-center lg:text-left space-y-3">
                       {faq.answer}
-                    </p>
+                    </div>
                   </div>
                 )}
               </div>

@@ -10,11 +10,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import AnimatedButton from "@/components/ui/animated-button";
-import FAQSectionInvestors from "@/components/pages/investor/faq-section-investors";
+import FAQSectioninvestors from "@/components/pages/investor/faq-section-investors";
 import { ImagePreloader } from "@/components/ui/image-preloader";
 import { LazyBackgroundImage } from "@/components/ui/lazy-background-image";
 
-export default function ForInvestors() {
+export default function Forinvestors() {
   const advantages = [
     {
       title: "Proprietary deal flow",
@@ -49,7 +49,7 @@ export default function ForInvestors() {
     {
       title: "Better use of investment team time",
       description:
-        "By outsourcing the top of the funnel, your investors stay focused on diligence, execution, and value creation.",
+        "By outsourcing the top of the funnel, your capital partners stay focused on diligence, execution, and value creation.",
       imageUrl: "/icons/relationship.svg",
     },
   ];
@@ -59,35 +59,35 @@ export default function ForInvestors() {
       number: "01.",
       title: "Mandate and Calibration",
       description:
-        "Deep intake on criteria, prior bets, red lines and decision cadence. Build target map and proof points.",
+        "Conversations start with deep industry research and alignment with your key objectives. From there, we build a target map, and identify key next steps.",
       duration: "1–2 weeks",
     },
     {
       number: "02.",
       title: "Market Outreach",
       description:
-        "We introduce you to carefully selected investors who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
+        "We introduce you to carefully selected capital partners who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
       duration: "3–6 weeks",
     },
     {
       number: "03.",
       title: "First conversations",
       description:
-        "Interested investors provide initial offers and letters of intent. We help you evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
+        "Interested capital partners provide initial offers and letters of intent. We help you evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
       duration: "2–3 weeks",
     },
     {
       number: "04.",
       title: "Diligence on live targets",
       description:
-        "Selected investors conduct thorough due diligence. We coordinate the process, ensuring all necessary documentation is prepared and questions are answered efficiently.",
+        "Selected capital partners conduct thorough due diligence. We coordinate the process, ensuring all necessary documentation is prepared and questions are answered efficiently.",
       duration: "8–12 weeks",
     },
     {
       number: "05.",
       title: "Terms and execution",
       description:
-        "We facilitate final negotiations on terms, valuation, and deal structure. Once agreed, legal documents are prepared and the transaction is finalized with proper documentation.",
+        "We facilitate final negotiations on terms, valuation, and deal structure. Once agreed, legal documents are prepared and the transaction is finalised with proper documentation.",
       duration: "3–5 weeks",
     },
     {
@@ -141,11 +141,10 @@ export default function ForInvestors() {
         {/* Hero Content */}
         <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center flex flex-col items-center">
           <h1 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[74px] text-white uppercase mb-2 lg:mb-4">
-            Leading Investors <br />{" "}
+            Leading Capital Partners <br />{" "}
             <span
               className=""
               style={{
-                textDecorationLine: "line-through",
                 textDecorationThickness: "1.5px",
               }}
             >
@@ -154,8 +153,7 @@ export default function ForInvestors() {
             for Deals.
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-3xl mx-auto">
-            Deal Origination connects you with founder-led businesses before
-            they even reach the market.
+          PhaseOne Partners connects you with high-quality, off-market founder led businesses in the niches and industries that meet your mandate" 
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
@@ -265,11 +263,10 @@ export default function ForInvestors() {
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
                   We connect you with{" "}
                   <span className="text-[#0224e9]">opportunities</span> that
-                  others never see.
+                  meet your mandate.
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px] mx-auto lg:mx-0">
-                  Most investors wait for businesses to come to market. Deal
-                  Origination means uncovering founder-led opportunities before
+                  Most capital partners wait for businesses to come to market. PhaseOne Partners means uncovering founder-led opportunities before
                   they are even considering a sale.
                 </p>
               </div>
@@ -286,7 +283,7 @@ export default function ForInvestors() {
               </Button>
             </div>
           </div>
-          <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-end overflow-hidden">
+          <div className="relative rounded-[12px] z-10 h-[431px] lg:h-full w-full flex flex-col justify-center overflow-hidden">
             <Image
               src="/about/about-updated-images/founder-updated-images/investor-updated-images/businesspeople-discussing-strategy-on-couch.webp"
               alt="Businesspeople discussing strategy on couch"
@@ -431,9 +428,7 @@ export default function ForInvestors() {
                 <span className="text-[#0224e9]">Agreement</span>
               </h2>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] mx-auto lg:mx-0">
-                There are 6 simple phases of sourcing and investing in a
-                founder-led business and we guide you through each, with clarity
-                and momentum.
+              There are 6 simple phases of sourcing that we deliver on, with clarity and momentum.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start w-full">
@@ -503,7 +498,7 @@ export default function ForInvestors() {
       </section>
 
       {/* FAQ Section */}
-      <FAQSectionInvestors />
+      <FAQSectioninvestors />
 
       {/* Page Break Line */}
       <div className="w-full px-4 lg:px-16 py-8 lg:py-12">

@@ -55,7 +55,7 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "For Founders", href: "/for-founders" },
-  { name: "For Investors", href: "/for-investors" },
+  { name: "For Capital Partners", href: "/for-investors" },
   {
     name: "Explore",
     href: "#",
@@ -180,7 +180,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
             <div className="flex flex-shrink-0 ">
               <Link href="/" className="ml-1.5 flex items-center">
                 <Image
-                  src="/icons/logo 1.svg"
+                  src="/logo.jpg"
                   alt="PhaseOne Partners Logo"
                   width={164}
                   height={39}
@@ -326,7 +326,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
             <div className="flex">
               <Link href="/" className="-m-1.5 p-1.5 inline-block">
                 <Image
-                  src="/logo.png"
+                  src="/logo.jpg"
                   alt="PhaseOne Partners"
                   width={600}
                   height={400}

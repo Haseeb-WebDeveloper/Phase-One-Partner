@@ -20,7 +20,7 @@ export default function FeaturesSection() {
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-bold text-foreground mb-3">
-                  Direct Access to Investors
+                  Direct Access to Capital Partners
                 </h3>
                 <p className="text-foreground leading-relaxed">
                   We connect you straight to vetted private equity funds and strategic buyers already investing in your 
@@ -41,7 +41,7 @@ export default function FeaturesSection() {
                   Confidential and Targeted Outreach
                 </h3>
                 <p className="text-foreground leading-relaxed">
-                  Your reputation matters. We only approach a select group of aligned investors who want to speak with 
+                  Your reputation matters. We only approach a select group of aligned capital partners who want to speak with 
                   you directly, keeping the process discreet and focused.
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
                   Fast, Clean Process
                 </h3>
                 <p className="text-foreground leading-relaxed">
-                  Pre-qualified investors mean fewer distractions, no wasted presentations, and more time spent on serious opportunities.
+                  Pre-qualified capital partners mean fewer distractions, no wasted presentations, and more time spent on serious opportunities.
                 </p>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function FeaturesSection() {
                   Aligned Incentives
                 </h3>
                 <p className="text-foreground leading-relaxed">
-                  We are paid by investors, not by pushing deals. Our goal is finding the right long-term match for your business.
+                  We are paid by capital partners, not by pushing deals. Our goal is finding the right long-term match for your business.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function FeaturesSection() {
                   Protecting Your Legacy
                 </h3>
                 <p className="text-foreground leading-relaxed">
-                  We help match you with investors who share your vision and will look after your employees, customers, and the culture you've built.
+                  We help match you with capital partners who share your vision and will look after your employees, customers, and the culture you've built.
                 </p>
               </div>
             </div>

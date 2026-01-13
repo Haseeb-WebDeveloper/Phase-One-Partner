@@ -58,17 +58,16 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center text-foreground gap-4 font-manrope text-center mx-auto max-w-full">
-        <h3 className="text-5xl leading-[110%] md:text-[78px] font-manrope font-light uppercase relative">
+      <div className="flex flex-col justify-center text-foreground gap-3 font-manrope text-center mx-auto max-w-full">
+        <h3 className="text-lg leading-[110%] md:text-[32px] font-manrope font-normal">
           <span
             className="relative inline-block"
             style={{
-              textDecoration: "line-through",
               textDecorationColor: "oklch(42.69% 0.24 269.16)", // matches --primary
               textDecorationThickness: "4px",
             }}
           >
-            Business Brokers
+            More than a Business Broker we are your
           </span>
         </h3>
         <h1 className="text-5xl leading-[110%] md:text-[78px] lg:font-semibold font-extrabold uppercase text-pretty text-primary relative">
@@ -90,8 +89,7 @@ export default function HeroSection() {
             Starts Here.
           </p>
           <p className="text-xl  lg:text-[29.57px] ">
-            We connect only the right businesses with the right investors —
-            nothing less.
+            We connect only the right businesses with the right capital partners
           </p>
         </div>
         <div className="lg:mt-12 mt-6 w-fit mx-auto">

@@ -17,7 +17,7 @@ import { LazyBackgroundImage } from "@/components/ui/lazy-background-image";
 export default function ForFounders() {
   const advantages = [
     {
-      title: "Direct Access to Investors",
+      title: "Direct Access to Capital Partners",
       description:
         "We connect you straight to vetted private equity funds and strategic buyers already investing in your industry. No broad auctions, no wasted time.",
       imageUrl: "/icons/database.svg", // Placeholder for icon
@@ -25,25 +25,25 @@ export default function ForFounders() {
     {
       title: "Fast, Clean Process",
       description:
-        "Pre-qualified investors mean fewer distractions, no wasted presentations, and more time spent on serious opportunities.",
+        "Pre-qualified capital partners mean fewer distractions, no wasted presentations, and more time spent on serious opportunities.",
       imageUrl: "/icons/fast.svg", // Placeholder for icon
     },
     {
       title: "Confidential and Targeted Access",
       description:
-        "Your reputation matters. We approach select aligned investors who want to speak with you directly, keeping the process discreet.",
+        "Your reputation matters. We approach select aligned capital partners who want to speak with you directly, keeping the process discreet.",
       imageUrl: "/icons/target.svg", // Placeholder for icon
     },
     {
       title: "Aligned Incentives",
       description:
-        "We are paid by investors, not by pushing deals. Our goal is finding the right long-term match for your business.",
+        "We are paid by capital partners, not by pushing deals. Our goal is finding the right long-term match for your business.",
       imageUrl: "/icons/money.svg", // Placeholder for icon
     },
     {
       title: "Protecting Your Legacy",
       description:
-        "We help match you with investors who share your vision and will look after your employees, customers, and the culture you've built.",
+        "We help match you with capital partners who share your vision and will look after your employees, customers, and the culture you've built.",
       imageUrl: "/icons/protection.svg", // Placeholder for icon
     },
     {
@@ -57,45 +57,45 @@ export default function ForFounders() {
   const phases = [
     {
       number: "01.",
-      title: "Initial Exploration & Planning",
+      title: "Initial Exploration And Planning",
       description:
         "We meet to discuss your goals, review financials, and understand your business. Confidentiality agreements protect your information from the start.",
       duration: "2–4 weeks",
     },
     {
       number: "02.",
-      title: "Early Investor Engagement",
+      title: "Early Capital Partner Engagement",
       description:
-        "We introduce you to carefully selected investors who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
+        "We introduce you to carefully selected capital partners who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities.",
       duration: "3–6 weeks",
     },
     {
       number: "03.",
       title: "Indicative Offers / LOIs",
       description:
-        "Interested investors provide initial offers and letters of intent. We help you evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
+        "Investors provide an initial offer, subject to due diligence, for you to evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
       duration: "2–3 weeks",
     },
     {
       number: "04.",
       title: "Due Diligence",
       description:
-        "Selected investors conduct thorough due diligence. We coordinate the process, ensuring all necessary documentation is prepared and questions are answered efficiently.",
+        "The investor will conduct thorough due diligence on the business, which encompases the commericial, financial, tax and legal aspects of your operations.",
       duration: "8–12 weeks",
     },
     {
       number: "05.",
-      title: "Final Negotiation & Signing",
+      title: "Final Negotiation And Signing",
       description:
-        "We facilitate final negotiations on terms, valuation, and deal structure. Once agreed, legal documents are prepared and the transaction is finalized with proper documentation.",
+        "Once agreed, legal documents are prepared and the transaction is finalised with proper documentation.",
       duration: "3–5 weeks",
     },
     {
       number: "06.",
-      title: "Completion & Transition",
+      title: "Completion And Transition",
       description:
         "The deal closes and ownership transitions. We support the handover process, ensuring a smooth transition for your team, customers, and operations.",
-      duration: "2–4 weeks & ongoing handover",
+      duration: "2–4 weeks and ongoing handover",
     },
   ];
 
@@ -128,7 +128,7 @@ export default function ForFounders() {
             Partners FOR <span className="text-[#0085F2]">GROWTH</span>
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-none mx-auto">
-            Helping entrepreneurs ach6eve their vision.
+            Helping entrepreneurs achieve their vision.
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
@@ -232,7 +232,6 @@ export default function ForFounders() {
           <div className="space-y-6 lg:space-y-[60px] text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[40px]">
               <div className="space-y-4 lg:space-y-[30px]">
-                
                 <p className="font-manrope text-[#0224e9] text-[14px] lg:text-[16px] uppercase tracking-wide leading-[14px]">
                   What we do
                 </p>
@@ -241,12 +240,12 @@ export default function ForFounders() {
                   <span className="text-[#0224e9]">every phase of the process.</span>
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px] mx-auto lg:mx-0">
-                  Selling a business can feel overwhelming, but you don't need
+                  Exiting a business can feel overwhelming, but you don't need
                   to go through it alone.
                 </p>
               </div>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none mx-auto lg:mx-0">
-                With PhaseOne, every stage is structured, managed, & supported,
+                With PhaseOne, every stage is structured, managed, and supported,
                 so you can focus on running your business while we handle the
                 complexities.
               </p>
@@ -266,7 +265,7 @@ export default function ForFounders() {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* right side absolute position image */}    
+          {/* right side absolute position image */}
           <div className="absolute md:-top-32 -right-36 bottom-0 md:bottom-auto z-0">
             <Image
               src="/bg/partners-for-growth-2nd-section-bg.png"
@@ -290,10 +289,6 @@ export default function ForFounders() {
               <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
                 Our Key <span className="text-[#0224e9]">Advantages</span>
               </h2>
-              <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[299px] lg:max-w-[516px] mx-auto leading-[24px] lg:leading-[28px] mt-4 lg:mt-6">
-                Key advantages that make a difference when expanding, growing,
-                or exiting your company
-              </p>
             </div>
           </div>
 
@@ -301,7 +296,6 @@ export default function ForFounders() {
           <div className="max-w-4xl mx-auto lg:hidden">
             <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
               <div className="mb-6">
-            
                 <ul className="space-y-4 text-foreground">
                   {advantages.map((advantage, index) => (
                     <li key={index} className="flex items-start">
@@ -328,7 +322,6 @@ export default function ForFounders() {
                   ))}
                 </ul>
               </div>
-
             </div>
           </div>
 
@@ -339,7 +332,7 @@ export default function ForFounders() {
               const isSecondRow = index >= 3;
               const isFirstColumn = index % 3 === 0;
               const isThirdColumn = (index + 1) % 3 === 0;
-              const isSecondColumn = index % 3 === 1;
+              // const isSecondColumn = index % 3 === 1; // Unused
 
               // Determine which borders to show
               const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
@@ -393,8 +386,7 @@ export default function ForFounders() {
                 <span className="text-[#0224e9]">Agreement</span>
               </h2>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px]">
-                There are 6 simple phases of selling your business or raising
-                capital and we handle them all.
+              There are 6 simple phases of finding the right growth or succession partner.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
@@ -448,10 +440,6 @@ export default function ForFounders() {
         <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
           {/* Background decorative elements */}
           <div className="absolute -left-20 lg:left-0 -bottom-8 lg:bottom-0">
-            {/* 
-              Changed -left-8 -> -left-20 on mobile to move it further left,
-              but kept on desktop (lg:left-0) for original placement.
-            */}
             <Image
               src="/bg/partners-for-growth-get-started-desktop.png"
               alt="Partners for Growth 15-Minute Conversation Background"
@@ -475,14 +463,11 @@ export default function ForFounders() {
               Next Step
             </p>
             <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-white">
-              <span className="block">15-Minute</span>
-              <span className="block">Conversation</span>
+              A 15‑Minute Conversation
             </h2>
             <p className="font-inter text-[16px] lg:text-[18px] text-white leading-[26px] lg:leading-[28px] max-w-[359px] lg:max-w-[636px] mx-auto">
-              We'll explain exactly why this investor developed conviction about
-              your space. You'll know immediately if it's worth exploring.
+              We'll outline the signals we're seeing from aligned investors and help you understand whether there's real conviction behind your sector. You'll have immediate clarity on next steps.
             </p>
-            {/* Center button on all breakpoints */}
             <div className="flex justify-center">
               <Button className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
                 <Link href="/contact">Get Started Today</Link>

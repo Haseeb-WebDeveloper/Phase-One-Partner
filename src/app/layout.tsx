@@ -39,7 +39,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "PhaseOne Partners",
   description:
-    "Connecting businesses with the right investors through strategic deal origination.",
+    "Connecting businesses with the right capital partners through strategic deal origination.",
 };
 
 export default function RootLayout({

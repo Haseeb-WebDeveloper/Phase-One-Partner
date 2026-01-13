@@ -12,7 +12,7 @@ export default function OpportunitySection() {
         {/* Main Heading */}
         <p className="text-center font-inter text-[20px] md:text-[24px] lg:text-[28px] leading-[38px] text-black mb-12 lg:mb-16 max-w-5xl mx-auto">
           Across Australia and New Zealand, thousands of founder-led businesses
-          are building momentum & scale while staying private. These businesses
+          are building momentum and scale while staying private. These businesses
           represent one of the most exciting investment landscapes in the world.
         </p>
 
@@ -21,7 +21,7 @@ export default function OpportunitySection() {
           {/* Left Column */}
           <div className="text-center">
             <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0224e9] mb-2">
-              12,000
+            64,000
             </div>
             <div className="text-base md:text-lg lg:text-xl text-black">
               mid-market companies operate in Australia.
@@ -47,10 +47,10 @@ export default function OpportunitySection() {
           {/* Right Column */}
           <div className="text-center">
             <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0224e9] mb-2">
-              $60
+            $60B
             </div>
             <div className="text-base md:text-lg lg:text-xl text-black">
-              billion in private capital is now managed by institutional investors.
+            in private capital is now managed by institutional investors.
             </div>
           </div>
         </div>

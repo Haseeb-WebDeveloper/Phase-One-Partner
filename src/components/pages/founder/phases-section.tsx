@@ -15,15 +15,15 @@ export default function PhasesSection() {
     },
     {
       id: 2,
-      title: "Phase 2: Early Investor Engagement",
+      title: "Phase 2: Early Capital Partner Engagement",
       duration: "3–6 weeks",
-      description: "Targeted outreach to a curated set of pre-qualified investors. Introductory calls and teaser information shared to explore fit."
+      description: "Targeted outreach to a curated set of pre-qualified capital partners. Introductory calls and teaser information shared to explore fit."
     },
     {
       id: 3,
       title: "Phase 3: Indicative Offers / LOIs",
       duration: "2–3 weeks",
-      description: "Investors submit indicative offers or letters of interest. You'll see valuation ranges, deal structures, and strategic rationale."
+      description: "Capital partners submit indicative offers or letters of interest. You'll see valuation ranges, deal structures, and strategic rationale."
     },
     {
       id: 4,
@@ -82,7 +82,7 @@ export default function PhasesSection() {
                 </span>
               </h2>
               <p className="text-lg text-foreground leading-relaxed">
-                There are 6 simple phases of selling your business or raising capital — and we handle them all.
+                There are 6 simple phases of exiting your business or raising capital — and we handle them all.
               </p>
             </div>
           </div>

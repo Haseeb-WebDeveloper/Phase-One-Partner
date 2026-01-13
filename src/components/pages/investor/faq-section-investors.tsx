@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronDownIcon } from "lucide-react";
 
-export default function FAQSectionInvestors() {
+export default function FAQSectioninvestors() {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
   const faqs = [
@@ -14,13 +14,33 @@ export default function FAQSectionInvestors() {
     },
     {
       id: 2,
-      question: "What makes your approach different from traditional M&A advisors or investment bankers?",
-      answer: "The critical distinction is that we represent the buy-side, not the sell-side. Traditional M&A advisors represent sellers and run auction processes focused on maximising sale price. We source proprietary opportunities for our clients (PE firms, Family Offices, Corporates) often before a business has decided to sell or engaged an advisor. This approach provides a first-mover advantage and the opportunity to build trust-based relationships, long before a business is brought to market - which research consistently shows leads to better valuations and superior long-term outcomes than auction processes. Our clients pay us to find and connect them with business owners in the niches and industries that they're focussed on, providing business owners with an on-ramp to investors who understand their business and industry, and can provide a flexible structure to suit their needs."
+      question: "What makes your approach different from traditional M and A advisors or investment bankers?",
+      answer: "The critical distinction is that we represent the buy-side, not the exit-side. Traditional M and A advisors represent exiting businesses and run auction processes focused on maximising sale price. We source proprietary opportunities for our clients (PE firms, Family Offices, Corporates) often before a business has decided to exit or engaged an advisor. This approach provides a first-mover advantage and the opportunity to build trust-based relationships, long before a business is brought to market - which research consistently shows leads to better valuations and superior long-term outcomes than auction processes. Our clients payPhaseOne Partnersto find and connect them with business owners in the niches and industries that they're focussed on, providing business owners with an on-ramp to capital partners who understand their business and industry, and can provide a flexible structure to suit their needs."
     },
     {
       id: 3,
       question: "How do you source deals, and how can you deliver proprietary opportunities that our internal team hasn't already found?",
-      answer: "Our value proposition is rooted in dedicated focus, proven methodology, and specialized PE origination expertise. • Market mapping: we conduct comprehensive, sector-specific analysis to identify businesses aligned with your investment thesis—not just companies actively looking to sell. Our dedicated team thoroughly map all businesses in the identified niche using our proprietary platform. • Relationship-driven outreach: we engage directly with founders and owners through personalized outreach, positioning your firm as a strategic partner. • Dedicated bandwidth: we provide full-time focus on systematic proprietary sourcing. Your internal team is often stretched; we supplement their efforts with specialized capacity and established playbooks developed over 7+ years in-house at PE firms. • Pre-qualification: we pre-qualify all opportunities to ensure they meet your investment criteria, delivering fewer, higher-quality, strategically-aligned names."
+      answer: (
+        <>
+          <p>
+            Our value proposition is rooted in dedicated focus, proven methodology, and specialised PE origination expertise.
+          </p>
+          <ul className="list-disc space-y-2 pl-5 mt-3 text-left">
+            <li>
+              <span className="font-semibold">Market mapping:</span> we conduct comprehensive, sector-specific analysis to identify businesses aligned with your investment thesis—not just companies actively looking to exit. Our dedicated team thoroughly map all businesses in the identified niche using our proprietary platform.
+            </li>
+            <li>
+              <span className="font-semibold">Relationship-driven outreach:</span> we engage directly with founders and owners through personalised outreach, positioning your firm as a strategic partner.
+            </li>
+            <li>
+              <span className="font-semibold">Dedicated bandwidth:</span> we provide full-time focus on systematic proprietary sourcing. Your internal team is often stretched; we supplement their efforts with specialised capacity and established playbooks developed over 7+ years in-house at PE firms.
+            </li>
+            <li>
+              <span className="font-semibold">Pre-qualification:</span> we pre-qualify all opportunities to ensure they meet your investment criteria, delivering fewer, higher-quality, strategically-aligned names.
+            </li>
+          </ul>
+        </>
+      )
     },
     {
       id: 4,
@@ -80,9 +100,9 @@ export default function FAQSectionInvestors() {
                 
                 {expandedFAQ === faq.id && (
                   <div className="pb-6 animate-in slide-in-from-top-2 duration-200 w-full">
-                    <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
+                    <div className="text-muted-foreground leading-relaxed text-center lg:text-left space-y-3">
                       {faq.answer}
-                    </p>
+                    </div>
                   </div>
                 )}
               </div>
@@ -109,9 +129,9 @@ export default function FAQSectionInvestors() {
                 
                 {expandedFAQ === faq.id && (
                   <div className="pb-6 animate-in slide-in-from-top-2 duration-200 w-full">
-                    <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
+                    <div className="text-muted-foreground leading-relaxed text-center lg:text-left space-y-3">
                       {faq.answer}
-                    </p>
+                    </div>
                   </div>
                 )}
               </div>

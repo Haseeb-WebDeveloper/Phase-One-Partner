@@ -1,7 +1,7 @@
 const blogPosts = [
   {
     id: "1",
-    title: "How to get investor-ready, even if you're not selling yet",
+    title: "How to get capital partner-ready, even if you're not exiting yet",
     category: "Exit Preparation",
     image: "/images/test.webp",
     link: "#"
@@ -9,7 +9,7 @@ const blogPosts = [
   {
     id: "4",
     title: "What today’s buyers are really looking for in growth-stage businesses",
-    category: "Investor Insights",
+    category: "Capital Partner Insights",
     image: "/images/test.webp",
     link: "#"
   },

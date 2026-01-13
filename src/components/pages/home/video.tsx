@@ -227,7 +227,7 @@ export default function HomeVideo() {
           </span>{" "}
           and{" "}
           <span className="text-[#0224E9] font-extrabold">
-            strong investor networks.
+            strong capital partner networks.
           </span>{" "}
           The PhaseOne model is built to turn that expertise into real outcomes
           by helping the{" "}
