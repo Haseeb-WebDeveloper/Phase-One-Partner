@@ -215,7 +215,7 @@ export default function HomeVideo() {
             objectPosition: "center",
           }}
         >
-          <source src="/PhaseOne-video.mp4" type="video/mp4" />
+          <source src="/PhaseOne-Hero-Video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
