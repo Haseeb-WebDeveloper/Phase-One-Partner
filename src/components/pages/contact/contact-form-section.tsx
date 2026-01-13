@@ -186,7 +186,7 @@ export default function ContactFormSection() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell PhaseOne Partners about your inquiry..."
+                  placeholder="Tell PhaseOne Partners about your enquiry..."
                   className="min-h-[120px] text-base resize-none"
                 />
               </div>

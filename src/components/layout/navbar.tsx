@@ -180,7 +180,7 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
             <div className="flex flex-shrink-0 ">
               <Link href="/" className="ml-1.5 flex items-center">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.black.png"
                   alt="PhaseOne Partners Logo"
                   width={164}
                   height={39}
@@ -321,12 +321,12 @@ export default function Navbar({ isLight }: { isLight?: boolean }) {
           </div>
           
           {/* Mobile navbar wrapper */}
-          <div className="lg:hidden flex items-center justify-between bg-background px-6 py-4 rounded-full shadow">
+          <div className="lg:hidden flex items-center justify-between bg-background px-6 py-4 rounded-full">
             {/* Mobile Logo */}
             <div className="flex">
               <Link href="/" className="-m-1.5 p-1.5 inline-block">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.black.png"
                   alt="PhaseOne Partners"
                   width={600}
                   height={400}
