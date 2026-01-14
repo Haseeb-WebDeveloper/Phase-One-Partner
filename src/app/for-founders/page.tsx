@@ -132,7 +132,7 @@ export default function ForFounders() {
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
-              text="Book a Free Discovery Session Today"
+              text="Book a discovery session today' "
               variant="inverse"
               href="/contact"
             />

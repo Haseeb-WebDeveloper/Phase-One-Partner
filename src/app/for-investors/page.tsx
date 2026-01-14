@@ -141,7 +141,7 @@ export default function Forinvestors() {
         {/* Hero Content */}
         <div className="px-4 sm:px-6 lg:px-16 relative z-10 max-w-7xl mx-auto w-full text-center flex flex-col items-center">
           <h1 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[74px] text-white uppercase mb-2 lg:mb-4">
-            Leading Capital Partners <br />{" "}
+            Leading Investors <br />{" "}
             <span
               className=""
               style={{
@@ -157,7 +157,7 @@ export default function Forinvestors() {
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
-              text="Book a Free Discovery Session Today"
+              text="Book a discovery session today' "
               variant="inverse"
               href="/contact"
             />
