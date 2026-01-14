@@ -55,7 +55,7 @@ export default function MissionGoalsSection() {
       ),
     },
     {
-      text: "And to make every introduction count.",
+      text: "To make intentional introductions that count.",
       icon: (
         <svg
           className="w-6 h-6"

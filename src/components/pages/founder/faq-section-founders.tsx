@@ -10,7 +10,22 @@ export default function FAQSectionFounders() {
     {
       id: 1,
       question: "Who are you, and what do you do?",
-      answer: "PhaseOne Partners is a specialist, proprietary deal origination firm dedicated to helping founders and business owners connect with likeminded institutional capital partners, including private equity firms, family offices, and corporate capital partners. We are reaching out because your business was identified through detailed market research as having the specific characteristics our investment partner is seeking, such as a strong market position, growth trajectory, or unique capabilities. The fact that you haven't marketed your business is exactly the point: the best strategic partnerships often form before a formal sale process begins. We are seeking to explore mutual interest in a strategic partnership, not pressure you into a transaction. Many successful business owners are open to discussing growth capital, succession planning, or partnering with capital partners who can accelerate their vision. This is a confidential, no-pressure conversation to explore strategic fit."
+      answer: (
+        <>
+          <p>
+            PhaseOne Partners is a specialist, proprietary deal origination firm dedicated to helping founders and business owners connect with likeminded institutional capital partners, including private equity firms, family offices, and corporate capital partners.
+          </p>
+          <p>
+            We are reaching out because your business was identified through detailed market research as having the specific characteristics our investment partner is seeking, such as a strong market position, growth trajectory, or unique capabilities. The fact that you haven't marketed your business is exactly the point: the best strategic partnerships often form before a formal sale process begins.
+          </p>
+          <p>
+            We are seeking to explore mutual interest in a strategic partnership, not pressure you into a transaction. Many successful business owners are open to discussing growth capital, succession planning, or partnering with capital partners who can accelerate their vision.
+          </p>
+          <p>
+            This is a confidential, no-pressure conversation to explore strategic fit.
+          </p>
+        </>
+      )
     },
     {
       id: 2,
@@ -18,9 +33,13 @@ export default function FAQSectionFounders() {
       answer: (
         <>
           <p>
-            The key difference is representation: Traditional advisors and brokers represent exiting businesses; we represent the buyer. Advisors and brokers: They are hired by you, the business owner looking to exit, to run a competitive auction process, maximise price, and charge you a fee (typically 3 and up to 10% of the transaction value). PhaseOne Partners: We are paid by the investment partner (the buyer). We are not trying to exit your business for you. We explore whether your business is a strategic fit for our client and help connect you with the people who understand your industry, and are aligned with your vision. This means:
+            The key difference is representation: Traditional advisors and brokers represent exiting businesses; we represent the buyer. Advisors and brokers: They are hired by you, the business owner looking to exit, to run a competitive auction process, maximise price, and charge you a fee (typically 3 and up to 10% of the transaction value).
           </p>
-          <ul className="list-disc space-y-2 pl-5 mt-3 text-left">
+          <p>
+            PhaseOne Partners: We are paid by the investment partner (the buyer). We are not trying to exit your business for you. We explore whether your business is a strategic fit for our client and help connect you with the people who understand your industry, and are aligned with your vision.
+          </p>
+          <p className="font-semibold">This means:</p>
+          <ul className="list-disc space-y-2 pl-5 mt-2">
             <li>
               <span className="font-semibold">No auction pressure:</span> We offer exploratory, relationship-driven conversations, not a competitive auction process.
             </li>
@@ -37,12 +56,41 @@ export default function FAQSectionFounders() {
     {
       id: 3,
       question: "What information do you need from me, and how do you ensure confidentiality? I don't want my competitors, customers, or employees finding out.",
-      answer: "Confidentiality is paramount. Our initial conversation requires minimal information—just a high-level overview of your market position and growth trends. We don't put your business on a website, or advertise it broadly. We maintain confidentiality and through the entire process. If there is mutual interest, we immediately establish formal confidentiality agreements (NDAs) before any sensitive information is exchanged. Detailed information, such as financial performance or customer concentration, is only shared after NDAs are in place and mutual interest is established. We protect confidentiality through signed NDAs, limited sharing of information only with the core deal team, and secure data rooms. You control the pace of information disclosure."
+      answer: (
+        <>
+          <p className="font-semibold">Confidentiality is paramount.</p>
+          <p>
+            Our initial conversation requires minimal information—just a high-level overview of your market position and growth trends. We don't put your business on a website, or advertise it broadly. We maintain confidentiality and through the entire process.
+          </p>
+          <p>
+            If there is mutual interest, we immediately establish formal confidentiality agreements (NDAs) before any sensitive information is exchanged. Detailed information, such as financial performance or customer concentration, is only shared after NDAs are in place and mutual interest is established.
+          </p>
+          <p>
+            We protect confidentiality through signed NDAs, limited sharing of information only with the core deal team, and secure data rooms.
+          </p>
+          <p className="font-semibold">You control the pace of information disclosure.</p>
+        </>
+      )
     },
     {
       id: 4,
       question: "What happens if we explore this and I decide it's not the right fit?",
-      answer: "If you decide the fit is not right, we will respect that decision completely and immediately. We only connect you with institutional capital partners who are actively interested in investing in your industry, and do not advertise businesses for sale, but understand that sometimes things change. All conversations are kept confidential, and any information shared remains as such. Many business owners find they benefit from the strategic market insights gained, even without a transaction. If you are open to a confidential conversation to learn more about our partner's investment approach and explore alignment, we would welcome the opportunity."
+      answer: (
+        <>
+          <p>
+            If you decide the fit is not right, we will respect that decision completely and immediately.
+          </p>
+          <p>
+            We only connect you with institutional capital partners who are actively interested in investing in your industry, and do not advertise businesses for sale, but understand that sometimes things change.
+          </p>
+          <p>
+            All conversations are kept confidential, and any information shared remains as such. Many business owners find they benefit from the strategic market insights gained, even without a transaction.
+          </p>
+          <p>
+            If you are open to a confidential conversation to learn more about our partner's investment approach and explore alignment, we would welcome the opportunity.
+          </p>
+        </>
+      )
     }
   ];
 

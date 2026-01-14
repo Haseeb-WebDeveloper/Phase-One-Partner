@@ -153,7 +153,7 @@ export default function Forinvestors() {
             for Deals.
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-3xl mx-auto">
-          PhaseOne Partners connects you with high-quality, off-market founder led businesses in the niches and industries that meet your mandate" 
+          PhaseOne Partners connects you with high-quality, off-market founder led businesses in the niches and industries that meet your mandate.
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton

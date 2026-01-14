@@ -28,7 +28,7 @@ const sectionData = [
     title: "Capital Partners",
     subtitle: "High-Quality Deals, Curated to Your Portfolio",
     description:
-      "We bring you deals that are aligned with your investment. Each one is pre-qualified, prepared, and ready to progress.",
+      "We bring you deals that are aligned with your investment. Each one is Pre-qualified, prepared, and ready to progress.",
     features: [
       "Targeted introductions based on sector, strategy, and scale",
       "pre‑vetted opportunities with clearly aligned next steps",
@@ -118,20 +118,23 @@ export default function InvestorFounder() {
               <h4 className="text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
                 What Does Deal
               </h4>
-              <div className="relative flex gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
+              <div className="relative inline-flex items-start gap-3 text-3xl lg:text-4xl xl:text-[62px] font-extrabold text-[#333333]">
                 <p>Origination</p>
-                <p className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary">
-                  Mean for You
-                </p>
-                <Image
-                  src="/logo-tip.svg"
-                  alt="arrow-right"
-                  width={400}
-                  height={400}
-                  className="absolute -right-[6.5rem] -top-[2rem] w-fit h-8"
-                  priority
-                  quality={100}
-                />
+                <div className="relative inline-flex items-start">
+                  <p className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary">
+                    Mean for You
+                  </p>
+                  <Image
+                    src="/logo-tip.svg"
+                    alt="arrow-right"
+                    width={400}
+                    height={400}
+                    className="absolute left-full -ml-1 -top-8 w-auto h-8"
+                    style={{ minWidth: 'auto' }}
+                    priority
+                    quality={100}
+                  />
+                </div>
               </div>
             </div>
 

@@ -54,7 +54,7 @@ const Team = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-          Why Deal Origination works for Founders and Business Owners?
+          Why Deal Origination works for Founders and Business Owners
           </h2>
           <p className="text-xl md:text-[26px] max-w-4xl mx-auto">
             A side-by-side comparison of how we work differently to traditional
