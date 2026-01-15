@@ -76,7 +76,7 @@ export default function Footer() {
                     href="/for-founders"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    For Business Owners
+                    For Founders
                   </Link>
                 </li>
                 <li>
@@ -211,7 +211,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col sm:flex-row justify-center lg:justify-between items-center pt-4 gap-2 sm:gap-0">
           <div className="text-[14px] sm:text-[16px] font-inter font-medium text-center lg:text-left">
-            © 2025 PhaseOne Partners. All Rights Reserved
+            © 2026 PhaseOne Partners. All Rights Reserved
           </div>
           <div className="text-[12px] sm:text-[16px] font-inter font-medium text-center">
             Website Designed and Built by{" "}

@@ -67,11 +67,11 @@ export default function HeroSection() {
               textDecorationThickness: "4px",
             }}
           >
-            More than a Business Broker we are your
+            More than a Business Broker, we are your
           </span>
         </h3>
         <h1 className="text-5xl leading-[110%] md:text-[78px] lg:font-semibold font-extrabold uppercase text-pretty text-primary relative">
-          Investment Partners
+          Investment Partner
         </h1>
         <div className="space-y-6 lg:mt-12 mt-6 z-10">
           <p className="text-3xl lg:text-[36px] font-bold font-manrope lg:leading-[100%]">
@@ -93,7 +93,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="lg:mt-12 mt-6 w-fit mx-auto">
-          <AnimatedButton text="Book a discovery session today' " className="mx-auto" href="/contact" />
+          <AnimatedButton text="Book a discovery session today" className="mx-auto" href="/contact" />
         </div>
       </div>
     </section>
