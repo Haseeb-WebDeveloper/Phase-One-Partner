@@ -26,13 +26,6 @@ export default function Home() {
       <div className="hidden">
         <WhoWeAre />
       </div>
-      <Image
-        src="/divider.png"
-        alt="Who we are"
-        width={1000}
-        height={1000}
-        className="max-w-[1200px] mx-auto px-4 md:px-0 w-full h-full object-cover object-center"
-      />
       <Team />
       <Image
         src="/divider.png"
