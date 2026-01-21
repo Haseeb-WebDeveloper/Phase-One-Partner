@@ -31,7 +31,7 @@ const sectionData = [
       "We bring you deals that are aligned with your investment. Each one is Pre-qualified, prepared, and ready to progress.",
     features: [
       "Targeted introductions based on sector, strategy, and scale",
-      "pre‑vetted opportunities with clearly aligned next steps",
+      "Pre‑vetted opportunities with clearly aligned next steps",
       "Tailor‑made and purpose‑built materials — never generic IMs",
     ],
     buttonText: "View Our Approach",

@@ -30,7 +30,7 @@ export default function AboutUsHeroSection() {
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
-              text="Book a discovery session today' "
+              text="Book a discovery session today "
               variant="inverse"
               href="/contact"
             />

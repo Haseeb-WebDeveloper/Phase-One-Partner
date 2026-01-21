@@ -54,7 +54,7 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "For Founders", href: "/for-founders" },
+  { name: "For Business Owners", href: "/for-founders" },
   { name: "For Capital Partners", href: "/for-investors" },
   {
     name: "Explore",

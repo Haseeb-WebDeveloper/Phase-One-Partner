@@ -76,7 +76,7 @@ export default function Footer() {
                     href="/for-founders"
                     className="text-[14px] sm:text-[16px] lg:text-[18px] font-medium hover:text-primary transition-colors block"
                   >
-                    For Founders
+                    For Business Owners
                   </Link>
                 </li>
                 <li>
