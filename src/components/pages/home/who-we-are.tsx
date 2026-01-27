@@ -139,7 +139,7 @@ export function WhoWeAre() {
         }}
       >
         {/* Desktop */}
-        <div className="hidden lg:flex relative  gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
+        <div className="hidden xl:flex relative  gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
           <p>We Get To </p>
           <p className="bg-[#c0c8f9] rounded-l-lg px-2">
             Work
@@ -149,14 +149,14 @@ export function WhoWeAre() {
             alt="arrow-right"
             width={400}
             height={400}
-            className="absolute bottom-0 -right-[100px] w-[102px]"
+            className="absolute bottom-0 -right-[68px] w-[72px]"
             priority
             quality={100}
           />
         </div>
 
         {/* Mobile */}
-        <div className="lg:hidden relative flex gap-2 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
+        <div className="xl:hidden relative flex gap-2 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
           <p>We Get To </p>
           <p
             ref={mobileHighlightRef}
@@ -169,7 +169,7 @@ export function WhoWeAre() {
               alt="PhaseOne tag"
               width={400}
               height={400}
-              className="absolute bottom-0 -right-[54px] w-[54px]"
+              className="absolute bottom-0 -right-[35px] w-[37px]"
               priority
               quality={100}
             />

@@ -114,7 +114,7 @@ export default function InvestorFounder() {
             PhaseOne Partners
             </p>
             {/* Desktop */}
-            <div className="hidden lg:block">
+            <div className="hidden xl:block">
               <h4 className="text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
                 What Does Deal
               </h4>
@@ -129,7 +129,7 @@ export default function InvestorFounder() {
                     alt="arrow-right"
                     width={400}
                     height={400}
-                    className="absolute bottom-0 -right-[100px] w-[102px]"
+                    className="absolute bottom-0 -right-[68px] w-[72px]"
                     style={{ minWidth: 'auto' }}
                     priority
                     quality={100}
@@ -139,7 +139,7 @@ export default function InvestorFounder() {
             </div>
 
             {/* Mobile */}
-            <div className="lg:hidden space-y-1.5">
+            <div className="xl:hidden space-y-1.5">
               <h4 className="text-3xl max-w-4xl mx-auto font-extrabold text-[#333333] leading-[120%]">
                 What Does Deal Origination
               </h4>
@@ -156,7 +156,7 @@ export default function InvestorFounder() {
                   alt="PhaseOne tag"
                   width={400}
                   height={400}
-                  className="absolute bottom-0 -right-[54px] w-[54px]"
+                  className="absolute bottom-0 -right-[35px] w-[37px]"
                   priority
                   quality={100}
                 />
