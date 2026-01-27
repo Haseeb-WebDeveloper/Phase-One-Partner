@@ -141,15 +141,15 @@ export function WhoWeAre() {
         {/* Desktop */}
         <div className="hidden lg:flex relative  gap-3 w-fit text-3xl lg:text-4xl xl:text-[62px] max-w-4xl mx-auto font-extrabold text-[#333333]">
           <p>We Get To </p>
-          <p className="bg-[#c0c8f9] rounded-l-lg px-2 border-r-5 border-primary">
+          <p className="bg-[#c0c8f9] rounded-l-lg px-2">
             Work
           </p>
           <Image
-            src="/logo-tip.svg"
+            src="/flag.svg"
             alt="arrow-right"
             width={400}
             height={400}
-            className="absolute -right-[6.45rem] -top-[2rem] w-fit h-8"
+            className="absolute bottom-0 -right-[100px] w-[102px]"
             priority
             quality={100}
           />
@@ -160,16 +160,16 @@ export function WhoWeAre() {
           <p>We Get To </p>
           <p
             ref={mobileHighlightRef}
-            className="bg-[#c0c8f9] rounded-l-lg pl-2 pr-1 border-r-5 border-primary leading-[120%]"
+            className="bg-[#c0c8f9] rounded-l-lg pl-2 pr-1 leading-[120%] py-4"
           >
             Work
             <Image
               ref={mobileTagRef}
-              src="/logo-tip.svg"
+              src="/flag.svg"
               alt="PhaseOne tag"
               width={400}
               height={400}
-              className="absolute -right-[70%] -top-[1.7rem]  w-full  h-7 lg:h-5"
+              className="absolute bottom-0 -right-[54px] w-[54px]"
               priority
               quality={100}
             />
