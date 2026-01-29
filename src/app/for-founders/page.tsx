@@ -102,8 +102,9 @@ export default function ForFounders() {
   // Preload critical hero images
   const heroImages = [
     "/bg/partners-for-growth-hero-bg.png",
+    "/foreman-or-worker-work-at-factory.jpg",
     "/founder-optimized-images/skilled-mechanic-working-on-large-truck-repair-2025-10-08-10-22-08-utc_11zon.webp",
-    "/founder-optimized-images/craftsman-in-grey-work-clothes-puts-grout-on-a-flo-2025-03-17-20-57-05-utc_11zon.webp",
+    "/car-technician-check-engines-choose-quality-gear-2026-01-07-02-19-59-utc (1).jpg",
   ];
 
   return (
@@ -145,7 +146,7 @@ export default function ForFounders() {
             {/* 1st column  */}
             <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
               <LazyBackgroundImage
-                src="/founder-optimized-images/craftsman-in-grey-work-clothes-puts-grout-on-a-flo-2025-03-17-20-57-05-utc_11zon.webp"
+                src="/foreman-or-worker-work-at-factory.jpg"
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
                   backgroundSize: "cover",
@@ -180,7 +181,7 @@ export default function ForFounders() {
             {/* 3rd column  */}
             <div className="flex flex-col gap-2 lg:gap-6 w-[30%]">
               <LazyBackgroundImage
-                src="/founder-optimized-images/man-working-on-machine-in-industrial-factory-2024-09-13-19-48-20-utc_11zon.webp"
+                src="/car-technician-check-engines-choose-quality-gear-2026-01-07-02-19-59-utc (1).jpg"
                 className="w-full h-[72px] md:h-[236px] md:rounded-[12px] rounded-[6px]"
                 style={{
                   backgroundSize: "cover",
