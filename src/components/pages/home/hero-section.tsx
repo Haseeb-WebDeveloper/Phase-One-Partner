@@ -45,8 +45,6 @@ export default function HeroSection() {
 
   return (
     <section className="w-full h-full pt-28 lg:pt-40 pb-32 lg:pb-36 max-w-[1800px] mx-auto px-6 lg:px-16 lg:min-h-screen [@media(min-width:1600px)]:min-h-auto relative z-10 bg-[#f0f0f0]">
-
-
       <div className="absolute bottom-0 inset-x-0 lg:inset-x-auto lg:right-0 lg:w-[80vw] w-full h-full max-h-[100vh] z-0">
         <div className="w-full h-full relative">
           <Image
@@ -59,23 +57,19 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="flex flex-col justify-center text-foreground gap-3 font-manrope text-center mx-auto max-w-full">
-        <h3 className="text-lg leading-[110%] md:text-[32px] font-manrope font-normal">
-          <span
-            className="relative inline-block"
-            style={{
-              textDecorationColor: "oklch(42.69% 0.24 269.16)", // matches --primary
-              textDecorationThickness: "4px",
-            }}
-          >
-            More than a Business Broker, we are your
-          </span>
-        </h3>
-        <h1 className="text-5xl leading-[110%] md:text-[78px] lg:font-semibold font-extrabold uppercase text-pretty text-primary relative">
-          Investment Partner
-        </h1>
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/logo.black.png"
+            alt="PhaseOne Logo"
+            width={600}
+            height={200}
+            className="w-full max-w-[300px] md:max-w-[500px] h-auto object-contain"
+            priority
+          />
+        </div>
         <div className="space-y-6 lg:mt-12 mt-6 z-10">
           <p className="text-3xl lg:text-[36px] font-bold font-manrope lg:leading-[100%]">
-            The New Era of{" "}
+            The new era of{" "}
             <span
               className="underline"
               style={{
@@ -84,16 +78,20 @@ export default function HeroSection() {
                 textDecorationThickness: "4px",
               }}
             >
-              Deal Origination
+              deal origination
             </span>{" "}
-            Starts Here.
+            starts here.
           </p>
-          <p className="text-xl  lg:text-[29.57px] ">
+          {/* <p className="text-xl  lg:text-[29.57px] ">
             We connect only the right businesses with the right capital partners
-          </p>
+          </p> */}
         </div>
         <div className="lg:mt-12 mt-6 w-fit mx-auto">
-          <AnimatedButton text="Book a discovery session today" className="mx-auto" href="/contact" />
+          <AnimatedButton
+            text="Book a discovery session today"
+            className="mx-auto"
+            href="/contact"
+          />
         </div>
       </div>
     </section>

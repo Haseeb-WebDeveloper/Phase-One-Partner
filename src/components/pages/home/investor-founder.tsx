@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
 
 const sectionData = [
   {
-    title: "Founders",
+    title: " Business Owners",
     subtitle: "A Smarter Way to Exit Your Business",
     description:
       "We don't just list your company and hope the right buyer comes along. We work with you to position the opportunity, find aligned capital partners, and manage the process all the way through.",
@@ -26,13 +26,13 @@ const sectionData = [
   },
   {
     title: "Capital Partners",
-    subtitle: "High-Quality Deals, Curated to Your Portfolio",
+    subtitle: "High-Quality Deals, Curated to Your MANDATE",
     description:
-      "We bring you deals that are aligned with your investment. Each one is Pre-qualified, prepared, and ready to progress.",
+      "We bring you deals that are aligned with your mandate. Each one is pre-qualified, and ready to progress.",
     features: [
       "Targeted introductions based on sector, strategy, and scale",
       "Pre‑vetted opportunities with clearly aligned next steps",
-      "Tailor‑made and purpose‑built materials — never generic IMs",
+      "Tailor made and purpose built materials, never generic IMs",
     ],
     buttonText: "View Our Approach",
   },
@@ -141,7 +141,7 @@ export default function InvestorFounder() {
             {/* Mobile */}
             <div className="xl:hidden space-y-1.5">
               <h4 className="text-3xl max-w-4xl mx-auto font-extrabold text-[#333333] leading-[120%]">
-                What Does Deal Origination
+                What does deal origination
               </h4>
               <div className="relative mt-1 flex gap-3 w-fit text-3xl max-w-4xl mx-auto font-extrabold text-[#333333]">
                 <p
@@ -165,9 +165,9 @@ export default function InvestorFounder() {
           </div>
 
           <p className="text-xl lg:text-[25px] text-[#333333] font-poppins max-w-6xl mx-auto leading-relaxed text-pretty">
-            Whether you're preparing to exit or searching for your next
-            growth opportunity, deal origination is the service that connects
-            high-quality businesses with aligned capital partners.
+             PhaseOne Partners connects high-quality
+businesses with aligned capital providers and
+strategic acquirers.
           </p>
         </div>
 

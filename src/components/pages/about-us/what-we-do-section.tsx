@@ -4,25 +4,25 @@ import { Briefcase, BarChart2, FileText, Layers } from "lucide-react";
 export default function WhatWeDoSection() {
   const services = [
     {
-      title: "Deal Origination",
+      title: "Deal origination",
       description:
         "Sourcing and qualifying high-potential on- and off-market opportunities.",
       icon: Briefcase,
     },
     {
-      title: "Industry and Niche Research",
+      title: "Industry and niche research",
       description:
         "In-depth market mapping and analysis where value is emerging.",
       icon: BarChart2,
     },
     {
-      title: "Transaction Support",
+      title: "Transaction support",
       description:
         "Managing stakeholder engagement and deal progression with diligence, discretion, and expertise.",
       icon: FileText,
     },
     {
-      title: "Buy and Build",
+      title: "Buy and build",
       description:
         "Enhancing platform strategies through add-on sourcing, integration planning, and ongoing support.",
       icon: Layers,
@@ -45,7 +45,7 @@ export default function WhatWeDoSection() {
           <div className="flex flex-col justify-center space-y-5 lg:space-y-6 h-full text-center lg:text-left">
             <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px]">
               <span className="text-foreground">What</span>{" "}
-              <span className="text-[#0224e9]">We Do</span>
+              <span className="text-[#0224e9]">we do</span>
             </h2>
             <p className="font-inter text-[14px] lg:text-[18px] text-foreground/80 leading-[24px] lg:leading-[28px]">
               We design origination programs that extend reach and sharpen focus

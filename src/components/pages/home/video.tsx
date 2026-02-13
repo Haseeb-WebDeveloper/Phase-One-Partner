@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react"; 
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -91,7 +91,6 @@ export default function HomeVideo() {
         paddingTop: "4vw",
       });
     }
-
   }, []);
 
   // Set up video event listeners
@@ -136,7 +135,9 @@ export default function HomeVideo() {
         networkState: video.networkState,
         readyState: video.readyState,
         src: video.currentSrc || video.src,
-        allSources: Array.from(video.querySelectorAll('source')).map(s => s.src),
+        allSources: Array.from(video.querySelectorAll("source")).map(
+          (s) => s.src
+        ),
       });
     };
 
@@ -162,7 +163,9 @@ export default function HomeVideo() {
   }, [canAutoplay]);
 
   const handleVideoClick = async (
-    e: React.MouseEvent<HTMLButtonElement | HTMLVideoElement | HTMLDivElement> | React.TouchEvent<HTMLVideoElement>
+    e:
+      | React.MouseEvent<HTMLButtonElement | HTMLVideoElement | HTMLDivElement>
+      | React.TouchEvent<HTMLVideoElement>
   ) => {
     // Prevent default behavior
     e.preventDefault();
@@ -221,7 +224,7 @@ export default function HomeVideo() {
       </div>
       <div className="pt-20 lg:pt-32 max-w-[1600px] mx-auto px-6 lg:px-16 w-full space-y-[6vw]">
         <h3 className=" font-medium text-center text-pretty text-[20px] md:text-3xl lg:text-[35px] lg:tracking-tight leading-[130%] ">
-          We work across core sectors where we bring{" "}
+          We work across core sectors, bringing{" "}
           <span className="text-[#0224E9] font-extrabold">
             deep commercial insight
           </span>{" "}
@@ -229,14 +232,14 @@ export default function HomeVideo() {
           <span className="text-[#0224E9] font-extrabold">
             strong capital partner networks.
           </span>{" "}
-          The PhaseOne model is built to turn that expertise into real outcomes
-          by helping the{" "}
+          The PhaseOne Partners model is designed to turn that expertise into
+          outcomes, connecting the{" "}
           <span className="text-[#0224E9] font-extrabold">
-            right companies and capital connect
+            right companies with the right capital
           </span>{" "}
-          with clarity and confidence. Time and again, we’ve helped partners
+          through clarity and confidence. Time and again, we help partners
           achieve better results through meticulous preparation and strategic
-          positioning.
+          positioning
         </h3>
       </div>
     </section>

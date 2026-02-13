@@ -17,7 +17,9 @@ export default function ContactFormSection() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -64,7 +66,9 @@ export default function ContactFormSection() {
               </h2>
               <p className="text-lg lg:text-[20px] font-inter text-[#333333] leading-relaxed">
                 {/* Switched to text-[#333333] for body text */}
-                Whether you're a founder looking for investment or a capital partner seeking opportunities, we're here to help you make the right connections.
+                Whether you're a business owners looking for investment or a
+                capital partner seeking opportunities, we're here to help you
+                make the right connections.
               </p>
             </div>
 
@@ -102,20 +106,21 @@ export default function ContactFormSection() {
                   </a>
                 </div>
               </div>
-
-             
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-lg">
             <h3 className="text-2xl lg:text-[32px] font-manrope font-bold text-[#333333] mb-6">
-              Send PhaseOne Partners a Message
+              Send PhaseOne Partners a message
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-[#333333] font-inter font-medium">
+                <Label
+                  htmlFor="name"
+                  className="text-[#333333] font-inter font-medium"
+                >
                   Full Name *
                 </Label>
                 <Input
@@ -131,7 +136,10 @@ export default function ContactFormSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-[#333333] font-inter font-medium">
+                <Label
+                  htmlFor="email"
+                  className="text-[#333333] font-inter font-medium"
+                >
                   Email Address *
                 </Label>
                 <Input
@@ -147,7 +155,10 @@ export default function ContactFormSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="phone" className="text-[#333333] font-inter font-medium">
+                <Label
+                  htmlFor="phone"
+                  className="text-[#333333] font-inter font-medium"
+                >
                   Phone Number
                 </Label>
                 <Input
@@ -162,7 +173,10 @@ export default function ContactFormSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="company" className="text-[#333333] font-inter font-medium">
+                <Label
+                  htmlFor="company"
+                  className="text-[#333333] font-inter font-medium"
+                >
                   Company Name
                 </Label>
                 <Input
@@ -177,7 +191,10 @@ export default function ContactFormSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-[#333333] font-inter font-medium">
+                <Label
+                  htmlFor="message"
+                  className="text-[#333333] font-inter font-medium"
+                >
                   Message *
                 </Label>
                 <Textarea
@@ -191,11 +208,11 @@ export default function ContactFormSection() {
                 />
               </div>
 
-
               {submitStatus === "success" && (
                 <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
                   <p className="text-green-800 font-inter text-sm">
-                    Thank you! Your message has been sent successfully. We'll get back to you soon.
+                    Thank you! Your message has been sent successfully. We'll
+                    get back to you soon.
                   </p>
                 </div>
               )}
@@ -207,7 +224,6 @@ export default function ContactFormSection() {
                   </p>
                 </div>
               )}
-
 
               <Button
                 type="submit"
@@ -223,6 +239,3 @@ export default function ContactFormSection() {
     </section>
   );
 }
-
-
-

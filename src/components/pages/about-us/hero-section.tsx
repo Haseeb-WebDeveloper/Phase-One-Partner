@@ -26,7 +26,7 @@ export default function AboutUsHeroSection() {
             About PhaseOne Partners
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-none mx-auto">
-            Connecting founders and capital partners for lasting success.
+            Connecting business owners and capital partners for lasting success.
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton

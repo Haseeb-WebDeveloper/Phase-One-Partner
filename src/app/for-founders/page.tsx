@@ -17,37 +17,37 @@ import { LazyBackgroundImage } from "@/components/ui/lazy-background-image";
 export default function ForFounders() {
   const advantages = [
     {
-      title: "Direct Access to Capital Partners",
+      title: "Direct access to capital partners",
       description:
         "We connect you straight to vetted private equity funds and strategic buyers already investing in your industry. No broad auctions, no wasted time.",
       imageUrl: "/icons/database.svg", // Placeholder for icon
     },
     {
-      title: "Fast, Clean Process",
+      title: "Fast, clean process",
       description:
         "Pre-qualified capital partners mean fewer distractions, no wasted presentations, and more time spent on serious opportunities.",
       imageUrl: "/icons/fast.svg", // Placeholder for icon
     },
     {
-      title: "Confidential and Targeted Access",
+      title: "Confidential and targeted access",
       description:
         "Your reputation matters. We approach select aligned capital partners who want to speak with you directly, keeping the process discreet.",
       imageUrl: "/icons/target.svg", // Placeholder for icon
     },
     {
-      title: "Aligned Incentives",
+      title: "Aligned incentives",
       description:
         "We are paid by capital partners, not by pushing deals. Our goal is finding the right long-term match for your business.",
       imageUrl: "/icons/money.svg", // Placeholder for icon
     },
     {
-      title: "Protecting Your Legacy",
+      title: "Protecting your legacy",
       description:
         "We help match you with capital partners who share your vision and will look after your employees, customers, and the culture you've built.",
       imageUrl: "/icons/protection.svg", // Placeholder for icon
     },
     {
-      title: "Relationships, Not Transactions",
+      title: "Relationships, not transactions",
       description:
         "We prioritise early, genuine conversations so you can assess cultural fit and alignment before formal discussions begin.",
       imageUrl: "/icons/relationship.svg", // Placeholder for icon
@@ -57,42 +57,42 @@ export default function ForFounders() {
   const phases = [
     {
       number: "01.",
-      title: "Initial Exploration And Planning",
+      title: "Initial exploration and planning",
       description:
         "We meet to discuss your goals, review financials, and understand your business. Confidentiality agreements protect your information from the start.",
       duration: "2–4 weeks",
     },
     {
       number: "02.",
-      title: "Early Capital Partner Engagement",
+      title: "Early capital partner engagement",
       description:
         "We introduce you to carefully selected capital partners who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities.",
       duration: "3–6 weeks",
     },
     {
       number: "03.",
-      title: "Indicative Offers / LOIs",
+      title: "Indicative offers/LOIs",
       description:
         "Investors provide an initial offer, subject to due diligence, for you to evaluate these proposals, comparing terms, valuation, and strategic fit for your business.",
       duration: "2–3 weeks",
     },
     {
       number: "04.",
-      title: "Due Diligence",
+      title: "Due diligence",
       description:
         "The investor will conduct thorough due diligence on the business, which encompases the commericial, financial, tax and legal aspects of your operations.",
       duration: "8–12 weeks",
     },
     {
       number: "05.",
-      title: "Final Negotiation And Signing",
+      title: "Final negotiation and signing",
       description:
         "Once agreed, legal documents are prepared and the transaction is finalised with proper documentation.",
       duration: "3–5 weeks",
     },
     {
       number: "06.",
-      title: "Completion And Transition",
+      title: "Completion and transition",
       description:
         "The deal closes and ownership transitions. We support the handover process, ensuring a smooth transition for your team, customers, and operations.",
       duration: "2–4 weeks and ongoing handover",
@@ -238,7 +238,9 @@ export default function ForFounders() {
                 </p>
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
                   We guide you through{" "}
-                  <span className="text-[#0224e9]">every phase of the process.</span>
+                  <span className="text-[#0224e9]">
+                    every phase of the process.
+                  </span>
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px] mx-auto lg:mx-0">
                   Exiting a business can feel overwhelming, but you don't need
@@ -246,13 +248,15 @@ export default function ForFounders() {
                 </p>
               </div>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none mx-auto lg:mx-0">
-                With PhaseOne, every stage is structured, managed, and supported,
-                so you can focus on running your business while we handle the
-                complexities.
+                With PhaseOne Partners, we manage the complexity at every stage,
+                so you can stay focused on driving your business forward.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+              <Button
+                className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium"
+                asChild
+              >
                 <Link href="#phases-of-deal">Learn How We Help</Link>
               </Button>
             </div>
@@ -288,7 +292,7 @@ export default function ForFounders() {
                 Benefits
               </p>
               <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                Our Key <span className="text-[#0224e9]">Advantages</span>
+                Our Key <span className="text-[#0224e9]">advantages</span>
               </h2>
             </div>
           </div>
@@ -339,7 +343,9 @@ export default function ForFounders() {
               const borderTop = isFirstRow ? "none" : "1px solid #0000000D";
               const borderBottom = isSecondRow ? "none" : "1px solid #0000000D";
               const borderLeft = isFirstColumn ? "none" : "1px solid #0000000D";
-              const borderRight = isThirdColumn ? "none" : "1px solid #0000000D";
+              const borderRight = isThirdColumn
+                ? "none"
+                : "1px solid #0000000D";
 
               return (
                 <div
@@ -375,7 +381,10 @@ export default function ForFounders() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section id="phases-of-deal" className="py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center">
+      <section
+        id="phases-of-deal"
+        className="py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white flex flex-col items-center justify-center"
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div className="space-y-10 lg:space-y-[60px] flex flex-col justify-center h-full text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
@@ -383,16 +392,20 @@ export default function ForFounders() {
                 The Phase of Doing a Deal
               </p>
               <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                From the First Call to Beyond the Signed{" "}
-                <span className="text-[#0224e9]">Agreement</span>
+                From the first call to beyond the signed{" "}
+                <span className="text-[#0224e9]">agreement</span>
               </h2>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px]">
-              There are 6 simple phases of finding the right growth or succession partner.
+                There are 6 simple phases of finding the right growth or
+                succession partner.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
-                <Link href="/contact">Get Started Today</Link>
+              <Button
+                className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium"
+                asChild
+              >
+                <Link href="/contact"> Get started today</Link>
               </Button>
             </div>
           </div>
@@ -436,14 +449,14 @@ export default function ForFounders() {
       {/* FAQ Section */}
       <FAQSectionFounders />
 
-      {/* 15-Minute Conversation CTA Section */}
+      {/* A 15 minute conversation CTA Section */}
       <section className="relative py-12 lg:py-20 px-4 lg:px-16">
         <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
           {/* Background decorative elements */}
           <div className="absolute -left-20 lg:left-0 -bottom-8 lg:bottom-0">
             <Image
               src="/bg/partners-for-growth-get-started-desktop.png"
-              alt="Partners for Growth 15-Minute Conversation Background"
+              alt="Partners for Growth A 15 minute conversation Background"
               width={584}
               height={730}
               className="w-fit h-[200px] lg:h-[280px] object-cover opacity-80 lg:opacity-100"
@@ -452,7 +465,7 @@ export default function ForFounders() {
           <div className="absolute -right-8 -top-8 lg:right-0 lg:top-0">
             <Image
               src="/bg/partners-for-growth-get-started-2-desktop.png"
-              alt="Partners for Growth 15-Minute Conversation Background"
+              alt="Partners for Growth A 15 minute conversation Background"
               width={584}
               height={730}
               className="w-fit h-[200px] lg:h-[300px] object-cover opacity-80 lg:opacity-100"
@@ -464,14 +477,19 @@ export default function ForFounders() {
               Next Step
             </p>
             <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-white">
-              A 15‑Minute Conversation
+              A 15 minute conversation
             </h2>
             <p className="font-inter text-[16px] lg:text-[18px] text-white leading-[26px] lg:leading-[28px] max-w-[359px] lg:max-w-[636px] mx-auto">
-              We'll outline the signals we're seeing from aligned investors and help you understand whether there's real conviction behind your sector. You'll have immediate clarity on next steps.
+              We'll outline the signals we're seeing from aligned investors and
+              help you understand whether there's real conviction behind your
+              sector. You'll have immediate clarity on next steps.
             </p>
             <div className="flex justify-center">
-              <Button className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
-                <Link href="/contact">Get Started Today</Link>
+              <Button
+                className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium"
+                asChild
+              >
+                <Link href="/contact"> Get started today</Link>
               </Button>
             </div>
           </div>

@@ -114,7 +114,7 @@ export default function FAQSectionFounders() {
             </div>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-            Still Got Questions?
+            Still have questions?
           </h2>
         </div>
 

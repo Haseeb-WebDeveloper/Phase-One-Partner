@@ -57,14 +57,14 @@ export default function Forinvestors() {
   const phases = [
     {
       number: "01.",
-      title: "Mandate and Calibration",
+      title: "Mandate and calibration",
       description:
         "Conversations start with deep industry research and alignment with your key objectives. From there, we build a target map, and identify key next steps.",
       duration: "1–2 weeks",
     },
     {
       number: "02.",
-      title: "Market Outreach",
+      title: "Market outreach",
       description:
         "We introduce you to carefully selected capital partners who have expressed genuine interest in your industry and business model. These are pre-qualified opportunities, not cold calls.",
       duration: "3–6 weeks",
@@ -92,7 +92,7 @@ export default function Forinvestors() {
     },
     {
       number: "06.",
-      title: "Post-completion support",
+      title: " Post completion support",
       description:
         "The deal closes and ownership transitions. We support the handover process, ensuring a smooth transition for your team, customers, and operations.",
       duration: "2–4 weeks, then as needed",
@@ -153,7 +153,8 @@ export default function Forinvestors() {
             for Deals.
           </h1>
           <p className="font-inter text-[16px] lg:text-[28px] text-white mb-4 lg:mb-8 max-w-[400px] lg:max-w-3xl mx-auto">
-          PhaseOne Partners connects you with high-quality, off-market founder led businesses in the niches and industries that meet your mandate.
+            PhaseOne Partners connects you with high quality, off-market
+            businesses in the niches and industries that meet your mandate.
           </p>
           <div className="w-fit mx-auto">
             <AnimatedButton
@@ -266,19 +267,24 @@ export default function Forinvestors() {
                   meet your mandate.
                 </h2>
                 <p className="font-inter font-medium text-[16px] lg:text-[28px] text-black leading-[26px] lg:leading-[36px] max-w-[399px] lg:max-w-[618px] mx-auto lg:mx-0">
-                  Most capital partners wait for businesses to come to market. PhaseOne Partners means uncovering founder-led opportunities before
-                  they are even considering a sale.
+                  Most capital partners wait for opportunities to come to
+                  market. PhaseOne Partners focuses on building relationships
+                  early, uncovering founder led businesses before a sale is even
+                  on the table.
                 </p>
               </div>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] max-w-[389px] lg:max-w-none mx-auto lg:mx-0">
-                With PhaseOne, you gain access to high quality, off-market
-                businesses that fit your mandate and move at your pace. Every
-                introduction is discreet, structured, and designed to save you
-                time while strengthening your deal flow.
+                We provide access to high quality, off market opportunities that
+                align with your mandate and investment horizon. Every
+                introduction is handled with discretion, structure, and a focus
+                on long term value.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start w-full">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
+              <Button
+                className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium"
+                asChild
+              >
                 <Link href="#phases-of-deal">Learn How We Help</Link>
               </Button>
             </div>
@@ -315,13 +321,10 @@ export default function Forinvestors() {
                   Benefits
                 </p>
                 <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                  What you get with<br />
+                  What you get with
+                  <br />
                   <span className="text-[#0224e9]">PhaseOne Partners</span>
                 </h2>
-                <p className="font-inter text-[14px] lg:text-[18px] text-[#333333] max-w-[299px] lg:max-w-[516px] mx-auto leading-[24px] lg:leading-[28px] mt-4 lg:mt-6">
-                  Key advantages that make a difference when expanding, growing,
-                  or exiting your company
-                </p>
               </div>
             </div>
 
@@ -329,11 +332,12 @@ export default function Forinvestors() {
             <div className="max-w-4xl mx-auto lg:hidden">
               <div className="bg-background z-10 flex flex-col p-8 border-2 border-[#0224e9] rounded-[32px] font-manrope shadow-lg">
                 <div className="mb-6">
-                
-
                   <ul className="space-y-4 text-foreground">
                     {advantages.map((advantage, index) => (
-                      <li key={index} className="flex items-center text-left w-full">
+                      <li
+                        key={index}
+                        className="flex items-center text-left w-full"
+                      >
                         <div className="flex items-center gap-4 w-full">
                           <div className="w-[35px] h-[35px] rounded flex-shrink-0 mt-1 flex items-center justify-center">
                             <Image
@@ -357,7 +361,6 @@ export default function Forinvestors() {
                     ))}
                   </ul>
                 </div>
-
               </div>
             </div>
 
@@ -416,7 +419,10 @@ export default function Forinvestors() {
       </section>
 
       {/* The Phase of Doing a Deal Section */}
-      <section id="phases-of-deal" className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white">
+      <section
+        id="phases-of-deal"
+        className="relative py-12 lg:py-20 px-[15px] lg:px-[70px] bg-white"
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-10 lg:space-y-[60px] flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="space-y-5 lg:space-y-[30px]">
@@ -424,16 +430,20 @@ export default function Forinvestors() {
                 The Phase of Doing a Deal
               </p>
               <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-black">
-                From the First Call to Beyond the Signed{" "}
-                <span className="text-[#0224e9]">Agreement</span>
+                From the first call to beyond the signed{" "}
+                <span className="text-[#0224e9]">agreement</span>
               </h2>
               <p className="font-inter text-[14px] lg:text-[18px] text-black leading-[24px] lg:leading-[28px] mx-auto lg:mx-0">
-              There are 6 simple phases of sourcing that we deliver on, with clarity and momentum.
+                There are 6 simple phases of sourcing that we deliver on, with
+                clarity and momentum.
               </p>
             </div>
             <div className="flex justify-center lg:justify-start w-full">
-              <Button className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium" asChild>
-                <Link href="/contact">Get Started Today</Link>
+              <Button
+                className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium"
+                asChild
+              >
+                <Link href="/contact"> Get started today</Link>
               </Button>
             </div>
           </div>
@@ -486,7 +496,7 @@ export default function Forinvestors() {
             <div className="absolute top-1/2 -translate-y-1/2 right-[-5vw] z-1 pointer-events-none opacity-100">
               <Image
                 src="/bg/partners-for-growth-3nd-section.png"
-                alt="Partners for Growth 15-Minute Conversation Background"
+                alt="Partners for Growth A 15 minute conversation Background"
                 width={1200}
                 height={1200}
                 className="w-fit h-[520px] object-cover opacity-100"
@@ -507,14 +517,14 @@ export default function Forinvestors() {
         </div>
       </div>
 
-      {/* 15-Minute Conversation CTA Section */}
+      {/* A 15 minute conversation CTA Section */}
       <section className="relative py-12 lg:py-20 px-4 lg:px-16">
         <div className="max-w-[400px] lg:max-w-[1300px] mx-auto bg-gradient-to-b from-[#0224e9] to-[#011483] rounded-[9.846px] lg:rounded-[32px] p-8 lg:p-20 text-center relative overflow-hidden min-h-[351px] lg:min-h-[567px] flex items-center justify-center">
           {/* Background decorative elements */}
           <div className="absolute -left-8 -bottom-8 lg:left-0 lg:bottom-0">
             <Image
               src="/bg/partners-for-growth-get-started-desktop.png"
-              alt="Partners for Growth 15-Minute Conversation Background"
+              alt="Partners for Growth A 15 minute conversation Background"
               width={584}
               height={730}
               className="w-fit h-[200px] lg:h-[280px] object-cover opacity-80 lg:opacity-100"
@@ -523,7 +533,7 @@ export default function Forinvestors() {
           <div className="absolute -right-8 -top-8 lg:right-0 lg:top-0">
             <Image
               src="/bg/partners-for-growth-get-started-2-desktop.png"
-              alt="Partners for Growth 15-Minute Conversation Background"
+              alt="Partners for Growth A 15 minute conversation Background"
               width={584}
               height={730}
               className="w-fit h-[200px] lg:h-[300px] object-cover opacity-80 lg:opacity-100"
@@ -535,8 +545,8 @@ export default function Forinvestors() {
               Next Step
             </p>
             <h2 className="font-manrope font-medium text-[32px] lg:text-[64px] leading-[42px] lg:leading-[70px] text-white">
-              <span className="block">15-Minute</span>
-              <span className="block">Conversation</span>
+              <span className="block">A 15 minute</span>
+              <span className="block">conversation</span>
             </h2>
             <p className="font-inter text-[16px] lg:text-[18px] text-white leading-[26px] lg:leading-[28px] max-w-[359px] lg:max-w-[741px] mx-auto">
               See what PhaseOne Partners can unlock for your next investment.
@@ -544,8 +554,11 @@ export default function Forinvestors() {
               foundation for a tailored origination pipeline.
             </p>
             <div className="flex justify-center w-full">
-              <Button className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium w-full max-w-xs" asChild>
-                <Link href="/contact">Get Started Today</Link>
+              <Button
+                className="bg-white text-[#0224e9] hover:bg-[#0224e9] hover:text-white transition-colors rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium w-full max-w-xs"
+                asChild
+              >
+                <Link href="/contact"> Get started today</Link>
               </Button>
             </div>
           </div>

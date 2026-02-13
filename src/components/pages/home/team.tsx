@@ -18,26 +18,29 @@ const Team = () => {
         "Widely marketed process with little control over who sees your information",
     },
     {
-      feature: "Control of Process",
+      feature: "Control of process",
       phaseOne: "Founder-led pace - you choose when and with whom to engage",
       traditional:
         "Broker-driven timelines designed to maximise speed and fees",
     },
     {
-      feature: "Legacy and Culture",
-      phaseOne: "Focus on finding capital partners who respect your people and vision",
+      feature: "Legacy and culture",
+      phaseOne:
+        "Focus on finding capital partners who respect your people and vision",
       traditional: "Legacy and culture often secondary to transaction value",
     },
     {
-      feature: "Relationship Building",
+      feature: "Relationship building",
       phaseOne: "Early, trust-based conversations before formal negotiations",
       traditional:
         "Transaction-first approach with limited personal connection",
     },
     {
-      feature: "Process Efficiency",
-      phaseOne: "Pre-qualified capital partners mean fewer wasted conversations",
-      traditional: "Many exploratory calls with capital partners who may not be a fit",
+      feature: "Process efficiency",
+      phaseOne:
+        "Pre-qualified capital partners mean fewer wasted conversations",
+      traditional:
+        "Many exploratory calls with capital partners who may not be a fit",
     },
     {
       feature: "Incentives",
@@ -54,11 +57,11 @@ const Team = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-          Why Deal Origination works for Founders and Business Owners
+            PhaseOne Partners works with Business Owners and Capital Partners
           </h2>
           <p className="text-xl md:text-[26px] max-w-4xl mx-auto">
-            A side-by-side comparison of how we work differently to traditional
-            brokers and in-house sourcing teams.
+            A side by side comparison of how we work differently to traditional
+            brokers and in house sourcing teams.
           </p>
         </div>
 
@@ -80,7 +83,7 @@ const Team = () => {
               />
             </div>
             <div className="p-4 lg:text-[29px] text-[13px] lg:leading-[130%] leading-[120%] font-bold  text-center">
-              Traditional Brokers/ Advisors
+              Traditional Brokers or Advisors
             </div>
           </div>
 
@@ -97,16 +100,12 @@ const Team = () => {
                   style={{ backgroundColor: rowBgColor }}
                 >
                   {/* Feature Name */}
-                  <div
-                    className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[13.5px] flex items-center font-medium text-black leading-[130%] break-words min-w-0 pr-2 md:pr-6"
-                  >
+                  <div className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[13.5px] flex items-center font-medium text-black leading-[130%] break-words min-w-0 pr-2 md:pr-6">
                     {row.feature}
                   </div>
 
                   {/* PhaseOne Partners */}
-                  <div
-                    className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[15px] font-medium text-[#0224E9] leading-[130%] border-x-3 z-10 border-primary"
-                  >
+                  <div className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[15px] font-medium text-[#0224E9] leading-[130%] border-x-3 z-10 border-primary">
                     {/* Show icon on mobile, text on desktop */}
                     <div className="md:hidden flex items-center justify-center">
                       <Image
@@ -117,15 +116,11 @@ const Team = () => {
                         className="w-8 h-8"
                       />
                     </div>
-                    <div className="hidden md:block">
-                      {row.phaseOne}
-                    </div>
+                    <div className="hidden md:block">{row.phaseOne}</div>
                   </div>
 
                   {/* Traditional Brokers/Advisors */}
-                  <div
-                    className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[15px] font-medium text-black leading-[130%]"
-                  >
+                  <div className="p-4 md:px-6 py-4 md:py-6 lg:text-[20px] text-[15px] font-medium text-black leading-[130%]">
                     {/* Show icon on mobile, text on desktop */}
                     <div className="md:hidden flex items-center justify-center">
                       <Image
@@ -136,9 +131,7 @@ const Team = () => {
                         className="w-3 h-4"
                       />
                     </div>
-                    <div className="hidden md:block">
-                      {row.traditional}
-                    </div>
+                    <div className="hidden md:block">{row.traditional}</div>
                   </div>
                 </div>
               );
@@ -149,8 +142,7 @@ const Team = () => {
             <div className="p-4 md:p-6">
               {/* Empty header for first column */}
             </div>
-            <div className="p-4 text-lg font-semibold rounded-b-3xl bg-primary flex items-center justify-center">
-            </div>
+            <div className="p-4 text-lg font-semibold rounded-b-3xl bg-primary flex items-center justify-center"></div>
             <div className="p-4 md:p-6">
               {/* Empty header for first column */}
             </div>
@@ -159,9 +151,17 @@ const Team = () => {
 
         {/* CTA Section */}
         <div className="mt-20 flex flex-col justify-center w-fit mx-auto items-center text-center">
-          <h3 className="text-3xl md:text-[60px] font-extrabold text-primary mb-2">Next Steps</h3>
-          <p className="text-xl lg:text-[26px] font-medium mb-6">It all starts with one simple call.</p>
-          <AnimatedButton text="Schedule Discovery Call" defaultBgColor="bg-primary" href="/contact" />
+          <h3 className="text-3xl md:text-[60px] font-extrabold text-primary mb-2">
+            Next steps
+          </h3>
+          <p className="text-xl lg:text-[26px] font-medium mb-6">
+            It all starts with one simple call.
+          </p>
+          <AnimatedButton
+            text="Schedule Discovery Call"
+            defaultBgColor="bg-primary"
+            href="/contact"
+          />
         </div>
       </div>
     </section>
