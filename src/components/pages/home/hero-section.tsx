@@ -57,12 +57,12 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="flex flex-col justify-center text-foreground gap-3 font-manrope text-center mx-auto max-w-full">
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6 z-10">
           <Image
             src="/logo.black.png"
             alt="PhaseOne Logo"
-            width={600}
-            height={200}
+            width={800}
+            height={300}
             className="w-full max-w-[300px] md:max-w-[500px] h-auto object-contain"
             priority
           />
