@@ -237,9 +237,7 @@ export default function HomeVideo() {
           <span className="text-[#0224E9] font-extrabold">
             right companies with the right capital
           </span>{" "}
-          through clarity and confidence. Time and again, we help partners
-          achieve better results through meticulous preparation and strategic
-          positioning
+          through clarity and confidence.
         </h3>
       </div>
     </section>

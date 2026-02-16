@@ -285,7 +285,7 @@ export default function Forinvestors() {
                 className="bg-[#0224e9] text-white hover:bg-[#0224e9]/90 rounded-full px-[22px] py-[10px] h-[44px] lg:h-[48px] text-[12px] lg:text-[18px] font-manrope font-medium"
                 asChild
               >
-                <Link href="#phases-of-deal">Learn How We Help</Link>
+                <Link href="#phases-of-deal">Learn how we help</Link>
               </Button>
             </div>
           </div>

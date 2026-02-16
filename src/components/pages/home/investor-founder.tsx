@@ -18,7 +18,7 @@ const sectionData = [
       "We don't just list your company and hope the right buyer comes along. We work with you to position the opportunity, find aligned capital partners, and manage the process all the way through.",
     features: [
       "Direct access to trusted capital partners",
-      "End-to-end support",
+      "End to end support",
       "Strategic preparation to frame your business correctly",
       "Respect for your timeline, privacy, and exit goals",
     ],
@@ -122,7 +122,7 @@ export default function InvestorFounder() {
                 <p>Origination</p>
                 <div className="relative inline-flex items-start">
                   <p className="bg-[#c0c8f9] rounded-l-lg px-2">
-                    Mean for You
+                    mean for you
                   </p>
                   <Image
                     src="/flag.svg"

@@ -29,7 +29,7 @@ export default function FAQSectionFounders() {
     },
     {
       id: 2,
-      question: "How is this different from when investment bankers, M and A advisors or business brokers have approached me in the past?",
+      question: "How is this different from when investment bankers, M&A advisors, or business brokers have approached me in the past?",
       answer: (
         <>
           <p>

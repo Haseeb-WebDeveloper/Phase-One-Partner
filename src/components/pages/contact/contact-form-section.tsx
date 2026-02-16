@@ -62,11 +62,11 @@ export default function ContactFormSection() {
             <div>
               <h2 className="text-3xl lg:text-[42px] font-manrope font-bold text-[#333333] mb-4">
                 {/* Use consistent black for headings */}
-                Let's Start a Conversation
+                Let's start a conversation
               </h2>
               <p className="text-lg lg:text-[20px] font-inter text-[#333333] leading-relaxed">
                 {/* Switched to text-[#333333] for body text */}
-                Whether you're a business owners looking for investment or a
+                Whether you're a business owner looking for investment or a
                 capital partner seeking opportunities, we're here to help you
                 make the right connections.
               </p>
@@ -112,7 +112,7 @@ export default function ContactFormSection() {
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-lg">
             <h3 className="text-2xl lg:text-[32px] font-manrope font-bold text-[#333333] mb-6">
-              Send PhaseOne Partners a message
+              Contact us
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
