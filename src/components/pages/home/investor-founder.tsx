@@ -111,7 +111,7 @@ export default function InvestorFounder() {
         <div className="text-center font-manrope">
           <div className="mb-8">
             <p className="tracking-wider text-primary font-light mb-4">
-            PhaseOne Partners
+              PhaseOne Partners
             </p>
             {/* Desktop */}
             <div className="hidden xl:block">
@@ -121,16 +121,14 @@ export default function InvestorFounder() {
               <div className="relative inline-flex items-start gap-3 text-3xl lg:text-4xl xl:text-[62px] font-extrabold text-[#333333]">
                 <p>Origination</p>
                 <div className="relative inline-flex items-start">
-                  <p className="bg-[#c0c8f9] rounded-l-lg px-2">
-                    mean for you
-                  </p>
+                  <p className="bg-[#c0c8f9] rounded-l-lg px-2">mean for you</p>
                   <Image
                     src="/flag.svg"
                     alt="arrow-right"
                     width={400}
                     height={400}
                     className="absolute bottom-0 -right-[68px] w-[72px]"
-                    style={{ minWidth: 'auto' }}
+                    style={{ minWidth: "auto" }}
                     priority
                     quality={100}
                   />
@@ -148,7 +146,7 @@ export default function InvestorFounder() {
                   ref={mobileHighlightRef}
                   className="bg-[#c0c8f9] rounded-l-lg pl-2 pr-1 leading-[120%]"
                 >
-                  Mean for You
+                  mean for you
                 </p>
                 <Image
                   ref={mobileTagRef}
@@ -165,9 +163,8 @@ export default function InvestorFounder() {
           </div>
 
           <p className="text-xl lg:text-[25px] text-[#333333] font-poppins max-w-6xl mx-auto leading-relaxed text-pretty">
-             PhaseOne Partners connects high-quality
-businesses with aligned capital providers and
-strategic acquirers.
+            PhaseOne Partners connects high-quality businesses with aligned
+            capital providers and strategic acquirers.
           </p>
         </div>
 
@@ -215,7 +212,10 @@ strategic acquirers.
                 </div>
               </div>
 
-              <Button className="py-6  w-full lg:w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato" asChild>
+              <Button
+                className="py-6  w-full lg:w-fit mx-auto px-12 rounded-full text-background border-border transition-all duration-200 mt-auto text-lg font-medium font-lato"
+                asChild
+              >
                 <Link href={index === 0 ? "/for-founders" : "/for-investors"}>
                   {section.buttonText}
                 </Link>
