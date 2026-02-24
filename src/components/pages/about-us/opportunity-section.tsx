@@ -37,7 +37,7 @@ export default function OpportunitySection() {
               98%
             </div>
             <div className="text-base md:text-lg lg:text-xl text-black">
-              of larger private companies remain privately held.
+              of private companies remain privately held.
             </div>
           </div>
 
